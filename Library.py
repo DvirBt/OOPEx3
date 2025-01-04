@@ -25,14 +25,9 @@ class Library:
 
     @log_to_file
     def return_book(self, book_to_return):
-        for book in self.books:
-            if book.get_title() == book_to_return.get_title():
-                book.decrease_copy()
-                print(f"Returned book: {book.get_title()}")
-                return
-        print("Book was not found")
+        return FileManagement.return_book(book_to_return)
 
-    def is_book_exists(self, book:Book):
+    def is_book_exists(self, book: Book):
         books = FileManagement.get_book_name_list()
         if book.get_title() in books:
             return True
@@ -42,44 +37,40 @@ class Library:
     def add_book(self, book):
         try:
             if book is not None and not self.is_book_exists(book):
-                self.books.append(book)
                 FileManagement.add_book(book)
                 return f"Successfully added the book {book.get_title()}"
         except Exception as e:
             return f"Failed to add the book {book.get_title()} because: {e}"
 
-
-
     @log_to_file
     def remove_book(self, book):
         try:
             if book is not None:
-                self.books.append(book)
                 FileManagement.remove_book(book)
                 return f"Successfully removed the book {book.get_title()}"
         except Exception as e:
             return f"Failed to remove the book {book.get_title()} because: {e}"
 
     @log_to_file
-    def update_book(self, book_to_update):
-        for book in self.books:
-            if book.get_title() == book_to_update.get_title():
-                book.set_author(book_to_update.get_author())
-                book.set_year(book_to_update.get_year())
-                book.set_genre(book_to_update.get_genre())
-                book.set_copies(book_to_update.get_copies())
-                book.set_is_loaned(book_to_update.get_is_loaned())
-                print(f"Successfully updated the book {book.get_title()}")
-                return
-
-        print("Book to update wasn't found")
-
+    def update_book(self, book_to_update: Book):
+        if book_to_update is not None:
+            FileManagement.update_book(book_to_update)
+            return f"Successfully update the book: {book_to_update.get_title()}"
+        else:
+            return "Error: book cannot be None"
 
     @log_to_file
-    def add_user(self, user:User):
+    def add_user(self, user: User):
         if not FileManagement.is_user_exists(user):
             FileManagement.add_user(user)
             return f"Successfully added user: {user.get_username()}"
         else:
             return f"The user {user.get_username()} already exists"
 
+    @log_to_file
+    def remove_user(self, user: User):
+        if FileManagement.is_user_exists(user):
+            FileManagement.remove_username(user)
+            return f"Successfully removed user: {user.get_username()}"
+        else:
+            return f"The user {user.get_username()} doesn't exists"

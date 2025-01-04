@@ -48,7 +48,6 @@ def create_csv_header(path):
             writer.writerow(["title", "author", "is_loaned", "copies", "genre", "year"])
 
 
-@check
 def create_available_books_file():
     header = ["title", "available"]
     data = []
@@ -129,6 +128,8 @@ def decrease_from_availability(book: Book):
         for row in reader:
             if row[0] == book.get_title():
                 x = int(row[1])
+                if x == 0:
+                    return False
                 x -= 1
                 row[1] = str(x)
             rows.append(row)
@@ -138,15 +139,43 @@ def decrease_from_availability(book: Book):
         for row in rows:
             writer.writerow([row[0], row[1]])
 
+    return True
+
 
 @check
 def lend_book(book: Book):
-    if available_copies(book) > 0:
-        decrease_from_availability(book)
+    did_lower = decrease_from_availability(book)
+    if did_lower:
         return f"Successfully lent the book {book.get_title()}"
     else:
-        return f"Failed to lend the book {book.get_title()}"
+        return f"Can't lend {book.get_title()}, no more books in stock"
 
+
+@check
+def return_book(book: Book):
+    try:
+        increase_available_book(book)
+        return f"Successfully returned the book {book.get_title()}"
+    except Exception as e:
+        return f"Failed to return the book {book.get_title()} because of: {e}"
+
+
+@check
+def increase_available_book(book: Book):
+    rows = []
+    with open(available_books_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] == book.get_title():
+                x = int(row[1])
+                x += 1
+                row[1] = str(x)
+            rows.append(row)
+
+    with open(available_books_path, "w", newline="") as file:
+        writer = csv.writer(file)
+        for row in rows:
+            writer.writerow([row[0], row[1]])
 
 @check
 def get_book_name_list():
@@ -159,6 +188,26 @@ def get_book_name_list():
     return names
 
 
+@check
+def update_book(book: Book):
+    rows = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] == book.get_title():
+                row[1] = book.get_author()
+                row[2] = book.get_is_loaned()
+                row[3] = book.get_copies()
+                row[4] = book.get_genre()
+                row[5] = book.get_year()
+            rows.append(row)
+
+    with open(book_path, "w", newline="") as file:
+        writer = csv.writer(file)
+        for row in rows:
+            writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5]])
+
+
 def create_users_csv():
     header = ["Username", "Password"]
     with open(users_database, "w", newline="") as file:
@@ -166,6 +215,7 @@ def create_users_csv():
         writer.writerow(header)
 
 
+@check
 def add_user(user: User):
     password = encrypt_password(user.get_password())
     with open(users_database, "a", newline="") as file:
@@ -173,6 +223,7 @@ def add_user(user: User):
         writer.writerow([user.get_username(), password])
 
 
+@check
 def is_user_exists(user: User):
     with open(users_database, "r", newline="") as file:
         reader = csv.reader(file)
@@ -187,3 +238,28 @@ def encrypt_password(password):
     hash_obj = hashlib.sha256(password_bytes)
     hashed_password = hash_obj.hexdigest()
     return hashed_password
+
+
+@check
+def remove_username(user: User):
+    rows = []
+    with open(users_database, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] != user.get_username():
+                rows.append(row)
+    with open(users_database, "w", newline="") as file:
+        writer = csv.writer(file)
+        for row in rows:
+            writer.writerow([row[0], row[1]])
+
+
+@check
+def user_login(user: User):
+    password = encrypt_password(user.get_password())
+    with open(users_database, "r", newline=""):
+        reader = csv.reader("file")
+        for check_user in reader:
+            if check_user[0] == user.get_username() and check_user[1] == password:
+                return True
+    return False

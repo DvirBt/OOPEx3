@@ -27,9 +27,6 @@ class Book:
     def get_year(self):
         return self._year
 
-    def set_title(self, title):
-        self._title = title
-
     def set_author(self, author):
         self._author = author
 
