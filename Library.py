@@ -83,7 +83,6 @@ class Library:
         else:
             return "Error: book can't be None"
 
-
     @log_to_file
     def add_user(self, user: User):
         if user is not None:
@@ -98,7 +97,6 @@ class Library:
         else:
             return "Error: user can't be None"
 
-
     @log_to_file
     def remove_user(self, user: User):
         if user is not None:
@@ -112,4 +110,3 @@ class Library:
                 return f"Error: failed to remove the user {user.get_username()} because {e}"
         else:
             return "Error: user can't be None"
-
