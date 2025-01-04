@@ -146,9 +146,9 @@ def decrease_from_availability(book: Book):
 def lend_book(book: Book):
     did_lower = decrease_from_availability(book)
     if did_lower:
-        return f"Successfully lent the book {book.get_title()}"
+        return f"Successfully borrowed the book {book.get_title()}"
     else:
-        return f"Can't lend {book.get_title()}, no more books in stock"
+        return f"Can't borrow {book.get_title()}, no more books in stock"
 
 
 @check
@@ -176,6 +176,7 @@ def increase_available_book(book: Book):
         writer = csv.writer(file)
         for row in rows:
             writer.writerow([row[0], row[1]])
+
 
 @check
 def get_book_name_list():
@@ -263,3 +264,74 @@ def user_login(user: User):
             if check_user[0] == user.get_username() and check_user[1] == password:
                 return True
     return False
+
+
+def select_book_by_name(name):
+    book = None
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] == name:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+
+    return book
+
+
+def select_book_by_author(name):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[1] == name:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+
+def select_book_by_genre(genre):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[4] == genre:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+
+def select_book_by_year(year):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[5] == year:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+
+def select_book_by_is_loaned(is_loaned):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[2] == is_loaned:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+
+def select_book_by_copies(copies):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[3] == copies:
+                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
