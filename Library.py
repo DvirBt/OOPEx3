@@ -21,7 +21,10 @@ class Library:
 
     @log_to_file
     def lend_book(self, book_to_lend):
-        return FileManagement.lend_book(book_to_lend)
+        try:
+            return FileManagement.lend_book(book_to_lend)
+        except Exception as e:
+            return f"Couldn't lend a book because {e}"
 
     @log_to_file
     def return_book(self, book_to_return):

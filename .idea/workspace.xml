@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Starting Ex3">
+    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Finished most of the backend of book and user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/available_books.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736010424708</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished most of the backend of book and user">
+      <option name="closed" value="true" />
+      <created>1736016343635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736016343635</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished most of the backend of book and user">
+      <option name="closed" value="true" />
+      <created>1736016354208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736016354208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -172,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting Ex3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting Ex3" />
+    <MESSAGE value="Finished most of the backend of book and user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished most of the backend of book and user" />
   </component>
 </project>
