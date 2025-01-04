@@ -1,0 +1,174 @@
+Error in add_book: Library.add_book() missing 1 required positional argument: 'book'
+Error in add_book: Library.add_book() missing 1 required positional argument: 'book'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Error in lend_book: unsupported operand type(s) for +=: 'int' and 'str'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Error in lend_book: unsupported operand type(s) for +=: 'int' and 'str'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Error in lend_book: '>' not supported between instances of 'NoneType' and 'int'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Error in lend_book: '>' not supported between instances of 'NoneType' and 'int'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Error in lend_book: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+None 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+None 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+None 
+None 
+None 
+Successfully added the book Title1 
+None 
+None 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+The user shakedm100 already exists 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added user: shakedm100 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added user: shakedm100 
+Successfully added the book Title1 
+Successfully removed the book Title1 
+Failed to lend the book Title2 
+Successfully added user: shakedm100 
