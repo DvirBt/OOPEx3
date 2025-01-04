@@ -21,7 +21,7 @@ class Library:
                 self.add_book(book)
 
     @log_to_file
-    def lend_book(self, book_to_lend: Book):
+    def borrow_book(self, book_to_lend: Book):
         if book_to_lend is not None:
             try:
                 return FileManagement.lend_book(book_to_lend)
@@ -84,16 +84,16 @@ class Library:
             return "Error: book can't be None"
 
     @log_to_file
-    def add_user(self, user: User):
+    def register_user(self, user: User):
         if user is not None:
             try:
                 if not FileManagement.is_user_exists(user):
                     FileManagement.add_user(user)
-                    return f"Successfully added user: {user.get_username()}"
+                    return f"Successfully registered user: {user.get_username()}"
                 else:
                     return f"The user {user.get_username()} already exists"
             except Exception as e:
-                return f"Error: failed to add user {user.get_username()} because {e}"
+                return f"Error: failed to register user {user.get_username()} because {e}"
         else:
             return "Error: user can't be None"
 
@@ -110,3 +110,38 @@ class Library:
                 return f"Error: failed to remove the user {user.get_username()} because {e}"
         else:
             return "Error: user can't be None"
+
+    @log_to_file
+    def login_user(self, user: User):
+        if user is not None:
+            try:
+                FileManagement.user_login(user)
+                return f"User {user.get_username()} successfully logged in"
+            except Exception as e:
+                return f"Error: failed to log in user {user.get_username()} because {e}"
+        else:
+            return "Error: user can't be None"
+
+    def get_book_by_name(self, name):
+        try:
+            return FileManagement.select_book_by_name(name)
+        except Exception as e:
+            print(f"Failed to search {name}")
+
+    def get_book_by_author(self, name):
+        try:
+            return FileManagement.select_book_by_author(name)
+        except Exception as e:
+            print(f"Failed to search {name}")
+
+    def get_book_by_genre(self, name):
+        try:
+            return FileManagement.select_book_by_genre(name)
+        except Exception as e:
+            print(f"Failed to search {name}")
+
+    def get_book_by_year(self, year):
+        try:
+            return FileManagement.select_book_by_year(year)
+        except Exception as e:
+            print(f"Failed to search {year}")

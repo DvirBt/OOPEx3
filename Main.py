@@ -1,4 +1,3 @@
-from typing import List
 import Library
 from Book import Book
 from User import User
@@ -17,7 +16,7 @@ library.add_book(book1)
 
 library.remove_book(book1)
 
-library.lend_book(book2)
+library.borrow_book(book2)
 
 user = User("shakedm100", "aesnhftk1")
 library.add_user(user)
