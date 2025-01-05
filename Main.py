@@ -19,7 +19,7 @@ library.remove_book(book1)
 library.borrow_book(book2)
 
 user = User("shakedm100", "aesnhftk1")
-library.add_user(user)
+library.register_user(user)
 library.remove_user(user)
 
 book2.set_author("Shaked Michael")
