@@ -1,4 +1,6 @@
 from tkinter import *
+from ..Library import Library
+
 
 # to be implemented
 def add_book():
