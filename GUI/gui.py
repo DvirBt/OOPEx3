@@ -1,8 +1,6 @@
 from tkinter import *
 from OOPEx3 import *
 
-#library = Library(None)
-
 # to be implemented
 def add_book():
     pass

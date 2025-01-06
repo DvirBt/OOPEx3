@@ -1,6 +1,10 @@
-Successfully added the book Title1 
-Successfully removed the book Title1 
-Can't borrow Title2, no more books in stock 
-Successfully added user: shakedm100 
-Successfully removed user: shakedm100 
-Successfully update the book: Title2 
+2025-01-05 18:31:03,381 - INFO - Successfully added the book Title1
+2025-01-05 18:31:03,382 - INFO - Successfully added the book Title1
+2025-01-05 18:31:03,382 - INFO - Successfully added the book Title1
+2025-01-05 18:31:03,383 - INFO - Successfully added the book Title1
+2025-01-05 18:31:03,383 - INFO - Successfully added the book Title1
+2025-01-05 18:31:03,384 - INFO - Successfully removed the book Title1
+2025-01-05 18:31:03,386 - INFO - Can't borrow Title2, no more books in stock
+2025-01-05 18:31:03,386 - INFO - The user shakedm100 already exists
+2025-01-05 18:31:03,387 - INFO - Successfully update the book: Title2
+2025-01-05 18:31:03,387 - ERROR - Book can't be None
