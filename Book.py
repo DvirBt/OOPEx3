@@ -47,6 +47,6 @@ class Book:
 
     def decrease_copy(self):
         self._copies -= 1
-        
+
 
 
