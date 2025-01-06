@@ -20,7 +20,9 @@ library.borrow_book(book2)
 
 user = User("shakedm100", "aesnhftk1")
 library.register_user(user)
+
 #library.remove_user(user)
+
 
 book2.set_author("Shaked Michael")
 book2.set_year(2005)
