@@ -16,3 +16,7 @@ class User:
 
     def set_password(self, password):
         self._password = password
+
+    def __eq__(self, other):
+        if isinstance(other, User):
+            return (self._username == other._username and self._password == other._password)

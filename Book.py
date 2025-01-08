@@ -42,11 +42,8 @@ class Book:
     def set_year(self, year):
         self._year = year
 
-    def increase_copy(self):
-        self._copies += 1
-
-    def decrease_copy(self):
-        self._copies -= 1
-        
+    def __eq__(self, other):
+        if isinstance(other, Book):
+            return (self._title == other._title and self._author == other._author and self._is_loaned == other._is_loaned and self._copies == other._copies and self._genre == other._genre and self._year == other._year)
 
 

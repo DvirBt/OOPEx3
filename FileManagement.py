@@ -123,46 +123,53 @@ def available_copies(book: Book):
 @check
 def decrease_from_availability(book: Book):
     rows = []
+    check_found = False
     with open(available_books_path, "r", newline="") as file:
         reader = csv.reader(file)
         for row in reader:
             if row[0] == book.get_title():
                 x = int(row[1])
+                check_found = True
                 if x == 0:
                     return False
                 x -= 1
                 row[1] = str(x)
             rows.append(row)
 
-    with open(available_books_path, "w", newline="") as file:
-        writer = csv.writer(file)
-        for row in rows:
-            writer.writerow([row[0], row[1]])
+    if check_found:
+        with open(available_books_path, "w", newline="") as file:
+            writer = csv.writer(file)
+            for row in rows:
+                writer.writerow([row[0], row[1]])
 
-    return True
+    return check_found
 
 
 @check
 def lend_book(book: Book):
-    did_lower = decrease_from_availability(book)
-    if did_lower:
-        return f"Successfully borrowed the book {book.get_title()}"
+    check_completed = decrease_from_availability(book)
+    if check_completed:
+        return f"Successfully borrowed the book {book.get_title()}", True
     else:
-        return f"Can't borrow {book.get_title()}, no more books in stock"
+        return f"Can't borrow {book.get_title()}, no more books in stock", False
 
 
 @check
 def return_book(book: Book):
     try:
-        increase_available_book(book)
-        return f"Successfully returned the book {book.get_title()}"
+        check_completed = increase_available_book(book)
+        if check_completed:
+            return f"Successfully returned the book {book.get_title()}", check_completed
+        else:
+            return f"Failed to return the book {book.get_title()}", check_completed
     except Exception as e:
-        return f"Failed to return the book {book.get_title()} because of: {e}"
+        return f"Failed to return the book {book.get_title()} because of: {e}", False
 
 
 @check
 def increase_available_book(book: Book):
     rows = []
+    check_found = False
     with open(available_books_path, "r", newline="") as file:
         reader = csv.reader(file)
         for row in reader:
@@ -170,12 +177,16 @@ def increase_available_book(book: Book):
                 x = int(row[1])
                 x += 1
                 row[1] = str(x)
+                check_found = True
             rows.append(row)
 
-    with open(available_books_path, "w", newline="") as file:
-        writer = csv.writer(file)
-        for row in rows:
-            writer.writerow([row[0], row[1]])
+    if check_found:
+        with open(available_books_path, "w", newline="") as file:
+            writer = csv.writer(file)
+            for row in rows:
+                writer.writerow([row[0], row[1]])
+
+    return check_found
 
 
 @check

@@ -51,9 +51,9 @@ class Library:
     def borrow_book(self, book_to_lend: Book):
         if book_to_lend is not None:
             try:
-                self.log_text = FileManagement.lend_book(book_to_lend)
+                self.log_text, check = FileManagement.lend_book(book_to_lend)
                 self.log_level = logging.INFO
-                return True
+                return check
             except Exception as e:
                 self.log_text = f"Failed to borrow the book {book_to_lend.get_title()} because {e}"
                 self.log_level = logging.DEBUG
@@ -67,9 +67,9 @@ class Library:
     def return_book(self, book_to_return: Book):
         if book_to_return is not None:
             try:
-                self.log_text = FileManagement.return_book(book_to_return)
+                self.log_text, check = FileManagement.return_book(book_to_return)
                 self.log_level = logging.INFO
-                return True
+                return check
             except Exception as e:
                 self.log_text = f"Failed to return the book {book_to_return.get_title()} because {e}"
                 self.log_level = logging.ERROR
@@ -144,6 +144,11 @@ class Library:
 
     @log_to_file
     def register_user(self, user: User):
+        """
+        TODO Add basic requirements checks for user name and password
+        :param user:
+        :return:
+        """
         if user is not None:
             try:
                 if not FileManagement.is_user_exists(user):
@@ -203,7 +208,7 @@ class Library:
             self.log_level = logging.ERROR
             return False
 
-    def get_book_by_name(self, name):
+    def get_book_by_title(self, name):
         try:
             book = FileManagement.select_book_by_name(name)
             if book is not None:
@@ -257,3 +262,12 @@ class Library:
         except Exception as e:
             self.log_text = f"Encountered an error when tried to search by the year {year}"
             self.log_level = logging.ERROR
+
+
+    def get_book_copies(self, book: Book):
+        try:
+            return FileManagement.available_copies(book)
+        except Exception as e:
+            self.log_text = f"Encountered an error when trying to find the book {book.get_title()} available copies"
+            self.log_level = logging.ERROR
+            return False

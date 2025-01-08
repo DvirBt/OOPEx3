@@ -8,3 +8,99 @@
 2025-01-05 18:31:03,386 - INFO - The user shakedm100 already exists
 2025-01-05 18:31:03,387 - INFO - Successfully update the book: Title2
 2025-01-05 18:31:03,387 - ERROR - Book can't be None
+2025-01-08 13:17:46,925 - INFO - Successfully added the book Title1
+2025-01-08 13:33:31,218 - INFO - Successfully removed the book Title1
+2025-01-08 13:36:34,650 - INFO - Successfully removed the book Title1
+2025-01-08 13:36:34,651 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:36:46,452 - INFO - Successfully removed the book Title1
+2025-01-08 13:36:47,437 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:37:09,522 - INFO - Successfully removed the book Title1
+2025-01-08 13:37:09,523 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:37:14,975 - INFO - Successfully removed the book Title1
+2025-01-08 13:37:15,258 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:37:22,206 - INFO - Successfully removed the book Title1
+2025-01-08 13:40:17,571 - INFO - Successfully removed the book Title1
+2025-01-08 13:40:17,571 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:40:23,623 - INFO - Successfully removed the book Title1
+2025-01-08 13:40:24,765 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:41:03,045 - INFO - Successfully removed the book Title1
+2025-01-08 13:41:03,046 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:41:08,747 - INFO - Successfully removed the book Title1
+2025-01-08 13:41:09,974 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:41:16,862 - INFO - Successfully removed the book Title1
+2025-01-08 13:41:34,288 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:41:47,005 - INFO - Successfully removed the book Title1
+2025-01-08 13:41:47,589 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:41:51,783 - INFO - Successfully removed the book Title1
+2025-01-08 13:42:50,348 - INFO - Successfully removed the book Title1
+2025-01-08 13:42:50,349 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:43:04,116 - INFO - Successfully removed the book Title1
+2025-01-08 13:43:04,851 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:43:16,620 - INFO - Successfully removed the book Title1
+2025-01-08 13:43:16,621 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:43:16,622 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:43:16,622 - INFO - Successfully added the book Title1
+2025-01-08 13:43:16,623 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:43:16,623 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:43:16,625 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 13:44:28,086 - INFO - Successfully removed the book Title1
+2025-01-08 13:44:28,090 - INFO - Successfully returned the book Title1
+2025-01-08 13:50:50,947 - INFO - Successfully removed the book Title1
+2025-01-08 13:50:50,948 - INFO - Successfully returned the book Title1
+2025-01-08 13:51:04,800 - INFO - Successfully removed the book Title1
+2025-01-08 13:51:04,800 - INFO - Successfully returned the book Title1
+2025-01-08 13:51:12,336 - INFO - Successfully removed the book Title1
+2025-01-08 13:51:16,587 - INFO - Successfully returned the book Title1
+2025-01-08 13:51:25,597 - INFO - Successfully removed the book Title1
+2025-01-08 13:51:55,825 - INFO - Successfully returned the book Title1
+2025-01-08 13:52:17,841 - INFO - Successfully removed the book Title1
+2025-01-08 13:52:27,367 - INFO - Successfully returned the book Title1
+2025-01-08 13:52:40,707 - INFO - Successfully removed the book Title1
+2025-01-08 13:55:35,415 - INFO - Successfully removed the book Title1
+2025-01-08 13:55:35,416 - INFO - Failed to return the book Title1
+2025-01-08 13:55:35,417 - INFO - Failed to return the book Title1
+2025-01-08 13:55:35,418 - INFO - Successfully added the book Title1
+2025-01-08 13:55:35,419 - INFO - Successfully returned the book Title1
+2025-01-08 13:55:35,420 - INFO - Successfully returned the book Title1
+2025-01-08 13:55:35,422 - INFO - Successfully borrowed the book Title1
+2025-01-08 13:55:41,384 - INFO - Successfully removed the book Title1
+2025-01-08 13:56:18,889 - INFO - Failed to return the book Title1
+2025-01-08 13:56:32,981 - INFO - Failed to return the book Title1
+2025-01-08 13:56:32,981 - INFO - Successfully added the book Title1
+2025-01-08 13:57:17,719 - INFO - Successfully returned the book Title1
+2025-01-08 14:05:10,368 - INFO - Successfully removed the book Title1
+2025-01-08 14:05:10,368 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:05:10,370 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:05:10,371 - INFO - Successfully added the book Title1
+2025-01-08 14:05:10,371 - INFO - Successfully borrowed the book Title1
+2025-01-08 14:05:43,425 - INFO - Successfully removed the book Title1
+2025-01-08 14:05:43,425 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:05:43,425 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:05:43,425 - INFO - Successfully added the book Title1
+2025-01-08 14:05:43,425 - INFO - Successfully borrowed the book Title1
+2025-01-08 14:07:00,503 - INFO - Successfully removed the book Title1
+2025-01-08 14:07:00,503 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:07:35,974 - INFO - Successfully removed the book Title1
+2025-01-08 14:07:35,974 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:08:08,027 - INFO - Successfully removed the book Title1
+2025-01-08 14:08:08,027 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:08:08,042 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:09:36,380 - INFO - Successfully added the book Title1
+2025-01-08 14:10:24,078 - INFO - Successfully borrowed the book Title1
+2025-01-08 14:11:15,792 - INFO - Successfully removed the book Title1
+2025-01-08 14:11:15,793 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:11:15,794 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:11:15,794 - INFO - Successfully added the book Title1
+2025-01-08 14:11:15,795 - INFO - Successfully borrowed the book Title1
+2025-01-08 14:11:15,796 - INFO - Successfully borrowed the book Title1
+2025-01-08 14:11:15,796 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 14:11:53,957 - INFO - Successfully removed the book Title1
+2025-01-08 14:11:53,957 - INFO - Failed to return the book Title1
+2025-01-08 14:11:53,958 - INFO - Failed to return the book Title1
+2025-01-08 14:11:53,959 - INFO - Successfully added the book Title1
+2025-01-08 14:11:53,959 - INFO - Successfully returned the book Title1
+2025-01-08 14:16:09,664 - INFO - Successfully update the book: Title1
+2025-01-08 14:16:25,946 - INFO - Successfully update the book: Title1
+2025-01-08 14:18:04,379 - INFO - Successfully update the book: Title1
+2025-01-08 14:19:18,195 - INFO - Successfully update the book: Title1
+2025-01-08 14:19:18,197 - INFO - Successfully update the book: Title1
