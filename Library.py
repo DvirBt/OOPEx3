@@ -152,10 +152,11 @@ class Library:
         if user is not None:
             try:
                 if not FileManagement.is_user_exists(user):
-                    FileManagement.add_user(user)
-                    self.log_text = f"Successfully registered user: {user.get_username()}"
-                    self.log_level = logging.INFO
-                    return True
+                    check = FileManagement.add_user(user)
+                    if check:
+                        self.log_text = f"Successfully registered user: {user.get_username()}"
+                        self.log_level = logging.INFO
+                    return check
                 else:
                     self.log_text = f"The user {user.get_username()} already exists"
                     self.log_level = logging.INFO

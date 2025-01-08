@@ -104,3 +104,28 @@
 2025-01-08 14:18:04,379 - INFO - Successfully update the book: Title1
 2025-01-08 14:19:18,195 - INFO - Successfully update the book: Title1
 2025-01-08 14:19:18,197 - INFO - Successfully update the book: Title1
+2025-01-08 18:18:53,075 - INFO - The user shakedm100 already exists
+2025-01-08 18:19:01,967 - INFO - The user shakedm100 already exists
+2025-01-08 18:23:26,779 - INFO - The user shakedm100 already exists
+2025-01-08 18:23:33,185 - INFO - The user shakedm100 already exists
+2025-01-08 18:28:01,877 - INFO - The user shakedm100 already exists
+2025-01-08 18:28:34,987 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:29:46,998 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:29:47,000 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:29:51,787 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:29:51,790 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:30:26,327 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:30:26,329 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:30:31,324 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:30:31,324 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:31:47,211 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:31:47,211 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:34:38,142 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:34:38,146 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:35:06,835 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:35:06,839 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:35:30,566 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:35:30,568 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:42:40,323 - INFO - Successfully removed user: dvirbto
+2025-01-08 18:42:40,325 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:42:40,328 - INFO - Successfully removed user: dvirbto

@@ -229,10 +229,15 @@ def create_users_csv():
 
 @check
 def add_user(user: User):
+    if is_user_exists(user):
+        return False
+
     password = encrypt_password(user.get_password())
     with open(users_database, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([user.get_username(), password])
+
+    return True
 
 
 @check
@@ -276,7 +281,7 @@ def user_login(user: User):
                 return True
     return False
 
-
+@check
 def select_book_by_name(name):
     book = None
     with open(book_path, "r", newline="") as file:
@@ -287,7 +292,7 @@ def select_book_by_name(name):
 
     return book
 
-
+@check
 def select_book_by_author(name):
     books = []
     with open(book_path, "r", newline="") as file:
@@ -299,7 +304,7 @@ def select_book_by_author(name):
 
     return books
 
-
+@check
 def select_book_by_genre(genre):
     books = []
     with open(book_path, "r", newline="") as file:
@@ -311,7 +316,7 @@ def select_book_by_genre(genre):
 
     return books
 
-
+@check
 def select_book_by_year(year):
     books = []
     with open(book_path, "r", newline="") as file:
@@ -323,7 +328,7 @@ def select_book_by_year(year):
 
     return books
 
-
+@check
 def select_book_by_is_loaned(is_loaned):
     books = []
     with open(book_path, "r", newline="") as file:
@@ -335,7 +340,7 @@ def select_book_by_is_loaned(is_loaned):
 
     return books
 
-
+@check
 def select_book_by_copies(copies):
     books = []
     with open(book_path, "r", newline="") as file:
@@ -346,3 +351,14 @@ def select_book_by_copies(copies):
                 books.append(book)
 
     return books
+
+@check
+def get_user_by_username(name):
+    user = None
+    with open(users_database, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] == name:
+                user = User(row[0], row[1])
+
+    return user

@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
 
     def setUp(self):
         self.book = Book("Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
-        self.user = User("shakedm100", "123")
+        self.user = User("dvirbto", "123")
         self.library = Library()
 
     def test_add_book(self):
@@ -87,7 +87,26 @@ class Test(unittest.TestCase):
         self.assertEqual(self.library.get_book_by_title(self.book.get_title()), self.book)
 
 
-    def
+    def test_add_and_remove_user(self):
+        self.library.remove_user(self.user)
+        user = FileManagement.get_user_by_username(self.user)
+        self.assertEqual(user, None)
+
+        check_registered = self.library.register_user(self.user)
+        self.assertEqual(check_registered, True)
+
+        check_user = FileManagement.get_user_by_username(self.user.get_username())
+        self.user.set_password(FileManagement.encrypt_password(self.user.get_password()))
+
+        self.assertEqual(check_user, self.user)
+
+        self.library.remove_user(self.user)
+        user = FileManagement.get_user_by_username(self.user)
+        self.assertEqual(user, None)
+
+
+
+
 
 
 
