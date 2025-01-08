@@ -258,8 +258,8 @@ def remove_username(user: User):
 @check
 def user_login(user: User):
     password = encrypt_password(user.get_password())
-    with open(users_database, "r", newline=""):
-        reader = csv.reader("file")
+    with open(users_database, "r", newline="") as file:
+        reader = csv.reader(file)
         for check_user in reader:
             if check_user[0] == user.get_username() and check_user[1] == password:
                 return True
