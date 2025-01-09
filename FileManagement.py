@@ -4,6 +4,7 @@ from Book import Book
 from functools import wraps
 from User import User
 import hashlib
+from BookFactory import BookFactory
 
 
 def check(func):
@@ -20,7 +21,7 @@ current_path = os.getcwd()
 available_books_path = rf"{current_path}\Files\available_books.csv"
 book_path = rf"{current_path}\Files\books.csv"
 users_database = rf"{current_path}\Files\users.csv"
-
+book_factory = BookFactory()
 
 def check_csv_exists():
     if not os.path.exists(available_books_path):
@@ -288,7 +289,7 @@ def select_book_by_name(name):
         reader = csv.reader(file)
         for row in reader:
             if row[0] == name:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
 
     return book
 
@@ -299,7 +300,7 @@ def select_book_by_author(name):
         reader = csv.reader(file)
         for row in reader:
             if row[1] == name:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
     return books
@@ -311,7 +312,7 @@ def select_book_by_genre(genre):
         reader = csv.reader(file)
         for row in reader:
             if row[4] == genre:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
     return books
@@ -323,7 +324,7 @@ def select_book_by_year(year):
         reader = csv.reader(file)
         for row in reader:
             if row[5] == year:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book",row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
     return books
@@ -335,7 +336,7 @@ def select_book_by_is_loaned(is_loaned):
         reader = csv.reader(file)
         for row in reader:
             if row[2] == is_loaned:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book",row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
     return books
@@ -347,7 +348,7 @@ def select_book_by_copies(copies):
         reader = csv.reader(file)
         for row in reader:
             if row[3] == copies:
-                book = Book(row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                book = book_factory.get_book("book",row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
     return books
@@ -362,3 +363,52 @@ def get_user_by_username(name):
                 user = User(row[0], row[1])
 
     return user
+
+@check
+def init_popular_books():
+    maximum_copies_list = []
+    current_copies_list = []
+    most_popular_list = []
+
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            maximum_copies_list.append([row[0],int(row[3])])
+
+    with open(available_books_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            current_copies_list.append([row[0], int(row[1])])
+
+    i = 0
+    for item in maximum_copies_list:
+        if len(most_popular_list) < 10:
+            most_popular_list.append(item)
+
+        if i > 9:
+            gap = maximum_copies_list[i][1] - current_copies_list[i][1]
+            if gap > 0:
+                minimum_index, minimum_value = find_min_index(maximum_copies_list,current_copies_list, most_popular_list)
+                if gap > minimum_value:
+                    most_popular_list[minimum_index][0] = item[0]
+                    most_popular_list[minimum_index][1] = item[1]
+
+        i += 1
+
+    return most_popular_list
+
+def find_min_index(original_list,available_list, most_popular_list):
+    current_min = original_list[0][1] - available_list[0][1]
+    min_book_index = 0
+    i = 0
+
+    for book in original_list:
+        if book in most_popular_list:
+            check_min = book[1] - available_list[i][1]
+            if check_min < current_min:
+                min_book_index = i
+            i += 1
+
+    return min_book_index, current_min

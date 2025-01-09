@@ -1,14 +1,15 @@
 import unittest
 
 import FileManagement
-from Book import Book
 from User import User
 from Library import Library
+from BookFactory import BookFactory
 
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.book = Book("Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
+        self.book_factory = BookFactory()
+        self.book = self.book_factory.get_book("book","Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
         self.user = User("dvirbto", "123")
         self.library = Library()
 
@@ -81,7 +82,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.library.get_book_by_title(self.book.get_title()), self.book)
 
         #Reset it
-        self.book = Book("Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
+        self.book = self.book_factory.get_book("book", "Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
         self.library.update_book(self.book)
 
         self.assertEqual(self.library.get_book_by_title(self.book.get_title()), self.book)

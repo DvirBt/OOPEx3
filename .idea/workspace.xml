@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Better exception handling and logging, removed LoggingDecorator.py">
+    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Continued Test">
+      <change afterPath="$PROJECT_DIR$/BookFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/available_books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/available_books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "shakedm100"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shakedm100&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/shakedm100/OOPEx3.git",
-    "accountId": "fc8af00d-7eed-4064-8601-f4f7ec71f570"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shakedm100/OOPEx3.git&quot;,
+    &quot;accountId&quot;: &quot;fc8af00d-7eed-4064-8601-f4f7ec71f570&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -50,33 +55,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for Test.Test.test_add_book.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_add_user.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_borrow_book.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_remove_book.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_return_book.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_update_book.executor": "Run",
-    "Python.FileManagement.executor": "Run",
-    "Python.Library.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.gui.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Shaked/Documents/GitHub/OOPEx3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for Test.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_add_and_remove_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_add_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_add_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_borrow_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_remove_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_return_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test.Test.test_update_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python.FileManagement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Library.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Shaked/Documents/GitHub/OOPEx3&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Shaked\PycharmProjects\Book_Library\Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Test.Test.test_add_and_remove_user">
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test.Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for Test.Test.test_add_and_remove_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -107,36 +151,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test.Test.test_borrow_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Book_Library" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_borrow_book&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for Test.Test.test_return_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Book_Library" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_return_book&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for Test.Test.test_update_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -154,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python tests.Python tests for Test.Test" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_add_and_remove_user" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_add_user" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_update_book" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_return_book" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736094751520</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Continued Test">
+      <option name="closed" value="true" />
+      <created>1736354602849</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736354602849</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -262,17 +284,7 @@
     <MESSAGE value="Added a basic GUI" />
     <MESSAGE value="Better exception handling and logging" />
     <MESSAGE value="Better exception handling and logging, removed LoggingDecorator.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better exception handling and logging, removed LoggingDecorator.py" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FileManagement.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Continued Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continued Test" />
   </component>
 </project>

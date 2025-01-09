@@ -1396,3 +1396,311 @@
 2025-01-08 20:19:19,390 - INFO - The user shakedm100 already exists
 2025-01-08 20:19:19,390 - INFO - Successfully update the book: Title2
 2025-01-08 20:19:19,390 - ERROR - Book can't be None
+2025-01-08 18:49:19,573 - INFO - The user dvirbto doesn't exists
+2025-01-08 18:49:19,574 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:49:41,754 - INFO - The user dvirbto doesn't exists
+2025-01-08 18:49:41,755 - INFO - Successfully registered user: dvirbto
+2025-01-08 18:49:41,759 - INFO - Successfully removed user: dvirbto
+2025-01-08 19:12:11,554 - INFO - The user dvirbto doesn't exists
+2025-01-08 19:12:11,557 - INFO - Successfully registered user: dvirbto
+2025-01-08 19:12:11,558 - INFO - Successfully removed user: dvirbto
+2025-01-08 19:12:11,565 - INFO - Successfully removed the book Title1
+2025-01-08 19:12:11,566 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 19:12:11,568 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 19:12:11,569 - INFO - Successfully added the book Title1
+2025-01-08 19:12:11,570 - INFO - Successfully borrowed the book Title1
+2025-01-08 19:12:11,571 - INFO - Successfully borrowed the book Title1
+2025-01-08 19:12:11,573 - INFO - Can't borrow Title1, no more books in stock
+2025-01-08 19:12:11,577 - INFO - Successfully removed the book Title1
+2025-01-08 19:12:11,580 - INFO - Successfully removed the book Title1
+2025-01-08 19:12:11,581 - INFO - Failed to return the book Title1
+2025-01-08 19:12:11,583 - INFO - Failed to return the book Title1
+2025-01-08 19:12:11,584 - INFO - Successfully added the book Title1
+2025-01-08 19:12:11,586 - INFO - Successfully returned the book Title1
+2025-01-08 19:12:11,587 - INFO - Successfully update the book: Title1
+2025-01-08 19:12:11,589 - INFO - Successfully update the book: Title1
+2025-01-08 19:58:13,083 - INFO - Successfully removed the book Title1
+2025-01-08 19:58:13,085 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 19:58:13,086 - INFO - The user shakedm100 already exists
+2025-01-08 19:58:13,088 - INFO - Successfully update the book: Title2
+2025-01-08 19:58:13,089 - ERROR - Book can't be None
+2025-01-08 19:58:44,447 - INFO - Successfully added the book Title1
+2025-01-08 19:58:44,453 - INFO - Successfully added the book Title1
+2025-01-08 19:58:44,453 - INFO - Successfully added the book Title1
+2025-01-08 19:58:44,459 - INFO - Successfully added the book Title1
+2025-01-08 19:58:44,459 - INFO - Successfully added the book Title1
+2025-01-08 19:58:44,463 - INFO - Successfully removed the book Title1
+2025-01-08 19:58:44,463 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 19:58:44,463 - INFO - The user shakedm100 already exists
+2025-01-08 19:58:44,463 - INFO - Successfully update the book: Title2
+2025-01-08 19:58:44,475 - ERROR - Book can't be None
+2025-01-08 19:59:19,831 - INFO - Successfully added the book Title1
+2025-01-08 19:59:19,832 - INFO - Successfully added the book Title1
+2025-01-08 19:59:19,832 - INFO - Successfully added the book Title1
+2025-01-08 19:59:19,834 - INFO - Successfully added the book Title1
+2025-01-08 19:59:19,834 - INFO - Successfully added the book Title1
+2025-01-08 19:59:19,835 - INFO - Successfully removed the book Title1
+2025-01-08 19:59:19,836 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 19:59:19,837 - INFO - The user shakedm100 already exists
+2025-01-08 19:59:19,838 - INFO - Successfully update the book: Title2
+2025-01-08 19:59:19,838 - ERROR - Book can't be None
+2025-01-08 19:59:28,519 - INFO - Successfully added the book Title1
+2025-01-08 19:59:28,519 - INFO - Successfully added the book Title1
+2025-01-08 19:59:28,519 - INFO - Successfully added the book Title1
+2025-01-08 19:59:28,519 - INFO - Successfully added the book Title1
+2025-01-08 19:59:28,519 - INFO - Successfully added the book Title1
+2025-01-08 19:59:28,519 - INFO - Successfully removed the book Title1
+2025-01-08 19:59:28,519 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 19:59:28,519 - INFO - The user shakedm100 already exists
+2025-01-08 19:59:28,536 - INFO - Successfully update the book: Title2
+2025-01-08 19:59:28,536 - ERROR - Book can't be None
+2025-01-08 20:00:12,055 - INFO - Successfully added the book Title1
+2025-01-08 20:00:12,055 - INFO - Successfully added the book Title1
+2025-01-08 20:00:12,055 - INFO - Successfully added the book Title1
+2025-01-08 20:00:12,055 - INFO - Successfully added the book Title1
+2025-01-08 20:00:12,055 - INFO - Successfully added the book Title1
+2025-01-08 20:00:12,055 - INFO - Successfully removed the book Title1
+2025-01-08 20:00:12,055 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:00:12,055 - INFO - The user shakedm100 already exists
+2025-01-08 20:00:12,071 - INFO - Successfully update the book: Title2
+2025-01-08 20:00:12,071 - ERROR - Book can't be None
+2025-01-08 20:00:55,212 - INFO - Successfully added the book Title1
+2025-01-08 20:00:55,212 - INFO - Successfully added the book Title1
+2025-01-08 20:00:55,212 - INFO - Successfully added the book Title1
+2025-01-08 20:00:55,212 - INFO - Successfully added the book Title1
+2025-01-08 20:00:55,212 - INFO - Successfully added the book Title1
+2025-01-08 20:00:55,228 - INFO - Successfully removed the book Title1
+2025-01-08 20:00:55,228 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:00:55,228 - INFO - The user shakedm100 already exists
+2025-01-08 20:00:55,228 - INFO - Successfully update the book: Title2
+2025-01-08 20:00:55,228 - ERROR - Book can't be None
+2025-01-08 20:01:19,182 - INFO - Successfully added the book Title1
+2025-01-08 20:01:19,182 - INFO - Successfully added the book Title1
+2025-01-08 20:01:19,182 - INFO - Successfully added the book Title1
+2025-01-08 20:01:19,198 - INFO - Successfully added the book Title1
+2025-01-08 20:01:19,198 - INFO - Successfully added the book Title1
+2025-01-08 20:01:19,198 - INFO - Successfully removed the book Title1
+2025-01-08 20:01:19,198 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:01:19,198 - INFO - The user shakedm100 already exists
+2025-01-08 20:01:19,198 - INFO - Successfully update the book: Title2
+2025-01-08 20:01:19,213 - ERROR - Book can't be None
+2025-01-08 20:02:04,653 - INFO - Successfully added the book Title1
+2025-01-08 20:02:04,655 - INFO - Successfully added the book Title1
+2025-01-08 20:02:04,655 - INFO - Successfully added the book Title1
+2025-01-08 20:02:04,655 - INFO - Successfully added the book Title1
+2025-01-08 20:02:04,655 - INFO - Successfully added the book Title1
+2025-01-08 20:02:04,655 - INFO - Successfully removed the book Title1
+2025-01-08 20:02:04,655 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:02:04,668 - INFO - The user shakedm100 already exists
+2025-01-08 20:02:04,668 - INFO - Successfully update the book: Title2
+2025-01-08 20:02:04,668 - ERROR - Book can't be None
+2025-01-08 20:02:13,316 - INFO - Successfully added the book Title1
+2025-01-08 20:02:13,323 - INFO - Successfully added the book Title1
+2025-01-08 20:02:13,323 - INFO - Successfully added the book Title1
+2025-01-08 20:02:13,323 - INFO - Successfully added the book Title1
+2025-01-08 20:02:13,323 - INFO - Successfully added the book Title1
+2025-01-08 20:02:13,323 - INFO - Successfully removed the book Title1
+2025-01-08 20:02:13,330 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:02:13,330 - INFO - The user shakedm100 already exists
+2025-01-08 20:02:13,330 - INFO - Successfully update the book: Title2
+2025-01-08 20:02:13,330 - ERROR - Book can't be None
+2025-01-08 20:03:12,460 - INFO - Successfully added the book Title1
+2025-01-08 20:03:12,461 - INFO - Successfully added the book Title1
+2025-01-08 20:03:12,462 - INFO - Successfully added the book Title1
+2025-01-08 20:03:12,463 - INFO - Successfully added the book Title1
+2025-01-08 20:03:12,463 - INFO - Successfully added the book Title1
+2025-01-08 20:03:12,465 - INFO - Successfully removed the book Title1
+2025-01-08 20:03:12,466 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:03:12,467 - INFO - The user shakedm100 already exists
+2025-01-08 20:03:12,468 - INFO - Successfully update the book: Title2
+2025-01-08 20:03:12,469 - ERROR - Book can't be None
+2025-01-08 20:04:38,436 - INFO - Successfully added the book Title1
+2025-01-08 20:04:38,452 - INFO - Successfully added the book Title1
+2025-01-08 20:04:38,452 - INFO - Successfully added the book Title1
+2025-01-08 20:04:38,452 - INFO - Successfully added the book Title1
+2025-01-08 20:04:38,452 - INFO - Successfully added the book Title1
+2025-01-08 20:04:38,452 - INFO - Successfully removed the book Title1
+2025-01-08 20:04:38,452 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:04:38,452 - INFO - The user shakedm100 already exists
+2025-01-08 20:04:38,452 - INFO - Successfully update the book: Title2
+2025-01-08 20:04:38,452 - ERROR - Book can't be None
+2025-01-08 20:06:49,967 - INFO - Successfully added the book Title1
+2025-01-08 20:06:49,967 - INFO - Successfully added the book Title1
+2025-01-08 20:06:49,967 - INFO - Successfully added the book Title1
+2025-01-08 20:06:49,967 - INFO - Successfully added the book Title1
+2025-01-08 20:06:49,967 - INFO - Successfully added the book Title1
+2025-01-08 20:06:49,967 - INFO - Successfully removed the book Title1
+2025-01-08 20:06:49,967 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:06:49,967 - INFO - The user shakedm100 already exists
+2025-01-08 20:06:49,983 - INFO - Successfully update the book: Title2
+2025-01-08 20:06:49,983 - ERROR - Book can't be None
+2025-01-08 20:21:12,712 - INFO - Successfully added the book Title1
+2025-01-08 20:21:12,712 - INFO - Successfully added the book Title1
+2025-01-08 20:21:12,712 - INFO - Successfully added the book Title1
+2025-01-08 20:21:12,712 - INFO - Successfully added the book Title1
+2025-01-08 20:21:12,712 - INFO - Successfully added the book Title1
+2025-01-08 20:21:12,712 - INFO - Successfully removed the book Title1
+2025-01-08 20:21:12,712 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:21:12,712 - INFO - The user shakedm100 already exists
+2025-01-08 20:21:12,712 - INFO - Successfully update the book: Title2
+2025-01-08 20:21:12,712 - ERROR - Book can't be None
+2025-01-08 20:22:25,299 - INFO - Successfully added the book Title1
+2025-01-08 20:22:25,300 - INFO - Successfully added the book Title1
+2025-01-08 20:22:25,302 - INFO - Successfully added the book Title1
+2025-01-08 20:22:25,303 - INFO - Successfully added the book Title1
+2025-01-08 20:22:25,303 - INFO - Successfully added the book Title1
+2025-01-08 20:22:25,305 - INFO - Successfully removed the book Title1
+2025-01-08 20:22:25,306 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:22:25,306 - INFO - The user shakedm100 already exists
+2025-01-08 20:22:25,307 - INFO - Successfully update the book: Title2
+2025-01-08 20:22:25,307 - ERROR - Book can't be None
+2025-01-08 20:23:54,543 - INFO - Successfully added the book Title1
+2025-01-08 20:23:54,543 - INFO - Successfully added the book Title1
+2025-01-08 20:23:54,543 - INFO - Successfully added the book Title1
+2025-01-08 20:23:54,550 - INFO - Successfully added the book Title1
+2025-01-08 20:23:54,550 - INFO - Successfully added the book Title1
+2025-01-08 20:23:54,550 - INFO - Successfully removed the book Title1
+2025-01-08 20:23:54,550 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:23:54,550 - INFO - The user shakedm100 already exists
+2025-01-08 20:23:54,555 - INFO - Successfully update the book: Title2
+2025-01-08 20:23:54,555 - ERROR - Book can't be None
+2025-01-08 20:25:45,868 - INFO - Successfully added the book Title1
+2025-01-08 20:25:45,868 - INFO - Successfully added the book Title1
+2025-01-08 20:25:45,868 - INFO - Successfully added the book Title1
+2025-01-08 20:25:45,868 - INFO - Successfully added the book Title1
+2025-01-08 20:25:45,868 - INFO - Successfully added the book Title1
+2025-01-08 20:25:45,868 - INFO - Successfully removed the book Title1
+2025-01-08 20:25:45,868 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:25:45,868 - INFO - The user shakedm100 already exists
+2025-01-08 20:25:45,884 - INFO - Successfully update the book: Title2
+2025-01-08 20:25:45,886 - ERROR - Book can't be None
+2025-01-08 20:26:14,314 - INFO - Successfully added the book Title1
+2025-01-08 20:26:14,314 - INFO - Successfully added the book Title1
+2025-01-08 20:26:14,314 - INFO - Successfully added the book Title1
+2025-01-08 20:26:14,314 - INFO - Successfully added the book Title1
+2025-01-08 20:26:14,314 - INFO - Successfully added the book Title1
+2025-01-08 20:26:14,314 - INFO - Successfully removed the book Title1
+2025-01-08 20:26:14,314 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:26:14,314 - INFO - The user shakedm100 already exists
+2025-01-08 20:26:14,314 - INFO - Successfully update the book: Title2
+2025-01-08 20:26:14,314 - ERROR - Book can't be None
+2025-01-08 20:26:53,004 - INFO - Successfully added the book Title1
+2025-01-08 20:26:53,004 - INFO - Successfully added the book Title1
+2025-01-08 20:26:53,004 - INFO - Successfully added the book Title1
+2025-01-08 20:26:53,004 - INFO - Successfully added the book Title1
+2025-01-08 20:26:53,004 - INFO - Successfully added the book Title1
+2025-01-08 20:26:53,004 - INFO - Successfully removed the book Title1
+2025-01-08 20:26:53,020 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:26:53,020 - INFO - The user shakedm100 already exists
+2025-01-08 20:26:53,020 - INFO - Successfully update the book: Title2
+2025-01-08 20:26:53,020 - ERROR - Book can't be None
+2025-01-08 20:28:50,755 - INFO - Successfully added the book Title1
+2025-01-08 20:28:50,755 - INFO - Successfully added the book Title1
+2025-01-08 20:28:50,755 - INFO - Successfully added the book Title1
+2025-01-08 20:28:50,755 - INFO - Successfully added the book Title1
+2025-01-08 20:28:50,755 - INFO - Successfully added the book Title1
+2025-01-08 20:28:50,755 - INFO - Successfully removed the book Title1
+2025-01-08 20:28:50,755 - INFO - Can't borrow Title2, no more books in stock
+2025-01-08 20:28:50,755 - INFO - The user shakedm100 already exists
+2025-01-08 20:28:50,755 - INFO - Successfully update the book: Title2
+2025-01-08 20:28:50,755 - ERROR - Book can't be None
+2025-01-09 13:05:49,304 - INFO - Successfully added the book Title1
+2025-01-09 13:05:49,304 - INFO - Successfully added the book Title1
+2025-01-09 13:05:49,304 - INFO - Successfully added the book Title1
+2025-01-09 13:05:49,304 - INFO - Successfully added the book Title1
+2025-01-09 13:05:49,304 - INFO - Successfully added the book Title1
+2025-01-09 13:05:49,320 - INFO - Successfully removed the book Title1
+2025-01-09 13:05:49,320 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:05:49,320 - INFO - The user shakedm100 already exists
+2025-01-09 13:05:49,320 - INFO - Successfully update the book: Title2
+2025-01-09 13:05:49,323 - ERROR - Book can't be None
+2025-01-09 13:06:08,607 - INFO - Successfully added the book Title1
+2025-01-09 13:06:08,607 - INFO - Successfully added the book Title1
+2025-01-09 13:06:08,607 - INFO - Successfully added the book Title1
+2025-01-09 13:06:08,607 - INFO - Successfully added the book Title1
+2025-01-09 13:06:08,607 - INFO - Successfully added the book Title1
+2025-01-09 13:06:08,607 - INFO - Successfully removed the book Title1
+2025-01-09 13:06:08,607 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:06:08,607 - INFO - The user shakedm100 already exists
+2025-01-09 13:06:08,607 - INFO - Successfully update the book: Title2
+2025-01-09 13:06:08,607 - ERROR - Book can't be None
+2025-01-09 13:07:07,891 - INFO - Successfully added the book Title1
+2025-01-09 13:07:07,891 - INFO - Successfully added the book Title1
+2025-01-09 13:07:07,891 - INFO - Successfully added the book Title1
+2025-01-09 13:07:07,891 - INFO - Successfully added the book Title1
+2025-01-09 13:07:07,891 - INFO - Successfully added the book Title1
+2025-01-09 13:07:07,891 - INFO - Successfully removed the book Title1
+2025-01-09 13:07:07,891 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:07:07,891 - INFO - The user shakedm100 already exists
+2025-01-09 13:07:07,904 - INFO - Successfully update the book: Title2
+2025-01-09 13:07:07,904 - ERROR - Book can't be None
+2025-01-09 13:08:15,664 - INFO - Successfully added the book Title1
+2025-01-09 13:08:15,664 - INFO - Successfully added the book Title1
+2025-01-09 13:08:15,664 - INFO - Successfully added the book Title1
+2025-01-09 13:08:15,664 - INFO - Successfully added the book Title1
+2025-01-09 13:08:15,664 - INFO - Successfully added the book Title1
+2025-01-09 13:08:15,664 - INFO - Successfully removed the book Title1
+2025-01-09 13:08:15,664 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:08:15,664 - INFO - The user shakedm100 already exists
+2025-01-09 13:08:15,664 - INFO - Successfully update the book: Title2
+2025-01-09 13:08:15,664 - ERROR - Book can't be None
+2025-01-09 13:10:04,768 - INFO - Successfully added the book Title1
+2025-01-09 13:10:04,768 - INFO - Successfully added the book Title1
+2025-01-09 13:10:04,768 - INFO - Successfully added the book Title1
+2025-01-09 13:10:04,768 - INFO - Successfully added the book Title1
+2025-01-09 13:10:04,768 - INFO - Successfully added the book Title1
+2025-01-09 13:10:04,768 - INFO - Successfully removed the book Title1
+2025-01-09 13:10:04,768 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:10:04,768 - INFO - The user shakedm100 already exists
+2025-01-09 13:10:04,768 - INFO - Successfully update the book: Title2
+2025-01-09 13:10:04,768 - ERROR - Book can't be None
+2025-01-09 13:11:06,642 - INFO - Successfully added the book Title1
+2025-01-09 13:11:06,642 - INFO - Successfully added the book Title1
+2025-01-09 13:11:06,642 - INFO - Successfully added the book Title1
+2025-01-09 13:11:06,642 - INFO - Successfully added the book Title1
+2025-01-09 13:11:06,642 - INFO - Successfully added the book Title1
+2025-01-09 13:11:06,656 - INFO - Successfully removed the book Title1
+2025-01-09 13:11:06,656 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:11:06,656 - INFO - The user shakedm100 already exists
+2025-01-09 13:11:06,656 - INFO - Successfully update the book: Title2
+2025-01-09 13:11:06,656 - ERROR - Book can't be None
+2025-01-09 13:13:13,713 - INFO - Successfully added the book Title1
+2025-01-09 13:13:13,723 - INFO - Successfully added the book Title1
+2025-01-09 13:13:13,723 - INFO - Successfully added the book Title1
+2025-01-09 13:13:13,723 - INFO - Successfully added the book Title1
+2025-01-09 13:13:13,723 - INFO - Successfully added the book Title1
+2025-01-09 13:13:13,723 - INFO - Successfully removed the book Title1
+2025-01-09 13:13:13,727 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:13:13,728 - INFO - The user shakedm100 already exists
+2025-01-09 13:13:13,729 - INFO - Successfully update the book: Title2
+2025-01-09 13:13:13,729 - ERROR - Book can't be None
+2025-01-09 13:13:38,656 - INFO - Successfully added the book Title1
+2025-01-09 13:13:38,656 - INFO - Successfully added the book Title1
+2025-01-09 13:13:38,656 - INFO - Successfully added the book Title1
+2025-01-09 13:13:38,656 - INFO - Successfully added the book Title1
+2025-01-09 13:13:38,656 - INFO - Successfully added the book Title1
+2025-01-09 13:13:38,672 - INFO - Successfully removed the book Title1
+2025-01-09 13:13:38,672 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:13:38,675 - INFO - The user shakedm100 already exists
+2025-01-09 13:13:38,675 - INFO - Successfully update the book: Title2
+2025-01-09 13:13:38,675 - ERROR - Book can't be None
+2025-01-09 13:16:23,449 - INFO - Successfully added the book Title1
+2025-01-09 13:16:23,466 - INFO - Successfully added the book Title1
+2025-01-09 13:16:23,466 - INFO - Successfully added the book Title1
+2025-01-09 13:16:23,466 - INFO - Successfully added the book Title1
+2025-01-09 13:16:23,466 - INFO - Successfully added the book Title1
+2025-01-09 13:16:23,468 - INFO - Successfully removed the book Title1
+2025-01-09 13:16:23,470 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:16:23,470 - INFO - The user shakedm100 already exists
+2025-01-09 13:16:23,471 - INFO - Successfully update the book: Title2
+2025-01-09 13:16:23,471 - ERROR - Book can't be None
+2025-01-09 13:16:44,450 - INFO - Successfully added the book Title1
+2025-01-09 13:16:44,463 - INFO - Successfully added the book Title1
+2025-01-09 13:16:44,463 - INFO - Successfully added the book Title1
+2025-01-09 13:16:44,463 - INFO - Successfully added the book Title1
+2025-01-09 13:16:44,463 - INFO - Successfully added the book Title1
+2025-01-09 13:16:44,465 - INFO - Successfully removed the book Title1
+2025-01-09 13:16:44,467 - INFO - Can't borrow Title2, no more books in stock
+2025-01-09 13:16:44,467 - INFO - The user shakedm100 already exists
+2025-01-09 13:16:44,467 - INFO - Successfully update the book: Title2
+2025-01-09 13:16:44,467 - ERROR - Book can't be None

@@ -1,10 +1,10 @@
-from typing import List
 import os
 from functools import wraps
 from Book import Book
 import FileManagement
 from User import User
 import logging
+from BookFactory import BookFactory
 
 LOG_FILE = rf"{os.getcwd()}\log.txt"
 
@@ -45,6 +45,8 @@ class Library:
     def __init__(self):
         self.log_text = ""
         self.log_level = logging.ERROR
+        self.book_factory = BookFactory()
+        self.popular_books = {}
 
 
     @log_to_file

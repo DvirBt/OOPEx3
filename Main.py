@@ -1,3 +1,4 @@
+import FileManagement
 import Library
 from Book import Book
 from User import User
@@ -32,3 +33,5 @@ library.update_book(book2)
 
 library.add_book(None)
 #library.return_book(book2)
+
+FileManagement.init_popular_books()
