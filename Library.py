@@ -28,7 +28,7 @@ def log_to_file(func):
                     logging.log(self.log_level, self.log_text)
                 return result
             except Exception as e:
-                logging.error(f"Encountered a problem at log decorator: {e}")
+                """logging.error(f"Encountered a problem at log decorator: {e}")"""
                 raise
 
     return wrapper
@@ -46,22 +46,26 @@ class Library:
         self.log_text = ""
         self.log_level = logging.ERROR
         self.book_factory = BookFactory()
-        self.popular_books = {}
 
 
     @log_to_file
     def borrow_book(self, book_to_lend: Book):
         if book_to_lend is not None:
             try:
-                self.log_text, check = FileManagement.lend_book(book_to_lend)
-                self.log_level = logging.INFO
+                check = FileManagement.lend_book(book_to_lend)
+                if check:
+                    self.log_text = "book borrowed successfully"
+                    self.log_level = logging.INFO
+                else:
+                    self.log_text = "book borrowed fail"
+                    self.log_level = logging.INFO
                 return check
             except Exception as e:
-                self.log_text = f"Failed to borrow the book {book_to_lend.get_title()} because {e}"
-                self.log_level = logging.DEBUG
+                self.log_text = "book borrowed fail"
+                self.log_level = logging.ERROR
                 return False
         else:
-            self.log_text = "Book can't be None"
+            self.log_text = "book borrowed fail"
             self.log_level = logging.ERROR
             return False
 
@@ -69,15 +73,20 @@ class Library:
     def return_book(self, book_to_return: Book):
         if book_to_return is not None:
             try:
-                self.log_text, check = FileManagement.return_book(book_to_return)
-                self.log_level = logging.INFO
+                check = FileManagement.return_book(book_to_return)
+                if check:
+                    self.log_text = "book returned successfully"
+                    self.log_level = logging.INFO
+                else:
+                    self.log_text = "book returned fail"
+                    self.log_level = logging.INFO
                 return check
             except Exception as e:
-                self.log_text = f"Failed to return the book {book_to_return.get_title()} because {e}"
+                self.log_text = "book returned fail"
                 self.log_level = logging.ERROR
                 return False
         else:
-            self.log_text = "Book can't be None"
+            self.log_text = "book returned fail"
             self.log_level = logging.ERROR
             return False
 
@@ -98,15 +107,15 @@ class Library:
             try:
                 if book is not None and not self.is_book_exists(book):
                     FileManagement.add_book(book)
-                    self.log_text = f"Successfully added the book {book.get_title()}"
+                    self.log_text = "book added successfully"
                     self.log_level = logging.INFO
                     return True
             except Exception as e:
-                self.log_text = f"Failed to add the book {book.get_title()} because: {e}"
+                self.log_text = "book added failed"
                 self.log_level = logging.ERROR
                 return False
         else:
-            self.log_text = "Book can't be None"
+            self.log_text = "book added failed"
             self.log_level = logging.ERROR
             return False
 
@@ -115,15 +124,15 @@ class Library:
         if book is not None:
             try:
                 FileManagement.remove_book(book)
-                self.log_text = f"Successfully removed the book {book.get_title()}"
+                self.log_text = "book removed successfully"
                 self.log_level = logging.INFO
                 return True
             except Exception as e:
-                self.log_text = f"Failed to remove the book {book.get_title()} because {e}"
+                self.log_text = "book removed failed"
                 self.log_level = logging.ERROR
                 return False
         else:
-            self.log_text ="Book can't be None"
+            self.log_text = "book removed failed"
             self.log_level = logging.ERROR
             return False
 
@@ -156,19 +165,22 @@ class Library:
                 if not FileManagement.is_user_exists(user):
                     check = FileManagement.add_user(user)
                     if check:
-                        self.log_text = f"Successfully registered user: {user.get_username()}"
+                        self.log_text = "registered successfully"
+                        self.log_level = logging.INFO
+                    else:
+                        self.log_text = "registered fail"
                         self.log_level = logging.INFO
                     return check
                 else:
-                    self.log_text = f"The user {user.get_username()} already exists"
+                    self.log_text = "registered fail"
                     self.log_level = logging.INFO
                     return False
             except Exception as e:
-                self.log_text = f"Failed to register user {user.get_username()} because {e}"
+                self.log_text = "registered fail"
                 self.log_level = logging.ERROR
                 return False
         else:
-            self.log_text = "User can't be None"
+            self.log_text = "registered fail"
             self.log_level = logging.ERROR
             return False
 
@@ -198,12 +210,17 @@ class Library:
     def login_user(self, user: User):
         if user is not None:
             try:
-                FileManagement.user_login(user)
-                self.log_text = f"User {user.get_username()} successfully logged in"
-                self.log_level = logging.INFO
-                return True
+                check = FileManagement.user_login(user)
+                if check:
+                    self.log_text = "logged in succesfully"
+                    self.log_level = logging.INFO
+                    return True
+                else:
+                    self.log_text = "logged in fail"
+                    self.log_level = logging.INFO
+                    return False
             except Exception as e:
-                self.log_text = f"Failed to log in user {user.get_username()} because {e}"
+                self.log_text = "logged in fail"
                 self.log_level = logging.ERROR
                 return False
         else:
@@ -211,66 +228,128 @@ class Library:
             self.log_level = logging.ERROR
             return False
 
+    @log_to_file
     def get_book_by_title(self, name):
         try:
             book = FileManagement.select_book_by_name(name)
             if book is not None:
-                self.log_text = f"Successfully found the book {name}"
+                self.log_text = f"Search book {name} by name completed successfully"
                 self.log_level = logging.INFO
             else:
-                self.log_text = f"Failed to search the book by the name {name}"
+                self.log_text = f"Search book {name} by name completed fail"
             return book
         except Exception as e:
-            self.log_text = f"Encountered an error when tried to search the book {name} by name"
+            self.log_text = f"Search book {name} by name completed"
             self.log_level = logging.ERROR
 
+    @log_to_file
     def get_book_by_author(self, name):
         try:
             books = FileManagement.select_book_by_author(name)
             if len(books) > 0:
-                self.log_text = f"Successfully found the books by the author {name}"
+                self.log_text = f"Search book {books[0].get_title()} by author completed successfully"
                 self.log_level = logging.INFO
             else:
-                self.log_text = f"Failed to find any books by the author {name}"
+                self.log_text = f"Search book by author completed fail"
                 self.log_level = logging.INFO
             return books
         except Exception as e:
-            self.log_text = f"Encountered an error when tried to search by the author {name}"
+            self.log_text = f"Search book by author completed fail"
             self.log_level = logging.ERROR
 
+    @log_to_file
     def get_book_by_genre(self, name):
         try:
             books = FileManagement.select_book_by_genre(name)
             if len(books) > 0:
-                self.log_text = f"Successfully found the books by the genre {name}"
+                self.log_text = "Displayed book by category successfully"
                 self.log_level = logging.INFO
             else:
-                self.log_text = f"Failed to find any books by the genre {name}"
+                self.log_text = "Displayed book by category fail"
                 self.log_level = logging.INFO
             return books
         except Exception as e:
-            self.log_text = f"Encountered an error when tried to search by the genre {name}"
+            self.log_text = "Displayed book by category fail"
             self.log_level = logging.ERROR
 
+    @log_to_file
     def get_book_by_year(self, year):
         try:
             books = FileManagement.select_book_by_year(year)
-            if len(books) > 0:
+            """if len(books) > 0:
                 self.log_text = f"Successfully found the books by the year {year}"
                 self.log_level = logging.INFO
             else:
                 self.log_text = f"Failed to find any books by the year {year}"
-                self.log_level = logging.INFO
+                self.log_level = logging.INFO"""
             return books
         except Exception as e:
-            self.log_text = f"Encountered an error when tried to search by the year {year}"
-            self.log_level = logging.ERROR
+            """self.log_text = f"Encountered an error when tried to search by the year {year}"
+            self.log_level = logging.ERROR"""
 
 
+    @log_to_file
     def get_book_copies(self, book: Book):
         try:
             return FileManagement.available_copies(book)
         except Exception as e:
-            self.log_text = f"Encountered an error when trying to find the book {book.get_title()} available copies"
-            self.log_level = logging.ERROR
+            """self.log_text = f"Encountered an error when trying to find the book {book.get_title()} available copies"
+            self.log_level = logging.ERROR"""
             return False
+
+
+    @log_to_file
+    def get_all_books(self):
+        try:
+            books = FileManagement.get_all_books()
+            if len(books) > 0:
+                self.log_text = "Displayed all books successfully"
+                self.log_level = logging.INFO
+            else:
+                self.log_text = "Displayed all books fail"
+                self.log_level = logging.INFO
+            return books
+        except Exception as e:
+            self.log_text = "Displayed all books fail"
+            self.log_level = logging.ERROR
+            return None
+
+    @log_to_file
+    def get_available_books(self):
+        try:
+            books = FileManagement.select_book_by_is_loaned(True)
+            if len(books) > 0:
+                self.log_text = "Displayed available books successfully"
+                self.log_level = logging.INFO
+            else:
+                self.log_text = "Displayed available books fail"
+                self.log_level = logging.INFO
+            return books
+        except Exception as e:
+            self.log_text = "Displayed available books fail"
+            self.log_level = logging.ERROR
+
+
+    def get_borrowed_book(self):
+        try:
+            books = FileManagement.get_borrowed_books()
+            if len(books) > 0:
+                self.log_text = "Displayed borrowed books successfully"
+                self.log_level = logging.INFO
+            else:
+                self.log_text = "Displayed borrowed books fail"
+                self.log_level = logging.INFO
+            return books
+        except Exception as e:
+            self.log_text = "Displayed borrowed books fail"
+            self.log_level = logging.ERROR
+
+
+    def logout(self, check):
+        if check:
+            self.log_text = "log out successful"
+            self.log_level = logging.INFO
+        else:
+            self.log_text = "log out fail"
+            self.log_level = logging.INFO
+

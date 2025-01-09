@@ -15,7 +15,7 @@ library.add_book(book1)
 library.add_book(book1)
 library.add_book(book1)
 
-library.remove_book(book1)
+#library.remove_book(book1)
 
 library.borrow_book(book2)
 
@@ -35,3 +35,9 @@ library.add_book(None)
 #library.return_book(book2)
 
 FileManagement.init_popular_books()
+
+books_partly = FileManagement.select_books_by_name_partly("title")
+
+print(f"books partly: {books_partly}")
+
+library.borrow_book(book2)

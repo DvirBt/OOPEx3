@@ -4,7 +4,14 @@ class Book:
     def __init__(self, title, author, is_loaned, copies, genre, year):
         self._title = title
         self._author = author
-        self._is_loaned = is_loaned
+
+        if is_loaned == "yes" or is_loaned == "Yes":
+            self._is_loaned = True
+        elif is_loaned == "no" or is_loaned == "No":
+            self._is_loaned = False
+        else:
+            self._is_loaned = is_loaned
+
         self._copies = copies
         self._genre = genre
         self._year = year

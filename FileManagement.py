@@ -6,6 +6,28 @@ from User import User
 import hashlib
 from BookFactory import BookFactory
 
+class CSVIterator:
+
+    def __init__(self, file_path):
+        self.file_path = file_path
+        self.file = None
+        self.reader = None
+
+    def __iter__(self):
+        self.file = open(self.file_path, "r", newline="")
+        self.reader = csv.reader(self.file)
+        next(self.reader)
+        return self
+
+    def __next__(self):
+        if self.reader is None:
+            raise StopIteration
+        try:
+            return next(self.reader)
+        except StopIteration:
+            self.file.close()
+            raise
+
 
 def check(func):
     @wraps(func)
@@ -50,6 +72,10 @@ def create_csv_header(path):
 
 
 def create_available_books_file():
+    """
+    TODO: Find out why the catcher in the rye's name in available_books.csv is being cut
+    :return:
+    """
     header = ["title", "available"]
     data = []
     with open(available_books_path, "w", newline="") as file:
@@ -94,8 +120,8 @@ def remove_book(book: Book):
         with open(book_path, mode="w", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(header)
-            for data in rows:
-                writer.writerow([data[0], data[1], data[2], data[3], data[4], data[5]])
+            for row in rows:
+                writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5]])
 
         with open(available_books_path, mode="r", newline="") as file:
             reader = csv.reader(file)
@@ -105,8 +131,8 @@ def remove_book(book: Book):
         with open(available_books_path, mode="w", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(header)
-            for data in rows:
-                writer.writerow([data[0], data[1]])
+            for row in rows:
+                writer.writerow([row[0], row[1]])
 
 
 @check
@@ -134,6 +160,8 @@ def decrease_from_availability(book: Book):
                 if x == 0:
                     return False
                 x -= 1
+                if x == 0:
+                    change_loaned_status(row[0])
                 row[1] = str(x)
             rows.append(row)
 
@@ -145,14 +173,31 @@ def decrease_from_availability(book: Book):
 
     return check_found
 
+@check
+def change_loaned_status(name):
+    rows = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[0] == name:
+                if row[2].lower() == "yes":
+                    row[2] = "No"
+                else:
+                    row[2] = "Yes"
+            rows.append(row)
+
+    with open(book_path, "w", newline="") as file:
+        writer = csv.writer(file)
+        for row in rows:
+            writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5]])
 
 @check
 def lend_book(book: Book):
     check_completed = decrease_from_availability(book)
     if check_completed:
-        return f"Successfully borrowed the book {book.get_title()}", True
+        return True
     else:
-        return f"Can't borrow {book.get_title()}, no more books in stock", False
+        return False
 
 
 @check
@@ -160,11 +205,11 @@ def return_book(book: Book):
     try:
         check_completed = increase_available_book(book)
         if check_completed:
-            return f"Successfully returned the book {book.get_title()}", check_completed
+            return True
         else:
-            return f"Failed to return the book {book.get_title()}", check_completed
+            return False
     except Exception as e:
-        return f"Failed to return the book {book.get_title()} because of: {e}", False
+        return False
 
 
 @check
@@ -176,6 +221,8 @@ def increase_available_book(book: Book):
         for row in reader:
             if row[0] == book.get_title():
                 x = int(row[1])
+                if x == 0:
+                    change_loaned_status(row[0])
                 x += 1
                 row[1] = str(x)
                 check_found = True
@@ -332,10 +379,17 @@ def select_book_by_year(year):
 @check
 def select_book_by_is_loaned(is_loaned):
     books = []
+    is_loaned_string = ""
+
+    if is_loaned:
+        is_loaned_string = "yes"
+    else:
+        is_loaned_string = "no"
+
     with open(book_path, "r", newline="") as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[2] == is_loaned:
+            if row[2].lower() == is_loaned_string:
                 book = book_factory.get_book("book",row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
@@ -412,3 +466,68 @@ def find_min_index(original_list,available_list, most_popular_list):
             i += 1
 
     return min_book_index, current_min
+
+@check
+def select_books_by_name_partly(name_partly):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            if name_partly.lower() in row[0].lower():
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+@check
+def select_book_by_author_partly(name_partly):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if name_partly.lower() in row[1].lower():
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+@check
+def select_book_by_genre_partly(genre_partly):
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if genre_partly.lower() in row[4].lower():
+                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
+
+    return books
+
+@check
+def get_all_books():
+    books = []
+    with open(book_path, "r", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+            books.append(book)
+
+    return books
+
+@check
+def get_borrowed_books():
+    books = []
+    with open(book_path, "r", newline="") as all_books:
+        with open(available_books_path, "r", newline="") as available_books:
+            reader_all = csv.reader(all_books)
+            reader_available = csv.reader(available_books)
+            next(reader_all)
+            next(reader_available)
+
+            for row_all, row_available in zip(reader_all, reader_available):
+                if int(row_all[3]) != int(row_available[1]):
+                    book = book_factory.get_book("book", row_all[0], row_all[1], row_all[2], int(row_all[3]), row_all[4], int(row_all[5]))
+                    books.append(book)
+
+    return books
