@@ -32,9 +32,11 @@ book2.set_is_loaned("No")
 library.update_book(book2)
 
 library.add_book(None)
-#library.return_book(book2)
+library.remove_book(book1)
 
-FileManagement.init_popular_books()
+library.return_book(book2)
+
+most_popular_books = FileManagement.init_popular_books()
 
 books_partly = FileManagement.select_books_by_name_partly("title")
 

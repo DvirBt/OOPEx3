@@ -14,7 +14,8 @@ class Test(unittest.TestCase):
         self.library = Library()
 
     def test_add_book(self):
-        self.library.add_book(self.book)
+        self.library.remove_book(self.book)
+        check = self.library.add_book(self.book)
         added_book = self.library.get_book_by_title(self.book.get_title())
 
         self.assertEqual(added_book, self.book)
@@ -73,7 +74,7 @@ class Test(unittest.TestCase):
 
         self.book.set_author("Zurbavel")
         self.book.set_copies(3)
-        self.book.set_is_loaned("No")
+        self.book.set_is_loaned(False)
         self.book.set_genre("New-Genre")
         self.book.set_year(2000)
 

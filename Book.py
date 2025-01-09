@@ -5,9 +5,9 @@ class Book:
         self._title = title
         self._author = author
 
-        if is_loaned == "yes" or is_loaned == "Yes":
+        if is_loaned == "yes" or is_loaned == "Yes" or is_loaned == "True":
             self._is_loaned = True
-        elif is_loaned == "no" or is_loaned == "No":
+        elif is_loaned == "no" or is_loaned == "No" or is_loaned == "False":
             self._is_loaned = False
         else:
             self._is_loaned = is_loaned

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Added book factory and a search for the 10 most popular books.">
+      <change afterPath="$PROJECT_DIR$/CSVIterator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Book_Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Book_Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Book.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/available_books.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,15 +59,15 @@
   "keyToString": {
     "Python tests.Python tests for Test.Test.executor": "Run",
     "Python tests.Python tests for Test.Test.test_add_and_remove_user.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_add_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_add_book.executor": "Debug",
     "Python tests.Python tests for Test.Test.test_add_user.executor": "Run",
     "Python tests.Python tests for Test.Test.test_borrow_book.executor": "Run",
     "Python tests.Python tests for Test.Test.test_remove_book.executor": "Run",
     "Python tests.Python tests for Test.Test.test_return_book.executor": "Run",
-    "Python tests.Python tests for Test.Test.test_update_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_update_book.executor": "Debug",
     "Python.FileManagement.executor": "Run",
     "Python.Library.executor": "Run",
-    "Python.Main.executor": "Debug",
+    "Python.Main.executor": "Run",
     "Python.gui.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -118,7 +121,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test.Test.test_add_and_remove_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test.Test.test_add_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,11 +132,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_add_and_remove_user&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_add_book&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test.Test.test_add_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test.Test.test_borrow_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +147,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_add_user&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_borrow_book&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -167,8 +170,8 @@
       <list>
         <item itemvalue="Python.Main" />
         <item itemvalue="Python tests.Python tests for Test.Test" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_add_and_remove_user" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_add_user" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_add_book" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_update_book" />
       </list>
     </recent_temporary>
@@ -292,5 +295,16 @@
     <MESSAGE value="Continued Test" />
     <MESSAGE value="Added book factory and a search for the 10 most popular books." />
     <option name="LAST_COMMIT_MESSAGE" value="Added book factory and a search for the 10 most popular books." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Book.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
