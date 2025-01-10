@@ -11,9 +11,7 @@ main_window = Tk()
 #main_frame = Frame(main_window)
 #icon = PhotoImage(file="library.jpeg")
 #window.iconphoto(False, icon)
-global username_entry
-global password_entry
-global user, book
+global user, book, my_categories
 
 
 def main():
@@ -43,7 +41,6 @@ def login_page():
                         bg="#cae8cd")
     username_label.grid(row=1, column=0, columnspan=1, pady=25, sticky="nsew")
 
-    global username_entry
     username_entry = Entry(main_window, width=20)
     username_entry.grid(row=1, column=1, pady=25, sticky="nsew")
 
@@ -53,13 +50,12 @@ def login_page():
                         bg="#cae8cd")
     password_label.grid(row=2, column=0, pady=25, sticky="nsew")
 
-    global password_entry
     password_entry = Entry(main_window, show="*", width=20)
     password_entry.grid(row=2, column=1, pady=25, sticky="nsew")
 
     # Buttons
     login_button = Button(main_window, text="Login")
-    login_button.config(command=login,
+    login_button.config(command=lambda: login(username_entry.get(), password_entry.get()),
                       font=('Ink Free', 15, 'bold'),
                       bg="#cae8cd")
     login_button.grid(row=4, columnspan=3, padx=250, pady=25, sticky="nsew")
@@ -75,47 +71,28 @@ def clear():
     for widget in main_window.winfo_children():
         widget.destroy()
 
-def back():
-    back_button = Button(main_window, text="Back")
+def init_page():
+    # remove all the widgets and create a back button
+    clear()
+    #back()
+    back_button = Button(main_window, text="Home page")
     back_button.config(command=home_page,
                        font=('Ink Free', 15, 'bold'),
                        bg="#cae8cd")
     back_button.grid(row=10, column=2, pady=10, sticky="nsew")
 
-def init_page():
-    # remove all the widgets and create a back button
-    clear()
-    back()
-
 def add_book():
     global book
     library.add_book(book)
 
-def remove_book():
-    pass
-
 def search_book(book_name, author_name):
-    pass
+    books_by_name = library.get_book_by_name(book_name)
+    books_by_author = library.get_book_by_author(author_name)
+    books_list = [books_by_name] + [books_by_author]
+    create_list(books_list)
 
 def borrow_book():
     pass
-
-def return_book():
-    pass
-
-def get_user():
-    global username_entry
-    global password_entry
-    try:
-        username = username_entry.get()
-        password = password_entry.get()
-    except NameError:
-        print("One of the variable are null!")
-    else:
-        if username == "" or password == "":
-            return None
-        else:
-            return User(username, password)
 
 def notification(message):
     alert = Label(main_window,
@@ -124,9 +101,9 @@ def notification(message):
                   bg="#cae8cd")
     alert.grid(row=6, columnspan=4, padx=220, pady=25, sticky="nsew")
 
-def register():
+def register(username, password):
     global user
-    user = get_user()
+    user = User(username, password)
     success = library.register_user(user)
     if success:
         notification("User created successfully!")
@@ -134,10 +111,9 @@ def register():
         notification("User could not be registered!")
 
 
-def login():
+def login(username, password):
     global user
-    user = get_user()
-    user = User("shakedm100", "aesnhftk1")
+    user = User(username,password)
     success = library.login_user(user)
     if success:
         home_page()
@@ -146,9 +122,6 @@ def login():
 
 def logout():
     main()
-
-def popular_books():
-    pass
 
 def books_by_category(category):
     pass
@@ -202,14 +175,6 @@ def home_page():
                       bg="#cae8cd")
     return_book_button.grid(row=6, column=1, pady=10, sticky="nsew")
 
-    """"
-    popular_books_button = Button(main_window, text="Popular Books")
-    popular_books_button.config(command=popular_books,
-                         font=('Ink Free', 15, 'bold'),
-                         bg="#cae8cd")
-    popular_books_button.grid(row=8, column=1, pady=10, sticky="nsew")
-    """
-
     logout_button = Button(main_window, text="Logout")
     logout_button.config(command=logout,
                       font=('Ink Free', 15, 'bold'),
@@ -243,6 +208,7 @@ def add_book_page():
     author_entry = Entry(main_window)
     author_entry.grid(row=2, column=2, pady=10, sticky="nsew")
 
+    """""
     isloaned_label = Label(main_window,
                          text="Is loaned?",
                          font=('Ink Free', 15, 'bold'),
@@ -251,36 +217,37 @@ def add_book_page():
 
     isloaned_checkbox = Checkbutton(main_window)
     isloaned_checkbox.grid(row=3, column=2, pady=10, sticky="nsew")
+    """
 
     copies_label = Label(main_window,
                            text="Copies:",
                            font=('Ink Free', 15, 'bold'),
                            bg="#cae8cd")
-    copies_label.grid(row=4, column=1, pady=10, sticky="nsew")
+    copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
 
     copies_entry = Entry(main_window)
-    copies_entry.grid(row=4, column=2, pady=10, sticky="nsew")
+    copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
 
     genre_label = Label(main_window,
                          text="Genre:",
                          font=('Ink Free', 15, 'bold'),
                          bg="#cae8cd")
-    genre_label.grid(row=5, column=1, pady=10, sticky="nsew")
+    genre_label.grid(row=4, column=1, pady=10, sticky="nsew")
 
     genre_entry = Entry(main_window)
-    genre_entry.grid(row=5, column=2, pady=10, sticky="nsew")
+    genre_entry.grid(row=4, column=2, pady=10, sticky="nsew")
 
     year_label = Label(main_window,
                         text="Year:",
                         font=('Ink Free', 15, 'bold'),
                         bg="#cae8cd")
-    year_label.grid(row=6, column=1, pady=10, sticky="nsew")
+    year_label.grid(row=5, column=1, pady=10, sticky="nsew")
 
     year_entry = Entry(main_window)
-    year_entry.grid(row=6, column=2, pady=10, sticky="nsew")
+    year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
 
     global book
-    book = Book(title_entry.get(), author_entry.get(), isloaned_checkbox.getboolean, copies_entry.getint, genre_entry.get(), year_entry.getint)
+    book = Book(title_entry.get(), author_entry.get(), False, copies_entry.getint, genre_entry.get(), year_entry.getint)
     add_button = Button(main_window, text="Add book")
     add_button.config(command=add_book,
                       font=('Ink Free', 22, 'bold'),
@@ -314,7 +281,7 @@ def search_page():
     author_entry.grid(row=2, column=2, pady=10, sticky="nsew")
 
     search_button = Button(main_window, text="Search")
-    search_button.config(command=search_book,
+    search_button.config(command=lambda: search_book(title_entry.get(), author_entry.get()),
                       font=('Ink Free', 22, 'bold'),
                       bg="#cae8cd")
     search_button.grid(row=3, column=2, pady=25, sticky="nsew")
@@ -342,7 +309,15 @@ def view_books_page():
     popular_button.grid(row=2, column=2, pady=20, sticky="nsew")
 
 
-def create_list(type):
+def create_list(book_list):
+    init_page()
+
+    books_label = Label(main_window,
+                           text="Books",
+                           font=('Ink Free', 22, 'bold'),
+                           bg="#cae8cd")
+    books_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+
     columns = ("Title", "Author", "Is loaned?", "Copies", "Genre", "Year")
     tree = Treeview(main_window, columns=columns, show="headings", height=10)
     # set headings
@@ -353,32 +328,134 @@ def create_list(type):
     tree.heading("Genre", text="Genre")
     tree.heading("Year", text="Year")
     # set columns
-    tree.column("Title", width=100)
+    tree.column("Title", width=150)
     tree.column("Author", width=100)
-    tree.column("Is loaned?", width=50)
-    tree.column("Copies", width=100)
-    tree.column("Genre", width=100)
-    tree.column("Year", width=100)
-    tree.grid()
+    tree.column("Is loaned?", width=75)
+    tree.column("Copies", width=75)
+    tree.column("Genre", width=75)
+    tree.column("Year", width=75)
+    tree.grid(row=2, column=2, padx=20, pady=20, sticky="nsew")
 
-    books = library.get_book_by_genre(type)
-    for item in books:
+    for item in book_list:
         tree.insert("", "end",
-                    values=(
-                        item["Title"], item["Author"], item["Is loaned?"], item["Copies"], item["Genre"], item["Year"]))
+                    values=(item.get_title(), item.get_author(), item.get_is_loaned(), item.get_copies(), item.get_genre(), item.get_year()))
+                        #item["_title"], item["_author"], item["_is_loaned"], item["_copies"], item["_genre"], item["_year"]))
 
-    tree.pack(fill="both", expand=True)
+    #tree.pack(fill="both", expand=True)
 
-
-def category_page():
+def category_page(category):
     init_page()
-    pass
+    category_label = Label(main_window,
+                             text=f"Books of {category}",
+                             font=('Ink Free', 22, 'bold'),
+                             bg="#cae8cd")
+    category_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+
+    categories = ["Fiction", "Dystopian", "Classic", "Adventure", "Romance", "Psychological Drama", "Philosophy", "Epic Poetry",
+                  "Gothic Romance", "Realism", "Modernism", "Satire", "Science Fiction", "Tragedy", "Fantasy"]
+
+    variables = [IntVar() for _ in categories]
+    # Creating Checkbuttons
+    for i, option in enumerate(categories):
+        Checkbutton(main_window, text=option, variable=variables[i]).grid(anchor="w")
+
+    # Submit Button
+    submit_button = Button(main_window, text="Submit", command=lambda : create_categories_list(categories, variables))
+    submit_button.grid(pady=10)
+
+    global my_categories
+    books = None
+    for category in my_categories:
+        books += library.get_book_by_genre(category)
+
+    create_list(books)
+
+def create_categories_list(categories, variables):
+    global my_categories
+    my_categories = [categories[i] for i in range(len(categories)) if variables[i].get() == 1]
 
 def popular_page():
     init_page()
-    # books_list = library.boo
-    pass
+    popular_label = Label(main_window,
+                         text="Popular books",
+                         font=('Ink Free', 22, 'bold'),
+                         bg="#cae8cd")
+    popular_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+    create_list(library)
 
+def remove_page():
+    init_page()
+    remove_label = Label(main_window,
+                           text="Remove a book",
+                           font=('Ink Free', 22, 'bold'),
+                           bg="#cae8cd")
+    remove_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+
+
+def return_book():
+    init_page()
+    return_label = Label(main_window,
+                           text="Return a book",
+                           font=('Ink Free', 22, 'bold'),
+                           bg="#cae8cd")
+    return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+
+    title_label = Label(main_window,
+                        text="Title:",
+                        font=('Ink Free', 15, 'bold'),
+                        bg="#cae8cd")
+    title_label.grid(row=1, column=1, pady=10, sticky="nsew")
+
+    title_entry = Entry(main_window)
+    title_entry.grid(row=1, column=2, pady=10, sticky="nsew")
+
+    author_label = Label(main_window,
+                         text="Author:",
+                         font=('Ink Free', 15, 'bold'),
+                         bg="#cae8cd")
+    author_label.grid(row=2, column=1, pady=10, sticky="nsew")
+
+    author_entry = Entry(main_window)
+    author_entry.grid(row=2, column=2, pady=10, sticky="nsew")
+
+    copies_label = Label(main_window,
+                         text="Copies:",
+                         font=('Ink Free', 15, 'bold'),
+                         bg="#cae8cd")
+    copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
+
+    copies_entry = Entry(main_window)
+    copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
+
+    genre_label = Label(main_window,
+                        text="Genre:",
+                        font=('Ink Free', 15, 'bold'),
+                        bg="#cae8cd")
+    genre_label.grid(row=4, column=1, pady=10, sticky="nsew")
+
+    genre_entry = Entry(main_window)
+    genre_entry.grid(row=4, column=2, pady=10, sticky="nsew")
+
+    year_label = Label(main_window,
+                       text="Year:",
+                       font=('Ink Free', 15, 'bold'),
+                       bg="#cae8cd")
+    year_label.grid(row=5, column=1, pady=10, sticky="nsew")
+
+    year_entry = Entry(main_window)
+    year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
+
+    global book
+    book = Book(title_entry.get(), author_entry.get(), False, copies_entry.getint,
+                genre_entry.get(), year_entry.getint)
+    return_button = Button(main_window, text="Return book")
+    return_button.config(command=lambda : library.return_book(book),
+                      font=('Ink Free', 22, 'bold'),
+                      bg="#cae8cd")
+    return_button.grid(row=8, column=2, pady=25, sticky="nsew")
+
+def remove_book(remove):
+    pass
 
 if __name__ == "__main__":
     main()
