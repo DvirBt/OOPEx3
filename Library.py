@@ -47,20 +47,23 @@ class Library:
     This class is primarily to handle the calls between the GUI and FileManagement
     and handling of the return values to the GUI and the exceptions
     that can occur
+    Because there can only be one library with one log.txt file this class is implemented as a Singleton
     """
 
+    _instance = None  # Class-level variable to store the single instance
 
-    """ Singleton?
-    def __new__(cls):
-        if not hasattr(cls, 'instance'):
-            cls.instance = super(Library, cls).__new__(cls)
-        return cls.instance
-    """
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(Library, cls).__new__(cls, *args, **kwargs)
+        return cls._instance
 
     def __init__(self):
-        self.log_text = ""
-        self.log_level = logging.ERROR
-        self.book_factory = BookFactory()
+        # Only initialize if it's the first instance
+        if not hasattr(self, "_initialized"):
+            self.log_text = ""
+            self.log_level = logging.ERROR
+            self.book_factory = BookFactory()
+            self._initialized = True  # Mark the instance as initialized
 
     @log_to_file
     def borrow_book(self, book_to_lend: Book):
@@ -455,3 +458,16 @@ class Library:
         else:
             self.log_text = "log out fail"
             self.log_level = logging.INFO
+
+
+    def get_popular_list(self):
+        try:
+            popular_books = FileManagement.init_popular_books()
+            if len(popular_books) > 0:
+                return popular_books
+            return None
+        except Exception as e:
+            return None
+
+
+

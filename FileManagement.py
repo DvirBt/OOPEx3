@@ -623,6 +623,7 @@ def get_all_books():
     """
     books = []
     with CSVIterator(book_path, "r") as iterator:
+        next(iterator)
         for row in iterator:
             book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
             books.append(book)

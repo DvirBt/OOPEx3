@@ -183,3 +183,37 @@
 2025-01-09 21:41:54,958 - INFO - book removed successfully
 2025-01-09 21:41:54,960 - INFO - book returned successfully
 2025-01-09 21:41:54,963 - INFO - book borrowed successfully
+2025-01-10 08:50:02,470 - INFO - book added successfully
+2025-01-10 08:50:02,476 - INFO - book added successfully
+2025-01-10 08:50:02,476 - INFO - book added successfully
+2025-01-10 08:50:02,477 - INFO - book added successfully
+2025-01-10 08:50:02,477 - INFO - book added successfully
+2025-01-10 08:50:02,478 - INFO - book borrowed fail
+2025-01-10 08:50:02,478 - INFO - registered fail
+2025-01-10 08:50:02,479 - INFO - registered fail
+2025-01-10 08:50:02,480 - INFO - Successfully update the book: Title2
+2025-01-10 08:50:02,480 - ERROR - book added failed
+2025-01-10 08:50:02,481 - ERROR - book added failed
+2025-01-10 08:50:02,482 - INFO - book removed successfully
+2025-01-10 08:50:02,492 - INFO - book returned successfully
+2025-01-10 08:50:02,502 - INFO - book borrowed successfully
+2025-01-10 08:50:30,187 - INFO - book added successfully
+2025-01-10 08:50:30,188 - INFO - book added successfully
+2025-01-10 08:50:30,189 - INFO - book added successfully
+2025-01-10 08:50:30,189 - INFO - book added successfully
+2025-01-10 08:50:30,189 - INFO - book added successfully
+2025-01-10 08:50:30,190 - INFO - book borrowed fail
+2025-01-10 08:50:30,191 - INFO - registered fail
+2025-01-10 08:50:30,192 - INFO - registered fail
+2025-01-10 08:50:30,192 - INFO - Successfully update the book: Title2
+2025-01-10 08:50:30,193 - ERROR - book added failed
+2025-01-10 08:50:30,194 - ERROR - book added failed
+2025-01-10 08:50:30,195 - INFO - book removed successfully
+2025-01-10 08:50:30,197 - INFO - book returned successfully
+2025-01-11 20:54:05,474 - INFO - book added successfully
+2025-01-11 20:54:05,480 - INFO - book borrowed successfully
+2025-01-11 20:54:16,678 - INFO - book borrowed successfully
+2025-01-11 20:54:37,880 - INFO - book borrowed fail
+2025-01-11 20:54:51,312 - INFO - book borrowed fail
+2025-01-11 20:55:07,348 - INFO - book borrowed fail
+2025-01-11 20:55:26,533 - INFO - book borrowed fail
