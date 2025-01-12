@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
 
     def setUp(self):
         self.book_factory = BookFactory()
-        self.book = self.book_factory.get_book("book", "Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
+        self.book = self.book_factory.get_book("book", "Title1", "Author1", "No", 3, "Science-Fiction", 1962)
         self.user = User("dvirbto", "123")
         self.library = Library()
 
@@ -31,39 +31,56 @@ class Test(unittest.TestCase):
 
     def test_borrow_book(self):
         self.library.remove_book(self.book)
-        check = self.library.borrow_book(self.book)
+        check = self.library.borrow_book(self.book, self.user, 1)
 
         self.assertEqual(check, False)
         self.assertEqual(self.library.get_book_copies(self.book), 0)
 
         self.library.add_book(self.book)
 
+        self.assertEqual(self.library.get_book_copies(self.book), 3)
+
+        check = self.library.borrow_book(self.book, self.user, 1)
+
         self.assertEqual(self.library.get_book_copies(self.book), 2)
-
-        check = self.library.borrow_book(self.book)
-
-        self.assertEqual(self.library.get_book_copies(self.book), 1)
         self.assertEqual(check, True)
 
-        self.library.borrow_book(self.book)
+        self.library.borrow_book(self.book, self.user, 1)
+        self.library.borrow_book(self.book, self.user, 1)
 
         self.assertEqual(self.library.get_book_copies(self.book), 0)
 
-        check = self.library.borrow_book(self.book)
+        check = self.library.borrow_book(self.book, self.user, 1)
 
         self.assertEqual(check, False)
         self.assertEqual(self.library.get_book_copies(self.book), 0)
+
+        self.library.remove_book(self.book)
+        self.library.add_book(self.book)
+
+        check = self.library.borrow_book(self.book, self.user, 3)
+        self.assertEqual(check, True)
+        self.assertEqual(self.book.get_is_loaned(), True)
+
+        check = self.library.borrow_book(self.book, self.user, 3)
+        self.assertEqual(check, False)
 
     def test_return_book(self):
         self.library.remove_book(self.book)
-        check = self.library.return_book(self.book)
+        check = self.library.return_book(self.book, self.user, 2)
 
         self.assertEqual(check, False)
 
         self.library.add_book(self.book)
-        check = self.library.return_book(self.book)
+        check = self.library.return_book(self.book, self.user, 3)
 
-        self.assertEqual(check, True)
+        self.assertEqual(check, False)
+
+        self.library.borrow_book(self.book, self.user, 3)
+        self.library.return_book(self.book, self.user, 1)
+        self.assertEqual(self.library.get_book_copies(self.book), 1)
+
+        self.library.return_book(self.book, self.user, 2)
         self.assertEqual(self.library.get_book_copies(self.book), 3)
 
     def test_update_book(self):
@@ -112,11 +129,28 @@ class Test(unittest.TestCase):
         self.assertEqual(check, True)
 
     def test_get_all_borrowed(self):
-        self.library.add_book(self.book)
-        self.library.borrow_book(self.book)
-        books = FileManagement.get_borrowed_books()
+        self.library.remove_book(self.book)  # Reset
+        self.library.add_book(self.book)  # Reset
+        self.library.register_user(self.user)
 
-        if len(books) > 0:
+        self.library.borrow_book(self.book, self.user, 2)
+        books = FileManagement.get_borrowed_books(self.user)
+
+        if len(books) == 2:
+            check = True
+        else:
+            check = False
+
+        self.assertEqual(check, True)
+
+    def test_popular_books(self):
+        self.library.remove_book(self.book)  # Reset
+        self.library.add_book(self.book)  # Reset
+
+        self.library.borrow_book(self.book, self.user, 2)
+        popular_books = self.library.get_popular_list()
+
+        if self.book.get_title() in popular_books:
             check = True
         else:
             check = False

@@ -126,6 +126,14 @@ def remove_book(book: Book):
             for row in rows:
                 iterator.write_row([row[0], row[1]])
 
+        with CSVIterator(borrowed_books_path, mode="r") as iterator:
+            header = next(iterator)
+            rows = [row for row in iterator if row[0] != book.get_title()]
+
+        with CSVIterator(borrowed_books_path, mode="w") as iterator:
+            iterator.write_row(header)
+            iterator.write_rows(rows)
+
 
 @check
 def available_copies(book: Book):
@@ -142,8 +150,15 @@ def available_copies(book: Book):
     return 0
 
 
+def check_can_decrease(book: Book, count):
+    available = available_copies(book)
+    if available >= count:
+        return True
+    return False
+
+
 @check
-def decrease_from_availability(book: Book):
+def decrease_from_availability(book: Book, count):
     """
     This function reduces the availability of a given book if possible
     and if the current copies amount drops to zero it calls to change
@@ -160,9 +175,10 @@ def decrease_from_availability(book: Book):
                 check_found = True
                 if x == 0:
                     return False
-                x -= 1
+                x -= count
                 if x == 0:
                     change_loaned_status(row[0])
+                    book.set_is_loaned(True)
                 row[1] = str(x)
             rows.append(row)
 
@@ -196,37 +212,94 @@ def change_loaned_status(name):
 
 
 @check
-def lend_book(book: Book, user: User, count):
+def add_borrowed_books_list(book: Book, librarian: User, count):
+    with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
+        for i in range(count):
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username()])
+            i += 1
+
+
+@check
+def lend_book(book: Book, librarian: User, count):
     """
     This function takes care of the logic behind borrowing a book
     :param book: the book to borrow
+    :param librarian: the librarian that lends the book
+    :param count: how many books of this type to lend
     :return: True if succeeded, False otherwise
     """
     try:
-        check_borrowed = decrease_from_availability(book)
-        if check_borrowed:
-            with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
-                borrowed_iterator.write_row([book.get_title(), user.get_username()])
-        return check_borrowed
+        if check_can_decrease(book, count):
+            check_borrow = decrease_from_availability(book, count)
+            if check_borrow:
+                add_borrowed_books_list(book, librarian, count)
+                return True
+        else:
+            return False
     except Exception as e:
         return False
 
 
 @check
-def return_book(book: Book):
+def return_book(book: Book, librarian: User, count):
     """
         This function takes care of the logic behind returning a book
         :param book: the book to return
         :return: True if succeeded, False otherwise
         """
     try:
-        return increase_available_book(book)
+        if check_can_increase(book, count):
+            check_return = increase_available_book(book, count)
+            if check_return:
+                remove_borrowed_books_list(book, librarian, count)
+                return True
+        return False
     except Exception as e:
         return False
 
 
+def remove_borrowed_books_list(book: Book, librarian: User, count):
+    rows = []
+    with CSVIterator(borrowed_books_path, mode="r") as iterator:
+        header = next(iterator)
+        for row in iterator:
+            if row[0] != book.get_title():
+                rows.append(row)
+            elif row[0] == book.get_title() and row[1] != librarian.get_username():
+                rows.append(row)
+            elif row[0] == book.get_title() and row[1] == librarian.get_username() and count > 0:
+                count -= 1
+            elif row[0] == book.get_title() and row[1] == librarian.get_username() and count == 0:
+                rows.append(row)
+
+    with CSVIterator(borrowed_books_path, mode="w") as iterator:
+        iterator.write_row(header)
+        iterator.write_rows(rows)
+
+
 @check
-def increase_available_book(book: Book):
+def check_can_increase(book: Book, count):
+    maximum_copies = 0
+    currently_available = 0
+
+    with CSVIterator(book_path, "r") as books_iterator:
+        for row in books_iterator:
+            if row[0] == book.get_title():
+                maximum_copies = int(row[3])
+
+    with CSVIterator(available_books_path, "r") as available_iterator:
+        for row in available_iterator:
+            if row[0] == book.get_title():
+                currently_available = int(row[1])
+
+    if count > maximum_copies - currently_available:
+        return False
+
+    return True
+
+
+@check
+def increase_available_book(book: Book, count):
     """
         This function increases the availability of a given book if possible
         and if the current copies amount increases to one it calls to change
@@ -242,7 +315,7 @@ def increase_available_book(book: Book):
                 x = int(row[1])
                 if x == 0:
                     change_loaned_status(row[0])
-                x += 1
+                x += count
                 row[1] = str(x)
                 check_found = True
             rows.append(row)
@@ -294,7 +367,7 @@ def update_book(book: Book):
 
 def create_users_csv():
     """
-    Creates a user.csv file if non existent
+    Creates a user1.csv file if non existent
     :return:
     """
     header = ["Username", "Password"]
@@ -315,8 +388,8 @@ def create_book_csv_file():
 @check
 def add_user(user: User):
     """
-    Checks if a given user already exists, if not it registers the new user to users.csv
-    :param user: new user
+    Checks if a given user1 already exists, if not it registers the new user1 to users.csv
+    :param user: new user1
     :return: True if succeeded, False otherwise
     """
     if is_user_exists(user):
@@ -332,8 +405,8 @@ def add_user(user: User):
 @check
 def is_user_exists(user: User):
     """
-    Check if a given user already exists in users.csv
-    :param user: a user
+    Check if a given user1 already exists in users.csv
+    :param user: a user1
     :return: True if exists
     """
     with CSVIterator(users_database, "r") as iterator:
@@ -358,8 +431,8 @@ def encrypt_password(password):
 @check
 def remove_username(user: User):
     """
-    This function removes from users.csv a given user by its username
-    :param user: user to remove
+    This function removes from users.csv a given user1 by its username
+    :param user: user1 to remove
     :return:
     """
     rows = []
@@ -375,9 +448,9 @@ def remove_username(user: User):
 @check
 def user_login(user: User):
     """
-    This function checks if the given user can log in to the system
-    :param user: the user to log in
-    :return: True if the user is allowed to log in
+    This function checks if the given user1 can log in to the system
+    :param user: the user1 to log in
+    :return: True if the user1 is allowed to log in
     """
     password = encrypt_password(user.get_password())
     with CSVIterator(users_database, "r") as iterator:
@@ -504,7 +577,7 @@ def get_user_by_username(name):
     """
     Given a username the function returns a new username with the hashed password
     :param name: the username
-    :return: a user object
+    :return: a user1 object
     """
     user = None
     with CSVIterator(users_database, "r") as iterator:
@@ -516,69 +589,24 @@ def get_user_by_username(name):
 
 
 @check
-def init_popular_books():
+def get_popular_books():
     """
     This function find the 10 most popular books. (The books that were borrowed the most)
-    if there are less than 10 different books that were burrowed it chooses the first ones
-    TODO: Think about should I change it so I can have less then 10 most popular books
     :return: a list of the most popular books
     """
-    maximum_copies_list = []
-    current_copies_list = []
-    most_popular_list = []
+    popular_books = {}
 
-    with CSVIterator(book_path, "r") as iterator:
-        next(iterator)
-        for row in iterator:
-            maximum_copies_list.append([row[0], int(row[3])])
+    with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
+        for row in borrowed_iterator:
+            if row[0] in popular_books:
+                popular_books[row[0]]["copies"] += 1
+            else:
+                popular_books[row[0]] = {"book_title": row[0], "copies": 1}
 
-    with CSVIterator(available_books_path, "r") as iterator:
-        next(iterator)
-        for row in iterator:
-            current_copies_list.append([row[0], int(row[1])])
+    sorted_popular = dict(sorted(popular_books.items(), key=lambda item: item[1]['copies'], reverse=True))
+    top_10_books = dict(list(sorted_popular.items())[:10])
 
-    i = 0
-    for item in maximum_copies_list:
-        if len(most_popular_list) < 10:
-            most_popular_list.append(item)
-
-        if i > 9:
-            gap = maximum_copies_list[i][1] - current_copies_list[i][1]
-            if gap > 0:
-                minimum_index, minimum_value = find_min_index(maximum_copies_list, current_copies_list,
-                                                              most_popular_list)
-                if gap > minimum_value:
-                    most_popular_list[minimum_index][0] = item[0]
-                    most_popular_list[minimum_index][1] = item[1]
-
-        i += 1
-
-    return most_popular_list
-
-
-def find_min_index(original_list, available_list, most_popular_list):
-    """
-    This is a helper function for most popular books.
-    Given 3 lists it checks which index can it switch in most_popular_list
-    by checking the difference between the maximum values and the currently available values
-    and returns the index with the smallest difference
-    :param original_list: the original list from books.csv
-    :param available_list: the available list from available_books.csv
-    :param most_popular_list: the current most popular list that is being created
-    :return: the index with the smallest difference
-    """
-    current_min = original_list[0][1] - available_list[0][1]
-    min_book_index = 0
-    i = 0
-
-    for book in original_list:
-        if book in most_popular_list:
-            check_min = book[1] - available_list[i][1]
-            if check_min < current_min:
-                min_book_index = i
-            i += 1
-
-    return min_book_index, current_min
+    return top_10_books
 
 
 @check
@@ -652,23 +680,13 @@ def get_all_books():
 
 
 @check
-def get_borrowed_books():
+def get_borrowed_books(librarian: User):
     """
-    This function returns all the books that are currently borrowed from the library
+    This function returns all the books that are currently borrowed from the library by a librarian
     :return: a list of books
     """
     books = []
-    with CSVIterator(book_path, "r") as all_books:
-        with CSVIterator(available_books_path, "r") as available_books:
-            reader_all = csv.reader(all_books)
-            reader_available = csv.reader(available_books)
-            next(reader_all)
-            next(reader_available)
-
-            for row_all, row_available in zip(reader_all, reader_available):
-                if int(row_all[3]) != int(row_available[1]):
-                    book = book_factory.get_book("book", row_all[0], row_all[1], row_all[2], int(row_all[3]),
-                                                 row_all[4], int(row_all[5]))
-                    books.append(book)
+    with CSVIterator(borrowed_books_path, "r") as all_books:
+        books = [row for row in all_books if row[1] == librarian.get_username()]
 
     return books

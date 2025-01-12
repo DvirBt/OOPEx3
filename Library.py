@@ -17,7 +17,7 @@ logging.basicConfig(
 
 def log_to_file(func):
     """
-    This decorator acts as a log warpper for library class.
+    This decorator acts as a log wrapper for library class.
     every function that needs to log something to log.txt assigns to self.log_txt and self.log_level
     the values and when wrapper is called it will log to log.txt the given text
     :param func: the function that needs to write to log.txt
@@ -70,6 +70,8 @@ class Library:
         """
         This function is given a book to borrow and return True if the book was successfully borrowed
         :param book_to_lend: the book to borrow
+        :param librarian: the librarians the lends the book
+        :param count: how many copies to lend
         :return: True if succeeded
         """
         if book_to_lend is not None:
@@ -92,15 +94,17 @@ class Library:
             return False
 
     @log_to_file
-    def return_book(self, book_to_return: Book):
+    def return_book(self, book_to_return: Book, librarian: User, count):
         """
         This function is given a book to return and return True if the book was successfully returned
         :param book_to_return: the book to return
+        :param librarian: the librarians that returns a book
+        :param count: how many books to return
         :return: True if succeeded
         """
         if book_to_return is not None:
             try:
-                check = FileManagement.return_book(book_to_return)
+                check = FileManagement.return_book(book_to_return, librarian, count)
                 if check:
                     self.log_text = "book returned successfully"
                     self.log_level = logging.INFO
@@ -206,10 +210,10 @@ class Library:
     @log_to_file
     def register_user(self, user: User):
         """
-        This function is given a user to register and returns True if the user successfully registered
+        This function is given a user1 to register and returns True if the user1 successfully registered
         if the username already exists it will return False
         Note: username and password cannot be "" (at least one char)
-        :param user: the user to register
+        :param user: the user1 to register
         :return: True if succeeded
         """
         if user is not None and len(user.get_username()) > 0 and len(user.get_password()) > 0:
@@ -239,24 +243,24 @@ class Library:
     @log_to_file
     def remove_user(self, user: User):
         """
-        This function is given a user to remove and returns True if the user was successfully removed
+        This function is given a user1 to remove and returns True if the user1 was successfully removed
         if the username doesn't exist it will return False
-        :param user: the user to register
+        :param user: the user1 to register
         :return: True if succeeded
         """
         if user is not None:
             try:
                 if FileManagement.is_user_exists(user):
                     FileManagement.remove_username(user)
-                    self.log_text = f"Successfully removed user: {user.get_username()}"
+                    self.log_text = f"Successfully removed user1: {user.get_username()}"
                     self.log_level = logging.INFO
                     return True
                 else:
-                    self.log_text = f"The user {user.get_username()} doesn't exists"
+                    self.log_text = f"The user1 {user.get_username()} doesn't exists"
                     self.log_level = logging.INFO
                     return False
             except Exception as e:
-                self.log_text = f"Failed to remove the user {user.get_username()} because {e}"
+                self.log_text = f"Failed to remove the user1 {user.get_username()} because {e}"
                 self.log_level = logging.ERROR
                 return False
         else:
@@ -267,16 +271,16 @@ class Library:
     @log_to_file
     def login_user(self, user: User):
         """
-        This function is given a user to login and returns True if the user successfully login to the system
+        This function is given a user1 to login and returns True if the user1 successfully login to the system
         if the username doesn't exist it will return False
-        :param user: the user to login
+        :param user: the user1 to login
         :return: True if succeeded
         """
         if user is not None:
             try:
                 check = FileManagement.user_login(user)
                 if check:
-                    self.log_text = "logged in succesfully"
+                    self.log_text = "logged in successfully"
                     self.log_level = logging.INFO
                     return True
                 else:
@@ -427,13 +431,13 @@ class Library:
             self.log_text = "Displayed available books fail"
             self.log_level = logging.ERROR
 
-    def get_borrowed_book(self):
+    def get_borrowed_book(self, librarian: User):
         """
         This function returns all the books that are currently borrowed from the library
         :return: a list of books
         """
         try:
-            books = FileManagement.get_borrowed_books()
+            books = FileManagement.get_borrowed_books(librarian)
             if len(books) > 0:
                 self.log_text = "Displayed borrowed books successfully"
                 self.log_level = logging.INFO
@@ -448,8 +452,8 @@ class Library:
     @log_to_file
     def logout(self, check):
         """
-        This function's primary goal is to print to log if the user successfully logged out
-        :param check: True if the user successfully logged out
+        This function's primary goal is to print to log if the user1 successfully logged out
+        :param check: True if the user1 successfully logged out
         :return:
         """
         if check:
@@ -461,7 +465,7 @@ class Library:
 
     def get_popular_list(self):
         try:
-            popular_books = FileManagement.init_popular_books()
+            popular_books = FileManagement.get_popular_books()
             if len(popular_books) > 0:
                 return popular_books
             return None
