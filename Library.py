@@ -66,7 +66,7 @@ class Library:
             self._initialized = True  # Mark the instance as initialized
 
     @log_to_file
-    def borrow_book(self, book_to_lend: Book):
+    def borrow_book(self, book_to_lend: Book, librarian: User, count):
         """
         This function is given a book to borrow and return True if the book was successfully borrowed
         :param book_to_lend: the book to borrow
@@ -74,7 +74,7 @@ class Library:
         """
         if book_to_lend is not None:
             try:
-                check = FileManagement.lend_book(book_to_lend)
+                check = FileManagement.lend_book(book_to_lend, librarian, count)
                 if check:
                     self.log_text = "book borrowed successfully"
                     self.log_level = logging.INFO
@@ -459,7 +459,6 @@ class Library:
             self.log_text = "log out fail"
             self.log_level = logging.INFO
 
-
     def get_popular_list(self):
         try:
             popular_books = FileManagement.init_popular_books()
@@ -468,6 +467,3 @@ class Library:
             return None
         except Exception as e:
             return None
-
-
-

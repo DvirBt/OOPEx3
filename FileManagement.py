@@ -33,6 +33,7 @@ current_path = os.getcwd()
 available_books_path = rf"{current_path}\Files\available_books.csv"
 book_path = rf"{current_path}\Files\books.csv"
 users_database = rf"{current_path}\Files\users.csv"
+borrowed_books_path = rf"{current_path}\Files\borrowed_books.csv"
 book_factory = BookFactory()  # Creates a factory to creates books for later
 
 
@@ -48,6 +49,19 @@ def check_csv_exists():
         create_book_csv_file()
     if not os.path.exists(users_database):
         create_users_csv()
+    if not os.path.exists(borrowed_books_path):
+        create_borrowed_books_file()
+
+
+def create_borrowed_books_file():
+    """
+    This function creates borrowed_books.csv by assuming that if the file doesn't exist
+    there was no history of books being borrowed
+    :return:
+    """
+    header = ["book_title", "librarian"]
+    with CSVIterator(borrowed_books_path, "w") as book_iterator:
+        book_iterator.write_row(header)
 
 
 def create_available_books_file():
@@ -79,7 +93,9 @@ def add_book(book: Book):
     """
     if book is not None:
         with CSVIterator(book_path, mode="a") as iterator:
-            iterator.write_row([book.get_title(), book.get_author(), book.get_is_loaned(), book.get_copies(), book.get_genre(), book.get_year()])
+            iterator.write_row(
+                [book.get_title(), book.get_author(), book.get_is_loaned(), book.get_copies(), book.get_genre(),
+                 book.get_year()])
 
         with CSVIterator(available_books_path, mode="a") as iterator:
             iterator.write_row([book.get_title(), book.get_copies()])
@@ -180,14 +196,18 @@ def change_loaned_status(name):
 
 
 @check
-def lend_book(book: Book):
+def lend_book(book: Book, user: User, count):
     """
     This function takes care of the logic behind borrowing a book
     :param book: the book to borrow
     :return: True if succeeded, False otherwise
     """
     try:
-        return decrease_from_availability(book)
+        check_borrowed = decrease_from_availability(book)
+        if check_borrowed:
+            with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
+                borrowed_iterator.write_row([book.get_title(), user.get_username()])
+        return check_borrowed
     except Exception as e:
         return False
 

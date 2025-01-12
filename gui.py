@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter.ttk import Treeview
 
 from Book import Book
-#from OOPEx3.Main import library
 from User import User
 from Library import Library
 
