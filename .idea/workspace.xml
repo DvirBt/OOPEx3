@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Added stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/Book_Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Book_Library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/borrowed_books.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +84,7 @@
       <recent name="C:\Users\Shaked\PycharmProjects\Book_Library\Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -180,10 +176,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gui" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user" />
         <item itemvalue="Python tests.Python tests for Test.Test" />
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_popular_books" />
       </list>
     </recent_temporary>
@@ -316,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736704625039</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added stuff">
+      <option name="closed" value="true" />
+      <created>1736775688548</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736775688548</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -341,6 +345,11 @@
           <url>file://$PROJECT_DIR$/Book.py</url>
           <line>53</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

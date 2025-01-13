@@ -66,7 +66,7 @@ class Library:
             self._initialized = True  # Mark the instance as initialized
 
     @log_to_file
-    def borrow_book(self, book_to_lend: Book, librarian: User, count):
+    def borrow_book(self, book_to_lend: Book, librarian: User, count, client_full_name, client_email, client_phone):
         """
         This function is given a book to borrow and return True if the book was successfully borrowed
         :param book_to_lend: the book to borrow
@@ -76,7 +76,7 @@ class Library:
         """
         if book_to_lend is not None:
             try:
-                check = FileManagement.lend_book(book_to_lend, librarian, count)
+                check = FileManagement.lend_book(book_to_lend, librarian, count, client_full_name, client_email, client_phone)
                 if check:
                     self.log_text = "book borrowed successfully"
                     self.log_level = logging.INFO
@@ -138,14 +138,14 @@ class Library:
             self.log_level = logging.DEBUG
 
     @log_to_file
-    def add_book(self, book):
+    def add_book(self, book: Book):
         """
         This function is given a new book to add and return True if the book was successfully added
         if the book already exists it will return False
         :param book: the book to add
         :return: True if succeeded
         """
-        if book is not None:
+        if book is not None and book.get_title() != "" and book.get_genre() != "" and book.get_author() != "" and book.get_copies() >= 0:
             try:
                 if not self.is_book_exists(book):
                     FileManagement.add_book(book)

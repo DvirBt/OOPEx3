@@ -59,7 +59,7 @@ def create_borrowed_books_file():
     there was no history of books being borrowed
     :return:
     """
-    header = ["book_title", "librarian", "isQueue"]
+    header = ["book_title", "librarian", "isQueue", "full_name", "email", "phone"]
     with CSVIterator(borrowed_books_path, "w") as book_iterator:
         book_iterator.write_row(header)
 
@@ -212,15 +212,15 @@ def change_loaned_status(name):
 
 
 @check
-def add_borrowed_books_list(book: Book, librarian: User, count):
+def add_borrowed_books_list(book: Book, librarian: User, count, full_name, email, phone):
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
         for i in range(count):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False])
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False, full_name, email, phone])
             i += 1
 
 
 @check
-def lend_book(book: Book, librarian: User, count):
+def lend_book(book: Book, librarian: User, count, full_name, email, phone):
     """
     This function takes care of the logic behind borrowing a book
     :param book: the book to borrow
@@ -232,29 +232,29 @@ def lend_book(book: Book, librarian: User, count):
         if check_can_decrease(book, count):
             check_borrow = decrease_from_availability(book, count)
             if check_borrow:
-                add_borrowed_books_list(book, librarian, count)
+                add_borrowed_books_list(book, librarian, count, full_name, email, phone)
                 return True
         else:
             currently_available = available_copies(book)
             left_over = count - currently_available
             check_borrow = decrease_from_availability(book, currently_available)
             if check_borrow:
-                add_borrowed_books_list(book, librarian, currently_available)
+                add_borrowed_books_list(book, librarian, currently_available,full_name, email, phone)
             else:
                 return False #Logically shouldn't reach here
 
-            add_books_to_queue(book, librarian, left_over)
+            add_books_to_queue(book, librarian, left_over, full_name, email, phone)
             return True
     except Exception as e:
         return False
 
 @check
-def add_books_to_queue(book: Book, librarian: User, count):
+def add_books_to_queue(book: Book, librarian: User, count, full_name, email, phone):
     left_over = count - available_copies(book)
 
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
         for i in range(left_over):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True])
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True, full_name, email, phone])
 
 
 @check

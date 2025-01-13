@@ -21,11 +21,11 @@ library.add_book(book1)
 library.add_book(book1)
 library.add_book(book1)
 
-library.borrow_book(book2, user1, 3)
-library.borrow_book(book3, user1, 9)
+library.borrow_book(book2, user1, 3, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
+library.borrow_book(book3, user1, 9, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
 # library.remove_book(book1)
 
-library.borrow_book(book2, user1, 1)
+library.borrow_book(book2, user1, 1, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
 
 library.register_user(user1)
 
