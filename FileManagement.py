@@ -59,7 +59,7 @@ def create_borrowed_books_file():
     there was no history of books being borrowed
     :return:
     """
-    header = ["book_title", "librarian"]
+    header = ["book_title", "librarian", "isQueue"]
     with CSVIterator(borrowed_books_path, "w") as book_iterator:
         book_iterator.write_row(header)
 
@@ -215,7 +215,7 @@ def change_loaned_status(name):
 def add_borrowed_books_list(book: Book, librarian: User, count):
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
         for i in range(count):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username()])
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False])
             i += 1
 
 
@@ -235,9 +235,26 @@ def lend_book(book: Book, librarian: User, count):
                 add_borrowed_books_list(book, librarian, count)
                 return True
         else:
-            return False
+            currently_available = available_copies(book)
+            left_over = count - currently_available
+            check_borrow = decrease_from_availability(book, currently_available)
+            if check_borrow:
+                add_borrowed_books_list(book, librarian, currently_available)
+            else:
+                return False #Logically shouldn't reach here
+
+            add_books_to_queue(book, librarian, left_over)
+            return True
     except Exception as e:
         return False
+
+@check
+def add_books_to_queue(book: Book, librarian: User, count):
+    left_over = count - available_copies(book)
+
+    with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
+        for i in range(left_over):
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True])
 
 
 @check
@@ -245,6 +262,8 @@ def return_book(book: Book, librarian: User, count):
     """
         This function takes care of the logic behind returning a book
         :param book: the book to return
+        :param librarian:
+        :param count:
         :return: True if succeeded, False otherwise
         """
     try:
@@ -252,10 +271,23 @@ def return_book(book: Book, librarian: User, count):
             check_return = increase_available_book(book, count)
             if check_return:
                 remove_borrowed_books_list(book, librarian, count)
+                refresh_queue(book, count)
                 return True
         return False
     except Exception as e:
         return False
+
+def refresh_queue(book: Book, count):
+    rows = []
+    with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
+        for row in borrowed_iterator:
+            if row[0] == book.get_title() and row[2] == "True" and count > 0:
+                row[2] = "False"
+                count -= 1
+            rows.append(row)
+
+    with CSVIterator(borrowed_books_path, "w") as borrowed_iterator:
+        borrowed_iterator.write_rows(rows)
 
 
 def remove_borrowed_books_list(book: Book, librarian: User, count):
@@ -690,3 +722,21 @@ def get_borrowed_books(librarian: User):
         books = [row for row in all_books if row[1] == librarian.get_username()]
 
     return books
+
+def get_borrowed_copies_by_book_and_user(book: Book, librarian: User):
+    """
+    This function returns how many copies were lent by a given librarian
+    :param book: the book to count
+    :param librarian: the librarian
+    :return: copies
+    """
+    copies = 0
+
+    with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
+        next(borrowed_iterator)
+        for row in borrowed_iterator:
+            if row[0] == book.get_title() and row[1] == librarian.get_username():
+                copies += 1
+
+    return copies
+

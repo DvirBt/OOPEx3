@@ -156,3 +156,14 @@ class Test(unittest.TestCase):
             check = False
 
         self.assertEqual(check, True)
+
+
+    def test_get_borrowed_copies_by_book_and_user(self):
+        self.library.remove_book(self.book)
+        self.library.add_book(self.book)
+
+        self.library.borrow_book(self.book, self.user, 3)
+
+        count = self.library.get_borrowed_copies_by_book_and_user(self.book, self.user)
+
+        self.assertEqual(count, 3)

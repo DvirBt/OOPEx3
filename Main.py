@@ -22,7 +22,7 @@ library.add_book(book1)
 library.add_book(book1)
 
 library.borrow_book(book2, user1, 3)
-library.borrow_book(book3, user1, 5)
+library.borrow_book(book3, user1, 9)
 # library.remove_book(book1)
 
 library.borrow_book(book2, user1, 1)
@@ -41,7 +41,7 @@ library.update_book(book2)
 library.add_book(None)
 library.remove_book(book1)
 
-library.return_book(book3, user2, 3)
+library.return_book(book3, user1, 3)
 
 most_popular_books = FileManagement.get_popular_books()
 

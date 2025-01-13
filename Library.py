@@ -431,7 +431,7 @@ class Library:
             self.log_text = "Displayed available books fail"
             self.log_level = logging.ERROR
 
-    def get_borrowed_book(self, librarian: User):
+    def get_borrowed_books_by_user(self, librarian: User):
         """
         This function returns all the books that are currently borrowed from the library
         :return: a list of books
@@ -471,3 +471,9 @@ class Library:
             return None
         except Exception as e:
             return None
+
+    def get_borrowed_copies_by_book_and_user(self, book: Book, librarian: User):
+        try:
+            return FileManagement.get_borrowed_copies_by_book_and_user(book, librarian)
+        except Exception as e:
+            return 0

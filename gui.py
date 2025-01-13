@@ -487,7 +487,7 @@ def return_book_page():
                          bg="#cae8cd")
     return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     global user
-    tree_select_value(library.get_borrowed_book())
+    tree_select_value(library.get_borrowed_books_by_user())
 
 def tree_select_value(books_list):
     global value_tree
