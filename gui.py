@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter.ttk import Treeview
 
 from Book import Book
+from OOPEx3.FileManagement import lend_book
 from User import User
 from Library import Library
 
@@ -266,7 +267,7 @@ def add_book_page():
                            bg="#cae8cd")
     copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
 
-    copies_entry = Entry(main_window)
+    copies_entry = Entry(main_window, textvariable=StringVar(value=0))
     copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
 
     genre_label = Label(main_window,
@@ -284,7 +285,7 @@ def add_book_page():
                         bg="#cae8cd")
     year_label.grid(row=5, column=1, pady=10, sticky="nsew")
 
-    year_entry = Entry(main_window)
+    year_entry = Entry(main_window, textvariable=StringVar(value=0))
     year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
 
     add_button = Button(main_window, text="Add book")
@@ -399,8 +400,7 @@ def popular_page():
     init_page()
     create_tree("Popular books", library.get_popular_list())
 
-
-def get_selected_book_from_tree():
+def get_selected_book_from_tree(copies):
     global value_tree
     selected_book = value_tree.selection()
     if selected_book:
@@ -416,69 +416,6 @@ def get_selected_book_from_tree():
         notification("Invalid book!")
         return None
 
-"""""
-def return_book_page():
-    init_page()
-    return_label = Label(main_window,
-                           text="Return a book",
-                           font=('Ink Free', 22, 'bold'),
-                           bg="#cae8cd")
-    return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
-
-    title_label = Label(main_window,
-                        text="Title:",
-                        font=('Ink Free', 15, 'bold'),
-                        bg="#cae8cd")
-    title_label.grid(row=1, column=1, pady=10, sticky="nsew")
-
-    title_entry = Entry(main_window)
-    title_entry.grid(row=1, column=2, pady=10, sticky="nsew")
-
-    author_label = Label(main_window,
-                         text="Author:",
-                         font=('Ink Free', 15, 'bold'),
-                         bg="#cae8cd")
-    author_label.grid(row=2, column=1, pady=10, sticky="nsew")
-
-    author_entry = Entry(main_window)
-    author_entry.grid(row=2, column=2, pady=10, sticky="nsew")
-
-    copies_label = Label(main_window,
-                         text="Copies:",
-                         font=('Ink Free', 15, 'bold'),
-                         bg="#cae8cd")
-    copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
-
-    copies_entry = Entry(main_window)
-    copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
-
-    genre_label = Label(main_window,
-                        text="Genre:",
-                        font=('Ink Free', 15, 'bold'),
-                        bg="#cae8cd")
-    genre_label.grid(row=4, column=1, pady=10, sticky="nsew")
-
-    genre_entry = Entry(main_window)
-    genre_entry.grid(row=4, column=2, pady=10, sticky="nsew")
-
-    year_label = Label(main_window,
-                       text="Year:",
-                       font=('Ink Free', 15, 'bold'),
-                       bg="#cae8cd")
-    year_label.grid(row=5, column=1, pady=10, sticky="nsew")
-
-    year_entry = Entry(main_window)
-    year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
-
-    book = Book(title_entry.get(), author_entry.get(), False, copies_entry.getint,
-                genre_entry.get(), year_entry.getint)
-    return_button = Button(main_window, text="Return book")
-    return_button.config(command=lambda : library.return_book(book),
-                      font=('Ink Free', 22, 'bold'),
-                      bg="#cae8cd")
-    return_button.grid(row=8, column=2, pady=25, sticky="nsew")
-"""
-
 def return_book_page():
     init_page()
     return_label = Label(main_window,
@@ -487,7 +424,12 @@ def return_book_page():
                          bg="#cae8cd")
     return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     global user
-    tree_select_value(library.get_borrowed_books_by_user())
+    borrowed_books_list = library.get_borrowed_books_by_user(user)
+    if borrowed_books_list:
+        tree_select_value(borrowed_books_list)
+
+    else:
+        notification("No borrowed books by this user!")
 
 def tree_select_value(books_list):
     global value_tree
@@ -548,20 +490,39 @@ def remove_book_page():
     else:
         notification("No books to remove!")
 
+def try_lend_book(book):
+    success = library.borrow_book(book)
+    if success:
+        notification("Book lend successfully!")
+    else:
+        notification("Book lend failed!")
+
 def borrow_book_page():
     init_page()
     borrow_label = Label(main_window,
                          text="Lend a book",
                          font=('Ink Free', 22, 'bold'),
                          bg="#cae8cd")
-    borrow_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
-    global user
-    books_list = library.get_available_books(user)
+    borrow_label.grid(row=0, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
+    books_list = library.get_all_books()
     if books_list:
+        global value_tree
         tree_select_value(books_list)
+        copies_label = Label(main_window,
+                             text="Amount:",
+                             font=('Ink Free', 15, 'bold'),
+                             bg="#cae8cd")
+        copies_label.grid(row=5, column=2, padx=10, pady=10, sticky="nsew")
+        copies_entry = Entry(main_window, textvariable=StringVar(value=0))
+        copies_entry.grid(row=5, column=3, columnspan=2, pady=10)
+        lend_button = Button(main_window, text="Lend selected book")
+        lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(copies_entry.get())),
+                             font=('Ink Free', 15, 'bold'),
+                             bg="#cae8cd")
+        lend_button.grid(row=6, column=1, columnspan=2, padx=100, pady=25, sticky="nsew")
 
     else:
-        notification("No books can be lent!")
+        notification("No books to remove!")
 
 if __name__ == "__main__":
     main()
