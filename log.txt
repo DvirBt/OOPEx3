@@ -645,3 +645,308 @@ book returned successfully
 2025-01-13 16:04:46,502 - ERROR - book added failed
 2025-01-13 16:04:46,504 - INFO - book removed successfully
 2025-01-13 16:04:46,509 - INFO - book returned successfully
+2025-01-13 18:19:17,398 - INFO - logged in fail
+2025-01-13 18:19:32,323 - INFO - logged in fail
+2025-01-13 18:39:34,427 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:39:34,429 - INFO - registered successfully
+2025-01-13 18:39:34,431 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:39:34,432 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:39:34,432 - ERROR - book removed failed
+2025-01-13 18:39:34,433 - ERROR - book removed failed
+2025-01-13 18:39:34,434 - INFO - book added successfully
+2025-01-13 18:39:34,435 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:39:34,439 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:39:34,440 - ERROR - book removed failed
+2025-01-13 18:39:34,441 - INFO - book borrowed successfully
+2025-01-13 18:39:34,449 - INFO - book borrowed successfully
+2025-01-13 18:39:34,449 - ERROR - book removed failed
+2025-01-13 18:39:34,450 - ERROR - book removed failed
+2025-01-13 18:39:34,451 - INFO - book added successfully
+2025-01-13 18:39:34,453 - INFO - registered successfully
+2025-01-13 18:39:34,457 - INFO - book borrowed successfully
+2025-01-13 18:39:34,459 - INFO - book borrowed successfully
+2025-01-13 18:39:34,463 - INFO - book removed successfully
+2025-01-13 18:39:34,464 - INFO - book removed successfully
+2025-01-13 18:39:34,465 - INFO - book added successfully
+2025-01-13 18:39:34,468 - INFO - book borrowed successfully
+2025-01-13 18:39:34,470 - INFO - book borrowed successfully
+2025-01-13 18:39:34,472 - INFO - book removed successfully
+2025-01-13 18:39:34,472 - INFO - book removed successfully
+2025-01-13 18:39:34,473 - INFO - book added successfully
+2025-01-13 18:39:34,477 - INFO - book borrowed successfully
+2025-01-13 18:39:34,480 - INFO - book borrowed successfully
+2025-01-13 18:39:34,480 - INFO - book borrowed successfully
+2025-01-13 18:39:34,481 - INFO - book borrowed successfully
+2025-01-13 18:39:34,483 - INFO - book removed successfully
+2025-01-13 18:39:34,484 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:39:34,485 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:39:34,486 - ERROR - book removed failed
+2025-01-13 18:39:34,487 - ERROR - book returned fail
+2025-01-13 18:39:34,488 - ERROR - book returned fail
+2025-01-13 18:39:34,489 - INFO - book added successfully
+2025-01-13 18:39:34,490 - ERROR - book returned fail
+2025-01-13 18:39:34,493 - INFO - book borrowed successfully
+2025-01-13 18:39:34,499 - INFO - book returned successfully
+2025-01-13 18:39:34,500 - INFO - book returned successfully
+2025-01-13 18:39:34,504 - INFO - book returned successfully
+2025-01-13 18:39:34,505 - INFO - book returned successfully
+2025-01-13 18:39:34,506 - INFO - book returned successfully
+2025-01-13 18:39:34,506 - INFO - book returned successfully
+2025-01-13 18:39:34,507 - INFO - book returned successfully
+2025-01-13 18:39:34,507 - INFO - Successfully update the book: Title1
+2025-01-13 18:39:34,509 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:39:34,510 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:39:34,511 - INFO - Successfully update the book: Title1
+2025-01-13 18:39:34,511 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:40:15,336 - INFO - book removed successfully
+2025-01-13 18:40:15,336 - INFO - book removed successfully
+2025-01-13 18:40:15,336 - INFO - book added successfully
+2025-01-13 18:40:15,336 - INFO - book borrowed successfully
+2025-01-13 18:40:36,712 - INFO - book removed successfully
+2025-01-13 18:40:36,712 - INFO - book removed successfully
+2025-01-13 18:40:36,712 - INFO - book added successfully
+2025-01-13 18:40:36,719 - INFO - book borrowed successfully
+2025-01-13 18:42:46,830 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:42:46,832 - INFO - registered successfully
+2025-01-13 18:42:46,834 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:42:46,835 - INFO - Successfully removed user1: dvirbto
+2025-01-13 18:42:46,837 - INFO - book removed successfully
+2025-01-13 18:42:46,839 - INFO - book removed successfully
+2025-01-13 18:42:46,839 - INFO - book added successfully
+2025-01-13 18:42:46,841 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:42:46,842 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:42:46,845 - INFO - book removed successfully
+2025-01-13 18:42:46,846 - INFO - book borrowed fail
+2025-01-13 18:42:46,847 - INFO - book borrowed fail
+2025-01-13 18:42:46,848 - INFO - book borrowed fail
+2025-01-13 18:42:46,848 - INFO - book added successfully
+2025-01-13 18:42:46,849 - INFO - book added successfully
+2025-01-13 18:42:46,851 - INFO - book borrowed successfully
+2025-01-13 18:42:46,852 - INFO - book borrowed successfully
+2025-01-13 18:42:46,854 - INFO - book borrowed successfully
+2025-01-13 18:42:46,858 - INFO - book borrowed successfully
+2025-01-13 18:42:46,859 - INFO - book borrowed successfully
+2025-01-13 18:42:46,861 - INFO - book borrowed fail
+2025-01-13 18:42:46,861 - INFO - book borrowed fail
+2025-01-13 18:42:46,862 - INFO - book borrowed fail
+2025-01-13 18:42:46,864 - INFO - book removed successfully
+2025-01-13 18:42:46,865 - INFO - book removed successfully
+2025-01-13 18:42:46,867 - INFO - book added successfully
+2025-01-13 18:42:46,869 - INFO - book borrowed successfully
+2025-01-13 18:42:46,870 - INFO - book borrowed fail
+2025-01-13 18:42:46,876 - INFO - book borrowed fail
+2025-01-13 18:42:46,879 - INFO - book removed successfully
+2025-01-13 18:42:46,881 - INFO - book removed successfully
+2025-01-13 18:42:46,881 - INFO - book added successfully
+2025-01-13 18:42:46,883 - INFO - registered successfully
+2025-01-13 18:42:46,885 - INFO - book borrowed successfully
+2025-01-13 18:42:46,887 - INFO - book borrowed successfully
+2025-01-13 18:42:46,890 - INFO - book removed successfully
+2025-01-13 18:42:46,892 - INFO - book removed successfully
+2025-01-13 18:42:46,893 - INFO - book added successfully
+2025-01-13 18:42:46,898 - INFO - book borrowed successfully
+2025-01-13 18:42:46,900 - INFO - book borrowed successfully
+2025-01-13 18:42:46,902 - INFO - book removed successfully
+2025-01-13 18:42:46,903 - INFO - book removed successfully
+2025-01-13 18:42:46,904 - INFO - book added successfully
+2025-01-13 18:42:46,908 - INFO - book borrowed successfully
+2025-01-13 18:42:46,911 - INFO - book borrowed successfully
+2025-01-13 18:42:46,911 - INFO - book borrowed successfully
+2025-01-13 18:42:46,912 - INFO - book borrowed successfully
+2025-01-13 18:42:46,915 - INFO - book removed successfully
+2025-01-13 18:42:46,916 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:42:46,917 - INFO - Search book Title1 by name completed fail
+2025-01-13 18:42:46,917 - ERROR - book removed failed
+2025-01-13 18:42:46,918 - ERROR - book returned fail
+2025-01-13 18:42:46,918 - ERROR - book returned fail
+2025-01-13 18:42:46,919 - INFO - book added successfully
+2025-01-13 18:42:46,921 - ERROR - book returned fail
+2025-01-13 18:42:46,924 - INFO - book borrowed successfully
+2025-01-13 18:42:46,929 - INFO - book returned successfully
+2025-01-13 18:42:46,930 - INFO - book returned successfully
+2025-01-13 18:42:46,933 - INFO - book returned successfully
+2025-01-13 18:42:46,934 - INFO - book returned successfully
+2025-01-13 18:42:46,935 - INFO - book returned successfully
+2025-01-13 18:42:46,935 - INFO - book returned successfully
+2025-01-13 18:42:46,936 - INFO - book returned successfully
+2025-01-13 18:42:46,937 - INFO - Successfully update the book: Title1
+2025-01-13 18:42:46,938 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:42:46,939 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:42:46,941 - INFO - Successfully update the book: Title1
+2025-01-13 18:42:46,942 - INFO - Search book Title1 by name completed successfully
+2025-01-13 18:44:28,003 - INFO - book removed successfully
+2025-01-13 18:44:28,005 - INFO - book removed successfully
+2025-01-13 18:44:28,006 - INFO - book added successfully
+2025-01-13 18:44:28,008 - INFO - book borrowed successfully
+2025-01-13 18:45:12,324 - INFO - book removed successfully
+2025-01-13 18:46:21,973 - INFO - book removed successfully
+2025-01-13 18:48:22,708 - INFO - book added successfully
+2025-01-13 18:48:22,713 - INFO - book borrowed successfully
+2025-01-13 18:52:37,039 - ERROR - book removed failed
+2025-01-13 18:52:37,040 - ERROR - book removed failed
+2025-01-13 18:52:37,042 - INFO - book added successfully
+2025-01-13 18:52:37,050 - INFO - book borrowed successfully
+2025-01-13 18:53:53,605 - INFO - book removed successfully
+2025-01-13 18:53:58,132 - INFO - book removed successfully
+2025-01-13 18:53:58,141 - INFO - book added successfully
+2025-01-13 18:53:58,142 - INFO - book borrowed successfully
+2025-01-13 18:54:47,661 - INFO - book removed successfully
+2025-01-13 18:54:47,661 - INFO - book removed successfully
+2025-01-13 18:54:47,661 - INFO - book added successfully
+2025-01-13 18:54:47,671 - INFO - book borrowed successfully
+2025-01-13 18:55:04,460 - INFO - book removed successfully
+2025-01-13 18:55:04,460 - INFO - book removed successfully
+2025-01-13 18:55:04,460 - INFO - book added successfully
+2025-01-13 18:55:04,460 - INFO - book borrowed successfully
+2025-01-13 18:55:33,568 - INFO - book removed successfully
+2025-01-13 18:55:33,568 - INFO - book removed successfully
+2025-01-13 18:55:33,568 - INFO - book added successfully
+2025-01-13 18:55:33,568 - INFO - book borrowed successfully
+2025-01-13 18:57:06,505 - INFO - book removed successfully
+2025-01-13 18:57:06,508 - INFO - book removed successfully
+2025-01-13 18:57:06,511 - INFO - book added successfully
+2025-01-13 18:57:06,515 - INFO - book borrowed successfully
+2025-01-13 18:59:13,771 - INFO - book removed successfully
+2025-01-13 18:59:13,771 - INFO - book removed successfully
+2025-01-13 18:59:13,771 - INFO - book added successfully
+2025-01-13 18:59:13,771 - INFO - book borrowed successfully
+2025-01-13 19:00:20,455 - INFO - book removed successfully
+2025-01-13 19:00:20,457 - INFO - book removed successfully
+2025-01-13 19:00:20,457 - INFO - book added successfully
+2025-01-13 19:00:20,460 - INFO - book borrowed successfully
+2025-01-13 19:00:25,722 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:00:25,726 - INFO - registered successfully
+2025-01-13 19:00:25,731 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:00:25,734 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:00:25,740 - INFO - book removed successfully
+2025-01-13 19:00:25,742 - INFO - book removed successfully
+2025-01-13 19:00:25,744 - INFO - book added successfully
+2025-01-13 19:00:25,746 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:00:25,748 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:00:25,753 - INFO - book removed successfully
+2025-01-13 19:00:25,756 - INFO - book borrowed fail
+2025-01-13 19:00:25,757 - INFO - book borrowed fail
+2025-01-13 19:00:25,758 - INFO - book borrowed fail
+2025-01-13 19:00:25,760 - INFO - book added successfully
+2025-01-13 19:00:25,761 - INFO - book added successfully
+2025-01-13 19:00:25,763 - INFO - book borrowed successfully
+2025-01-13 19:00:25,764 - INFO - book borrowed successfully
+2025-01-13 19:00:25,766 - INFO - book borrowed successfully
+2025-01-13 19:00:25,770 - INFO - book borrowed successfully
+2025-01-13 19:00:25,771 - INFO - book borrowed successfully
+2025-01-13 19:00:25,773 - INFO - book borrowed fail
+2025-01-13 19:00:25,773 - INFO - book borrowed fail
+2025-01-13 19:00:25,775 - INFO - book borrowed fail
+2025-01-13 19:00:25,779 - INFO - book removed successfully
+2025-01-13 19:00:25,781 - INFO - book removed successfully
+2025-01-13 19:00:25,782 - INFO - book added successfully
+2025-01-13 19:00:25,788 - INFO - book borrowed successfully
+2025-01-13 19:00:25,791 - INFO - book borrowed fail
+2025-01-13 19:00:25,795 - INFO - book borrowed fail
+2025-01-13 19:00:25,799 - INFO - book removed successfully
+2025-01-13 19:00:25,801 - INFO - book removed successfully
+2025-01-13 19:00:25,803 - INFO - book added successfully
+2025-01-13 19:00:25,806 - INFO - registered successfully
+2025-01-13 19:00:25,809 - INFO - book borrowed successfully
+2025-01-13 19:00:25,812 - INFO - book borrowed successfully
+2025-01-13 19:00:25,815 - INFO - book removed successfully
+2025-01-13 19:00:25,816 - INFO - book removed successfully
+2025-01-13 19:00:25,817 - INFO - book added successfully
+2025-01-13 19:00:25,821 - INFO - book borrowed successfully
+2025-01-13 19:00:25,824 - INFO - book borrowed successfully
+2025-01-13 19:00:25,827 - INFO - book removed successfully
+2025-01-13 19:00:25,828 - INFO - book removed successfully
+2025-01-13 19:00:25,829 - INFO - book added successfully
+2025-01-13 19:00:25,832 - INFO - book borrowed successfully
+2025-01-13 19:00:25,835 - INFO - book borrowed successfully
+2025-01-13 19:00:25,836 - INFO - book borrowed successfully
+2025-01-13 19:00:25,836 - INFO - book borrowed successfully
+2025-01-13 19:00:25,840 - INFO - book removed successfully
+2025-01-13 19:00:25,841 - INFO - Search book Title1 by name completed fail
+2025-01-13 19:00:25,842 - INFO - Search book Title1 by name completed fail
+2025-01-13 19:00:25,842 - ERROR - book removed failed
+2025-01-13 19:00:25,843 - ERROR - book returned fail
+2025-01-13 19:00:25,845 - ERROR - book returned fail
+2025-01-13 19:00:25,846 - INFO - book added successfully
+2025-01-13 19:00:25,849 - ERROR - book returned fail
+2025-01-13 19:00:25,854 - INFO - book borrowed successfully
+2025-01-13 19:00:25,861 - INFO - book returned successfully
+2025-01-13 19:00:25,862 - INFO - book returned successfully
+2025-01-13 19:00:25,868 - INFO - book returned successfully
+2025-01-13 19:00:25,869 - INFO - book returned successfully
+2025-01-13 19:00:25,871 - INFO - book returned successfully
+2025-01-13 19:00:25,871 - INFO - book returned successfully
+2025-01-13 19:00:25,872 - INFO - book returned successfully
+2025-01-13 19:00:25,873 - INFO - Successfully update the book: Title1
+2025-01-13 19:00:25,874 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:00:25,875 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:00:25,876 - INFO - Successfully update the book: Title1
+2025-01-13 19:00:25,878 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:03:37,273 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:03:37,277 - INFO - registered successfully
+2025-01-13 19:03:37,280 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:03:37,282 - INFO - Successfully removed user1: dvirbto
+2025-01-13 19:03:37,287 - INFO - book removed successfully
+2025-01-13 19:03:37,289 - INFO - book removed successfully
+2025-01-13 19:03:37,290 - INFO - book added successfully
+2025-01-13 19:03:37,292 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:03:37,294 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:03:37,300 - INFO - book removed successfully
+2025-01-13 19:03:37,303 - INFO - book borrowed fail
+2025-01-13 19:03:37,304 - INFO - book borrowed fail
+2025-01-13 19:03:37,306 - INFO - book borrowed fail
+2025-01-13 19:03:37,307 - INFO - book added successfully
+2025-01-13 19:03:37,308 - INFO - book added successfully
+2025-01-13 19:03:37,311 - INFO - book borrowed successfully
+2025-01-13 19:03:37,312 - INFO - book borrowed successfully
+2025-01-13 19:03:37,315 - INFO - book borrowed successfully
+2025-01-13 19:03:37,321 - INFO - book borrowed successfully
+2025-01-13 19:03:37,322 - INFO - book borrowed successfully
+2025-01-13 19:03:37,325 - INFO - book borrowed fail
+2025-01-13 19:03:37,326 - INFO - book borrowed fail
+2025-01-13 19:03:37,328 - INFO - book borrowed fail
+2025-01-13 19:03:37,332 - INFO - book removed successfully
+2025-01-13 19:03:37,334 - INFO - book removed successfully
+2025-01-13 19:03:37,336 - INFO - book added successfully
+2025-01-13 19:03:37,343 - INFO - book borrowed successfully
+2025-01-13 19:03:37,347 - INFO - book borrowed fail
+2025-01-13 19:03:37,352 - INFO - book borrowed fail
+2025-01-13 19:03:37,357 - INFO - book removed successfully
+2025-01-13 19:03:37,360 - INFO - book removed successfully
+2025-01-13 19:03:37,361 - INFO - book added successfully
+2025-01-13 19:03:37,364 - INFO - registered successfully
+2025-01-13 19:03:37,368 - INFO - book borrowed successfully
+2025-01-13 19:03:37,372 - INFO - book borrowed successfully
+2025-01-13 19:03:37,378 - INFO - book removed successfully
+2025-01-13 19:03:37,380 - INFO - book removed successfully
+2025-01-13 19:03:37,382 - INFO - book added successfully
+2025-01-13 19:03:37,403 - INFO - book borrowed successfully
+2025-01-13 19:03:37,406 - INFO - book borrowed successfully
+2025-01-13 19:03:37,410 - INFO - book removed successfully
+2025-01-13 19:03:37,412 - INFO - book removed successfully
+2025-01-13 19:03:37,414 - INFO - book added successfully
+2025-01-13 19:03:37,417 - INFO - book borrowed successfully
+2025-01-13 19:03:37,423 - INFO - book borrowed successfully
+2025-01-13 19:03:37,423 - INFO - book borrowed successfully
+2025-01-13 19:03:37,424 - INFO - book borrowed successfully
+2025-01-13 19:03:37,430 - INFO - book removed successfully
+2025-01-13 19:03:37,432 - INFO - Search book Title1 by name completed fail
+2025-01-13 19:03:37,434 - INFO - Search book Title1 by name completed fail
+2025-01-13 19:03:37,434 - ERROR - book removed failed
+2025-01-13 19:03:37,436 - ERROR - book returned fail
+2025-01-13 19:03:37,438 - ERROR - book returned fail
+2025-01-13 19:03:37,439 - INFO - book added successfully
+2025-01-13 19:03:37,442 - ERROR - book returned fail
+2025-01-13 19:03:37,446 - INFO - book borrowed successfully
+2025-01-13 19:03:37,454 - INFO - book returned successfully
+2025-01-13 19:03:37,455 - INFO - book returned successfully
+2025-01-13 19:03:37,462 - INFO - book returned successfully
+2025-01-13 19:03:37,463 - INFO - book returned successfully
+2025-01-13 19:03:37,465 - INFO - book returned successfully
+2025-01-13 19:03:37,465 - INFO - book returned successfully
+2025-01-13 19:03:37,466 - INFO - book returned successfully
+2025-01-13 19:03:37,468 - INFO - Successfully update the book: Title1
+2025-01-13 19:03:37,469 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:03:37,471 - INFO - Search book Title1 by name completed successfully
+2025-01-13 19:03:37,472 - INFO - Successfully update the book: Title1
+2025-01-13 19:03:37,474 - INFO - Search book Title1 by name completed successfully

@@ -6,6 +6,40 @@ from User import User
 import logging
 from BookFactory import BookFactory
 
+
+class Observer:
+    """Abstract observer class."""
+    def update(self, subject):
+        pass
+
+
+class NotificationService(Observer):
+    """Concrete Observer for sending notifications."""
+    def update(self, subject):
+        if isinstance(subject, Library):
+            print(f"Notification: {subject.notification_message}")
+
+class Subject:
+    """The Subject class maintains a list of observers and notifies them of changes."""
+    def __init__(self):
+        self._observers = []
+
+    def attach(self, observer):
+        if observer not in self._observers:
+            self._observers.append(observer)
+
+    def detach(self, observer):
+        try:
+            self._observers.remove(observer)
+        except ValueError:
+            pass
+
+    def notify(self):
+        for observer in self._observers:
+            observer.update(self)
+
+
+
 LOG_FILE = rf"{os.getcwd()}\log.txt"
 
 logging.basicConfig(
@@ -42,7 +76,7 @@ def log_to_file(func):
     return wrapper
 
 
-class Library:
+class Library(Subject):
     """
     This class is primarily to handle the calls between the GUI and FileManagement
     and handling of the return values to the GUI and the exceptions
@@ -63,6 +97,7 @@ class Library:
             self.log_text = ""
             self.log_level = logging.ERROR
             self.book_factory = BookFactory()
+            self.notification_message = ""
             self._initialized = True  # Mark the instance as initialized
 
     @log_to_file
@@ -104,13 +139,18 @@ class Library:
         """
         if book_to_return is not None:
             try:
-                check = FileManagement.return_book(book_to_return, librarian, count)
+                check, clients_to_update = FileManagement.return_book(book_to_return, librarian, count)
                 if check:
                     self.log_text = "book returned successfully"
                     self.log_level = logging.INFO
                 else:
                     self.log_text = "book returned fail"
                     self.log_level = logging.INFO
+                if clients_to_update is not None and len(clients_to_update) > 0:
+                    for client in clients_to_update:
+                        #I DON'T KNOW WHAT TO DO AAAAAAAAAAAAAAAAAAAAAAAAA
+                        self.notification_message = f"Hey, {client[2]}! The book '{book_to_return.get_title()}' is ready for you to pickup."
+                        self.notify()
                 return check
             except Exception as e:
                 self.log_text = "book returned fail"
@@ -367,16 +407,9 @@ class Library:
         """
         try:
             books = FileManagement.select_book_by_year(year)
-            """if len(books) > 0:
-                self.log_text = f"Successfully found the books by the year {year}"
-                self.log_level = logging.INFO
-            else:
-                self.log_text = f"Failed to find any books by the year {year}"
-                self.log_level = logging.INFO"""
             return books
         except Exception as e:
-            """self.log_text = f"Encountered an error when tried to search by the year {year}"
-            self.log_level = logging.ERROR"""
+            return None
 
     @log_to_file
     def get_book_copies(self, book: Book):
@@ -467,7 +500,10 @@ class Library:
         try:
             popular_books = FileManagement.get_popular_books()
             if len(popular_books) > 0:
-                return popular_books
+                full_popular_books = []
+                for book in popular_books:
+                    full_popular_books.append(FileManagement.select_book_by_name(book))
+                return full_popular_books
             return None
         except Exception as e:
             return None

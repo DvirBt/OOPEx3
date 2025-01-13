@@ -53,4 +53,8 @@ class Book:
         if isinstance(other, Book):
             return (self._title == other._title and self._author == other._author and self._is_loaned == other._is_loaned and self._copies == other._copies and self._genre == other._genre and self._year == other._year)
 
+    def get_is_loaned_string(self):
+        if self._is_loaned:
+            return "Yes"
 
+        return "No"

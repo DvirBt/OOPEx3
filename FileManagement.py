@@ -94,7 +94,7 @@ def add_book(book: Book):
     if book is not None:
         with CSVIterator(book_path, mode="a") as iterator:
             iterator.write_row(
-                [book.get_title(), book.get_author(), book.get_is_loaned(), book.get_copies(), book.get_genre(),
+                [book.get_title(), book.get_author(), book.get_is_loaned_string(), book.get_copies(), book.get_genre(),
                  book.get_year()])
 
         with CSVIterator(available_books_path, mode="a") as iterator:
@@ -271,23 +271,28 @@ def return_book(book: Book, librarian: User, count):
             check_return = increase_available_book(book, count)
             if check_return:
                 remove_borrowed_books_list(book, librarian, count)
-                refresh_queue(book, count)
-                return True
+                refreshed_rows = refresh_queue(book, count)
+                return True, refreshed_rows
         return False
     except Exception as e:
         return False
 
+@check
 def refresh_queue(book: Book, count):
     rows = []
+    refreshed_rows = []
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
         for row in borrowed_iterator:
             if row[0] == book.get_title() and row[2] == "True" and count > 0:
                 row[2] = "False"
                 count -= 1
+                refreshed_rows.append(row)
             rows.append(row)
 
     with CSVIterator(borrowed_books_path, "w") as borrowed_iterator:
         borrowed_iterator.write_rows(rows)
+
+    return refreshed_rows
 
 
 def remove_borrowed_books_list(book: Book, librarian: User, count):
@@ -387,7 +392,7 @@ def update_book(book: Book):
         for row in iterator:
             if row[0] == book.get_title():
                 row[1] = book.get_author()
-                row[2] = book.get_is_loaned()
+                row[2] = book.get_is_loaned_string()
                 row[3] = book.get_copies()
                 row[4] = book.get_genre()
                 row[5] = book.get_year()
@@ -629,6 +634,7 @@ def get_popular_books():
     popular_books = {}
 
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
+        next(borrowed_iterator)
         for row in borrowed_iterator:
             if row[0] in popular_books:
                 popular_books[row[0]]["copies"] += 1

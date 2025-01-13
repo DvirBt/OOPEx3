@@ -150,7 +150,7 @@ class Test(unittest.TestCase):
         self.library.borrow_book(self.book, self.user, 2, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
         popular_books = self.library.get_popular_list()
 
-        if self.book.get_title() in popular_books:
+        if self.book in popular_books:
             check = True
         else:
             check = False
