@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import Treeview
-
+from PIL import Image, ImageTk
 from Book import Book
 from OOPEx3.FileManagement import lend_book
 from User import User
@@ -10,9 +10,14 @@ library = Library()
 main_window = Tk()
 icon = PhotoImage(file="LibraryLogo.png")
 main_window.iconphoto(False, icon)
-global user, categories, alert_window, value_tree
-categories = ["Fiction", "Dystopian", "Classic", "Adventure", "Romance", "Psychological Drama", "Philosophy",
-              "Epic Poetry", "Gothic Romance", "Realism", "Modernism", "Satire", "Science Fiction", "Tragedy", "Fantasy"]
+global user, categories, alert_window, value_tree, categories
+#categories = ["Fiction", "Dystopian", "Classic", "Adventure", "Romance", "Psychological Drama", "Philosophy",
+             # "Epic Poetry", "Gothic Romance", "Realism", "Modernism", "Satire", "Science Fiction", "Tragedy", "Fantasy"]
+
+def valid_input(input):
+    return input.isdigit()
+
+validate_command = main_window.register(valid_input)  # Register the function
 
 def main():
     main_window.geometry("640x640")
@@ -65,6 +70,12 @@ def login_page():
                       font=('Ink Free', 15, 'bold'),
                       bg="#cae8cd")
     register_button.grid(row=5, columnspan=3, padx=250, pady=25, sticky="nsew")
+    """"
+    image = Image.open("books_png.png")
+    photo = ImageTk.PhotoImage(image)
+    image_label = Label(main_window, image=photo)
+    image_label.grid(row=1, column=2)
+    """
 
 def clear():
     # remove all the widgets of the current window
@@ -266,8 +277,7 @@ def add_book_page():
                            font=('Ink Free', 15, 'bold'),
                            bg="#cae8cd")
     copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
-
-    copies_entry = Entry(main_window, textvariable=StringVar(value=0))
+    copies_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key", validatecommand=(valid_input, "%P"))
     copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
 
     genre_label = Label(main_window,
@@ -285,7 +295,7 @@ def add_book_page():
                         bg="#cae8cd")
     year_label.grid(row=5, column=1, pady=10, sticky="nsew")
 
-    year_entry = Entry(main_window, textvariable=StringVar(value=0))
+    year_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key", validatecommand=(valid_input, "%P"))
     year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
 
     add_button = Button(main_window, text="Add book")
@@ -383,11 +393,14 @@ def create_tree(topic, book_list):
     tree.heading("Year", text="Year")
     # set columns
     tree.column("Title", width=150)
-    tree.column("Author", width=100)
-    tree.column("Is loaned?", width=75)
-    tree.column("Copies", width=75)
-    tree.column("Genre", width=75)
-    tree.column("Year", width=75)
+    tree.column("Author", width=130)
+    tree.column("Is loaned?", width=70)
+    tree.column("Copies", width=50)
+    tree.column("Genre", width=80)
+    tree.column("Year", width=50)
+    v_scrollbar = Scrollbar(main_window, orient=VERTICAL, command=tree.yview)
+    tree.configure(yscrollcommand=v_scrollbar.set)
+    v_scrollbar.grid(row=2, column=3, sticky="ns")
     tree.grid(row=2, column=2, padx=40, pady=20, sticky="nsew")
 
     for item in book_list:
@@ -400,7 +413,7 @@ def popular_page():
     init_page()
     create_tree("Popular books", library.get_popular_list())
 
-def get_selected_book_from_tree(copies):
+def get_selected_book_from_tree(event=None):
     global value_tree
     selected_book = value_tree.selection()
     if selected_book:
@@ -444,11 +457,11 @@ def tree_select_value(books_list):
     value_tree.heading("Year", text="Year")
     # set columns
     value_tree.column("Title", width=150)
-    value_tree.column("Author", width=100)
-    value_tree.column("Is loaned?", width=75)
-    value_tree.column("Copies", width=75)
-    value_tree.column("Genre", width=75)
-    value_tree.column("Year", width=75)
+    value_tree.column("Author", width=130)
+    value_tree.column("Is loaned?", width=70)
+    value_tree.column("Copies", width=50)
+    value_tree.column("Genre", width=80)
+    value_tree.column("Year", width=50)
     v_scrollbar = Scrollbar(main_window, orient=VERTICAL, command=value_tree.yview)
     value_tree.configure(yscrollcommand=v_scrollbar.set)
     v_scrollbar.grid(row=2, column=3, sticky="ns")
@@ -490,8 +503,9 @@ def remove_book_page():
     else:
         notification("No books to remove!")
 
-def try_lend_book(book):
-    success = library.borrow_book(book)
+def try_lend_book(book, copies):
+    global user
+    success = library.borrow_book(book, user, copies) # ALWAYS TRUE!!!
     if success:
         notification("Book lend successfully!")
     else:
@@ -499,6 +513,8 @@ def try_lend_book(book):
 
 def borrow_book_page():
     init_page()
+    main_window.grid_rowconfigure(1, weight=0)
+    main_window.grid_columnconfigure(1, weight=0)
     borrow_label = Label(main_window,
                          text="Lend a book",
                          font=('Ink Free', 22, 'bold'),
@@ -512,11 +528,11 @@ def borrow_book_page():
                              text="Amount:",
                              font=('Ink Free', 15, 'bold'),
                              bg="#cae8cd")
-        copies_label.grid(row=5, column=2, padx=10, pady=10, sticky="nsew")
-        copies_entry = Entry(main_window, textvariable=StringVar(value=0))
-        copies_entry.grid(row=5, column=3, columnspan=2, pady=10)
+        copies_label.grid(row=5, column=2, padx=100, pady=10, sticky="w")
+        copies_entry = Entry(main_window, textvariable=StringVar(value=1), validate="key", validatecommand=(valid_input, "%P"))
+        copies_entry.grid(row=5, column=2, padx=50, pady=10)
         lend_button = Button(main_window, text="Lend selected book")
-        lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(copies_entry.get())),
+        lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(), int(copies_entry.get())),
                              font=('Ink Free', 15, 'bold'),
                              bg="#cae8cd")
         lend_button.grid(row=6, column=1, columnspan=2, padx=100, pady=25, sticky="nsew")
@@ -525,4 +541,9 @@ def borrow_book_page():
         notification("No books to remove!")
 
 if __name__ == "__main__":
+    books = library.get_all_books()
+    categories = []
+    for book in books:
+        if book.get_genre() not in categories:
+            categories.append(book.get_genre())
     main()
