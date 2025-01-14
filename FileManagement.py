@@ -59,7 +59,7 @@ def create_borrowed_books_file():
     there was no history of books being borrowed
     :return:
     """
-    header = ["book_title", "librarian", "isQueue"]
+    header = ["book_title", "librarian", "isQueue", "full_name", "email", "phone"]
     with CSVIterator(borrowed_books_path, "w") as book_iterator:
         book_iterator.write_row(header)
 
@@ -94,7 +94,7 @@ def add_book(book: Book):
     if book is not None:
         with CSVIterator(book_path, mode="a") as iterator:
             iterator.write_row(
-                [book.get_title(), book.get_author(), book.get_is_loaned(), book.get_copies(), book.get_genre(),
+                [book.get_title(), book.get_author(), book.get_is_loaned_string(), book.get_copies(), book.get_genre(),
                  book.get_year()])
 
         with CSVIterator(available_books_path, mode="a") as iterator:
@@ -212,15 +212,15 @@ def change_loaned_status(name):
 
 
 @check
-def add_borrowed_books_list(book: Book, librarian: User, count):
+def add_borrowed_books_list(book: Book, librarian: User, count, full_name, email, phone):
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
         for i in range(count):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False])
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False, full_name, email, phone])
             i += 1
 
 
 @check
-def lend_book(book: Book, librarian: User, count):
+def lend_book(book: Book, librarian: User, count, full_name, email, phone):
     """
     This function takes care of the logic behind borrowing a book
     :param book: the book to borrow
@@ -232,29 +232,29 @@ def lend_book(book: Book, librarian: User, count):
         if check_can_decrease(book, count):
             check_borrow = decrease_from_availability(book, count)
             if check_borrow:
-                add_borrowed_books_list(book, librarian, count)
+                add_borrowed_books_list(book, librarian, count, full_name, email, phone)
                 return True
         else:
             currently_available = available_copies(book)
             left_over = count - currently_available
             check_borrow = decrease_from_availability(book, currently_available)
             if check_borrow:
-                add_borrowed_books_list(book, librarian, currently_available)
+                add_borrowed_books_list(book, librarian, currently_available,full_name, email, phone)
             else:
                 return False #Logically shouldn't reach here
 
-            add_books_to_queue(book, librarian, left_over)
+            add_books_to_queue(book, librarian, left_over, full_name, email, phone)
             return True
     except Exception as e:
         return False
 
 @check
-def add_books_to_queue(book: Book, librarian: User, count):
+def add_books_to_queue(book: Book, librarian: User, count, full_name, email, phone):
     left_over = count - available_copies(book)
 
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
         for i in range(left_over):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True])
+            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True, full_name, email, phone])
 
 
 @check
@@ -271,23 +271,28 @@ def return_book(book: Book, librarian: User, count):
             check_return = increase_available_book(book, count)
             if check_return:
                 remove_borrowed_books_list(book, librarian, count)
-                refresh_queue(book, count)
-                return True
+                refreshed_rows = refresh_queue(book, count)
+                return True, refreshed_rows
         return False
     except Exception as e:
         return False
 
+@check
 def refresh_queue(book: Book, count):
     rows = []
+    refreshed_rows = []
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
         for row in borrowed_iterator:
             if row[0] == book.get_title() and row[2] == "True" and count > 0:
                 row[2] = "False"
                 count -= 1
+                refreshed_rows.append(row)
             rows.append(row)
 
     with CSVIterator(borrowed_books_path, "w") as borrowed_iterator:
         borrowed_iterator.write_rows(rows)
+
+    return refreshed_rows
 
 
 def remove_borrowed_books_list(book: Book, librarian: User, count):
@@ -387,7 +392,7 @@ def update_book(book: Book):
         for row in iterator:
             if row[0] == book.get_title():
                 row[1] = book.get_author()
-                row[2] = book.get_is_loaned()
+                row[2] = book.get_is_loaned_string()
                 row[3] = book.get_copies()
                 row[4] = book.get_genre()
                 row[5] = book.get_year()
@@ -629,6 +634,7 @@ def get_popular_books():
     popular_books = {}
 
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
+        next(borrowed_iterator)
         for row in borrowed_iterator:
             if row[0] in popular_books:
                 popular_books[row[0]]["copies"] += 1
