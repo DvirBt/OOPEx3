@@ -66,7 +66,7 @@ def login_page():
     login_button.grid(row=4, columnspan=3, padx=250, pady=25, sticky="nsew")
 
     register_button = Button(main_window, text="Register") # (username_entry.get(), password_entry.get())
-    register_button.config(command= lambda : register,
+    register_button.config(command= lambda : register(username_entry.get(), password_entry.get()),
                       font=('Ink Free', 15, 'bold'),
                       bg="#cae8cd")
     register_button.grid(row=5, columnspan=3, padx=250, pady=25, sticky="nsew")
@@ -118,13 +118,6 @@ def close_alert_window():
     home_page()
 
 def notification(message):
-    """"
-    alert = Label(main_window,
-                  text=message,
-                  font=('Ink Free', 18, 'bold'),
-                  bg="#cae8cd")
-    alert.grid(row=7, columnspan=4, padx=220, pady=25, sticky="nsew")
-    """
     global alert_window
     alert_window = Tk()
 
@@ -142,8 +135,31 @@ def notification(message):
     main_window.grid_rowconfigure(1, weight=0)
     main_window.grid_columnconfigure(1, weight=0)
     alert_label = Label(alert_window, text=message)
-    alert_label.pack(pady=10)
+    alert_label.pack(pady=10) # there is no need for grid -> pack
     alert_button = Button(alert_window, text="ok", command=close_alert_window)
+    alert_button.pack(pady=20)
+    alert_window.mainloop()
+
+def register_notify(message):
+    global alert_window
+    alert_window = Tk()
+
+    # place the alert popup in the middle
+    main_window_x = main_window.winfo_x()
+    main_window_y = main_window.winfo_y()
+    main_window_width = main_window.winfo_width()
+    main_window_height = main_window.winfo_height()
+    alert_width = 250
+    alert_height = 100
+    pos_x = main_window_x + (main_window_width // 2) - (alert_width // 2)
+    pos_y = main_window_y + (main_window_height // 2) - (alert_height // 2)
+    alert_window.geometry(f"{alert_width}x{alert_height}+{pos_x}+{pos_y}")
+    alert_window.title("Login/Register notifications")
+    main_window.grid_rowconfigure(1, weight=0)
+    main_window.grid_columnconfigure(1, weight=0)
+    alert_label = Label(alert_window, text=message)
+    alert_label.pack(pady=10)  # there is no need for grid -> pack
+    alert_button = Button(alert_window, text="ok", command=lambda : alert_window.destroy())
     alert_button.pack(pady=20)
     alert_window.mainloop()
 
@@ -152,9 +168,10 @@ def register(username, password):
     user = User(username, password)
     success = library.register_user(user)
     if success:
-        notification("User created successfully!")
+        register_notify("User registered successfully!")
     else:
-        notification("User could not be registered!")
+        #notification("User could not be registered!")
+        register_notify("User register failed!")
 
 def login(username, password):
     global user
@@ -162,9 +179,9 @@ def login(username, password):
     user = User("shakedm100", "aesnhftk1")
     success = library.login_user(user)
     if success:
-        home_page()
+        notification("Login succeeded!")
     else:
-        notification("Login failed!")
+        register_notify("Login failed!")
 
 def logout():
     main()
@@ -340,7 +357,40 @@ def view_books_page():
     init_page()
     # create all necessary widgets
     view_books_label = Label(main_window,
-                           text="View books",
+                             text="View books",
+                             font=('Ink Free', 22, 'bold'),
+                             bg="#cae8cd")
+    view_books_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
+
+    all_button = Button(main_window, text="All books")
+    all_button.config(command=lambda: create_tree("All books", library.get_all_books()),
+                      font=('Ink Free', 15, 'bold'),
+                      bg="#cae8cd")
+    all_button.grid(row=1, column=2, pady=10, sticky="nsew")
+
+    available_button = Button(main_window, text="Available books")
+    available_button.config(command=lambda: create_tree("Available books", library.get_available_books()),
+                            font=('Ink Free', 15, 'bold'),
+                            bg="#cae8cd")
+    available_button.grid(row=2, column=2, pady=10, sticky="nsew")
+    global user
+    borrowed_button = Button(main_window, text="Lent books")
+    borrowed_button.config(command=lambda: create_tree("All books", library.get_borrowed_books_by_user(user)),
+                            font=('Ink Free', 15, 'bold'),
+                            bg="#cae8cd")
+    borrowed_button.grid(row=3, column=2, pady=10, sticky="nsew")
+
+    category_button = Button(main_window, text="By category")
+    category_button.config(command=category_page,
+                           font=('Ink Free', 15, 'bold'),
+                           bg="#cae8cd")
+    category_button.grid(row=4, column=2, pady=10, sticky="nsew")
+
+def category_page():
+    init_page()
+    # create all necessary widgets
+    view_books_label = Label(main_window,
+                           text="By category",
                            font=('Ink Free', 22, 'bold'),
                            bg="#cae8cd")
     view_books_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
@@ -373,6 +423,43 @@ def view_books_page():
                          font=('Ink Free', 15, 'bold'),
                          bg="#cae8cd")
     category_button.grid(row=2, column=2, pady=20, sticky="nsew")
+
+# TODO: implement for borrowed different columns!
+def create_tree_for_borrowed(books_list):
+    init_page()
+    books_label = Label(main_window,
+                        text="Lent books",
+                        font=('Ink Free', 22, 'bold'),
+                        bg="#cae8cd")
+    books_label.grid(row=0, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
+
+    columns = ("Title", "Author", "Is loaned?", "Copies", "Genre", "Year")
+    tree = Treeview(main_window, columns=columns, show="headings", height=10)
+    # set headings
+    tree.heading("Title", text="Title")
+    tree.heading("Author", text="Author")
+    tree.heading("Is loaned?", text="Is loaned?")
+    tree.heading("Copies", text="Copies")
+    tree.heading("Genre", text="Genre")
+    tree.heading("Year", text="Year")
+    # set columns
+    tree.column("Title", width=150)
+    tree.column("Author", width=130)
+    tree.column("Is loaned?", width=70)
+    tree.column("Copies", width=50)
+    tree.column("Genre", width=80)
+    tree.column("Year", width=50)
+    v_scrollbar = Scrollbar(main_window, orient=VERTICAL, command=tree.yview)
+    tree.configure(yscrollcommand=v_scrollbar.set)
+    v_scrollbar.grid(row=2, column=3, sticky="ns")
+    tree.grid(row=2, column=2, padx=40, pady=20, sticky="nsew")
+
+    for item in books_list:
+        tree.insert("", "end",
+                    values=(
+                    item.get_title(), item.get_author(), item.get_is_loaned(), item.get_copies(), item.get_genre(),
+                    item.get_year()))
+
 
 def create_tree(topic, book_list):
     init_page()
@@ -410,8 +497,12 @@ def create_tree(topic, book_list):
     #tree.pack(fill="both", expand=True)
 
 def popular_page():
-    init_page()
-    create_tree("Popular books", library.get_popular_list())
+    books_list = library.get_popular_list()
+    if books_list:
+        init_page()
+        create_tree("Popular books", books_list)
+    else:
+        notification("No popular books!")
 
 def get_selected_book_from_tree(event=None):
     global value_tree
@@ -503,9 +594,9 @@ def remove_book_page():
     else:
         notification("No books to remove!")
 
-def try_lend_book(book, copies):
+def try_lend_book(book, copies, client, email, phone):
     global user
-    success = library.borrow_book(book, user, copies) # ALWAYS TRUE!!!
+    success = library.borrow_book(book, user, copies, client, email, phone) # ALWAYS TRUE!!!
     if success:
         notification("Book lend successfully!")
     else:
@@ -519,7 +610,7 @@ def borrow_book_page():
                          text="Lend a book",
                          font=('Ink Free', 22, 'bold'),
                          bg="#cae8cd")
-    borrow_label.grid(row=0, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
+    borrow_label.grid(row=0, column=1, columnspan=3, padx=100, pady=15, sticky="nsew")
     books_list = library.get_all_books()
     if books_list:
         global value_tree
@@ -528,14 +619,40 @@ def borrow_book_page():
                              text="Amount:",
                              font=('Ink Free', 15, 'bold'),
                              bg="#cae8cd")
-        copies_label.grid(row=5, column=2, padx=100, pady=10, sticky="w")
+        copies_label.grid(row=3, column=2, padx=100, pady=5, sticky="w")
         copies_entry = Entry(main_window, textvariable=StringVar(value=1), validate="key", validatecommand=(valid_input, "%P"))
-        copies_entry.grid(row=5, column=2, padx=50, pady=10)
-        lend_button = Button(main_window, text="Lend selected book")
-        lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(), int(copies_entry.get())),
+        copies_entry.grid(row=3, column=2, padx=50, pady=5)
+
+        client_label = Label(main_window,
+                             text="Name:",
                              font=('Ink Free', 15, 'bold'),
                              bg="#cae8cd")
-        lend_button.grid(row=6, column=1, columnspan=2, padx=100, pady=25, sticky="nsew")
+        client_label.grid(row=4, column=2, padx=100, pady=5, sticky="w")
+        client_entry = Entry(main_window)
+        client_entry.grid(row=4, column=2, padx=50, pady=5)
+
+        email_label = Label(main_window,
+                             text="Email:",
+                             font=('Ink Free', 15, 'bold'),
+                             bg="#cae8cd")
+        email_label.grid(row=5, column=2, padx=100, pady=5, sticky="w")
+        email_entry = Entry(main_window)
+        email_entry.grid(row=5, column=2, padx=50, pady=5)
+
+        phone_label = Label(main_window,
+                             text="Phone:",
+                             font=('Ink Free', 15, 'bold'),
+                             bg="#cae8cd")
+        phone_label.grid(row=6, column=2, padx=100, pady=10, sticky="w")
+        phone_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key",
+                             validatecommand=(valid_input, "%P"))
+        phone_entry.grid(row=6, column=2, padx=50, pady=5)
+
+        lend_button = Button(main_window, text="Lend selected book")
+        lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(), int(copies_entry.get()), client_entry.get(), email_entry.get(), int(phone_entry.get())),
+                             font=('Ink Free', 15, 'bold'),
+                             bg="#cae8cd")
+        lend_button.grid(row=7, column=1, columnspan=2, padx=100, pady=10, sticky="nsew")
 
     else:
         notification("No books to remove!")
