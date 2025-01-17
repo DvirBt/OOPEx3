@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter.ttk import Treeview
 from PIL import Image, ImageTk
 from Book import Book
-from OOPEx3.FileManagement import lend_book
+from FileManagement import lend_book
 from User import User
 from Library import Library
 
@@ -375,9 +375,9 @@ def view_books_page():
     available_button.grid(row=2, column=2, pady=10, sticky="nsew")
     global user
     borrowed_button = Button(main_window, text="Lent books")
-    borrowed_button.config(command=lambda: create_tree("All books", library.get_borrowed_books_by_user(user)),
-                            font=('Ink Free', 15, 'bold'),
-                            bg="#cae8cd")
+    borrowed_button.config(command=lambda: create_tree("All books", library.get_borrowed_books_by_user()),
+                           font=('Ink Free', 15, 'bold'),
+                           bg="#cae8cd")
     borrowed_button.grid(row=3, column=2, pady=10, sticky="nsew")
 
     category_button = Button(main_window, text="By category")
@@ -528,7 +528,7 @@ def return_book_page():
                          bg="#cae8cd")
     return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     global user
-    borrowed_books_list = library.get_borrowed_books_by_user(user)
+    borrowed_books_list = library.get_borrowed_books_by_user()
     if borrowed_books_list:
         tree_select_value(borrowed_books_list)
 

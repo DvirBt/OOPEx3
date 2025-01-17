@@ -258,11 +258,10 @@ def add_books_to_queue(book: Book, librarian: User, count, full_name, email, pho
 
 
 @check
-def return_book(book: Book, librarian: User, count):
+def return_book(book: Book, count):
     """
         This function takes care of the logic behind returning a book
         :param book: the book to return
-        :param librarian:
         :param count:
         :return: True if succeeded, False otherwise
         """
@@ -270,7 +269,7 @@ def return_book(book: Book, librarian: User, count):
         if check_can_increase(book, count):
             check_return = increase_available_book(book, count)
             if check_return:
-                remove_borrowed_books_list(book, librarian, count)
+                remove_borrowed_books_list(book, count)
                 refreshed_rows = refresh_queue(book, count)
                 return True, refreshed_rows
         return False
@@ -295,18 +294,14 @@ def refresh_queue(book: Book, count):
     return refreshed_rows
 
 
-def remove_borrowed_books_list(book: Book, librarian: User, count):
+def remove_borrowed_books_list(book: Book, count):
     rows = []
     with CSVIterator(borrowed_books_path, mode="r") as iterator:
         header = next(iterator)
         for row in iterator:
-            if row[0] != book.get_title():
-                rows.append(row)
-            elif row[0] == book.get_title() and row[1] != librarian.get_username():
-                rows.append(row)
-            elif row[0] == book.get_title() and row[1] == librarian.get_username() and count > 0:
+            if row[0] == book.get_title() and count > 0:
                 count -= 1
-            elif row[0] == book.get_title() and row[1] == librarian.get_username() and count == 0:
+            else:
                 rows.append(row)
 
     with CSVIterator(borrowed_books_path, mode="w") as iterator:
@@ -718,14 +713,17 @@ def get_all_books():
 
 
 @check
-def get_borrowed_books(librarian: User):
+def get_borrowed_books():
     """
     This function returns all the books that are currently borrowed from the library by a librarian
     :return: a list of books
     """
     books = []
     with CSVIterator(borrowed_books_path, "r") as all_books:
-        books = [row for row in all_books if row[1] == librarian.get_username()]
+        next(all_books)
+        for row in all_books:
+            book = select_book_by_name(row[0])
+            books.append(book)
 
     return books
 

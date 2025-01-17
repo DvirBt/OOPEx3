@@ -67,20 +67,20 @@ class Test(unittest.TestCase):
 
     def test_return_book(self):
         self.library.remove_book(self.book)
-        check = self.library.return_book(self.book, self.user, 2)
+        check = self.library.return_book(self.book, 2)
 
         self.assertEqual(check, False)
 
         self.library.add_book(self.book)
-        check = self.library.return_book(self.book, self.user, 3)
+        check = self.library.return_book(self.book, 3)
 
         self.assertEqual(check, False)
 
         self.library.borrow_book(self.book, self.user, 3, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
-        self.library.return_book(self.book, self.user, 1)
+        self.library.return_book(self.book, 1)
         self.assertEqual(self.library.get_book_copies(self.book), 1)
 
-        self.library.return_book(self.book, self.user, 2)
+        self.library.return_book(self.book, 2)
         self.assertEqual(self.library.get_book_copies(self.book), 3)
 
     def test_update_book(self):
@@ -134,9 +134,9 @@ class Test(unittest.TestCase):
         self.library.register_user(self.user)
 
         self.library.borrow_book(self.book, self.user, 2, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
-        books = FileManagement.get_borrowed_books(self.user)
+        books = FileManagement.get_borrowed_books()
 
-        if len(books) == 2:
+        if len(books) >= 2:
             check = True
         else:
             check = False

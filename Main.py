@@ -41,7 +41,7 @@ library.update_book(book2)
 library.add_book(None)
 library.remove_book(book1)
 
-library.return_book(book3, user1, 3)
+library.return_book(book3, 3)
 
 most_popular_books = FileManagement.get_popular_books()
 

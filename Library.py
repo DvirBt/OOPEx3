@@ -9,18 +9,22 @@ from BookFactory import BookFactory
 
 class Observer:
     """Abstract observer class."""
+
     def update(self, subject):
         pass
 
 
 class NotificationService(Observer):
     """Concrete Observer for sending notifications."""
+
     def update(self, subject):
         if isinstance(subject, Library):
             print(f"Notification: {subject.notification_message}")
 
+
 class Subject:
     """The Subject class maintains a list of observers and notifies them of changes."""
+
     def __init__(self):
         self._observers = []
 
@@ -39,13 +43,12 @@ class Subject:
             observer.update(self)
 
 
-
 LOG_FILE = rf"{os.getcwd()}\log.txt"
 
 logging.basicConfig(
     filename=LOG_FILE,  # File where logs will be saved
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(message)s'
 )
 
 
@@ -111,7 +114,8 @@ class Library(Subject):
         """
         if book_to_lend is not None:
             try:
-                check = FileManagement.lend_book(book_to_lend, librarian, count, client_full_name, client_email, client_phone)
+                check = FileManagement.lend_book(book_to_lend, librarian, count, client_full_name, client_email,
+                                                 client_phone)
                 if check:
                     self.log_text = "book borrowed successfully"
                     self.log_level = logging.INFO
@@ -129,17 +133,16 @@ class Library(Subject):
             return False
 
     @log_to_file
-    def return_book(self, book_to_return: Book, librarian: User, count):
+    def return_book(self, book_to_return: Book, count):
         """
         This function is given a book to return and return True if the book was successfully returned
         :param book_to_return: the book to return
-        :param librarian: the librarians that returns a book
         :param count: how many books to return
         :return: True if succeeded
         """
         if book_to_return is not None:
             try:
-                check, clients_to_update = FileManagement.return_book(book_to_return, librarian, count)
+                check, clients_to_update = FileManagement.return_book(book_to_return, count)
                 if check:
                     self.log_text = "book returned successfully"
                     self.log_level = logging.INFO
@@ -148,7 +151,7 @@ class Library(Subject):
                     self.log_level = logging.INFO
                 if clients_to_update is not None and len(clients_to_update) > 0:
                     for client in clients_to_update:
-                        #I DON'T KNOW WHAT TO DO AAAAAAAAAAAAAAAAAAAAAAAAA
+                        # I DON'T KNOW WHAT TO DO AAAAAAAAAAAAAAAAAAAAAAAAA
                         self.notification_message = f"Hey, {client[2]}! The book '{book_to_return.get_title()}' is ready for you to pickup."
                         self.notify()
                 return check
@@ -452,7 +455,7 @@ class Library(Subject):
         :return: a list of books
         """
         try:
-            books = FileManagement.select_book_by_is_loaned(True)
+            books = FileManagement.select_book_by_is_loaned(False)
             if len(books) > 0:
                 self.log_text = "Displayed available books successfully"
                 self.log_level = logging.INFO
@@ -464,13 +467,13 @@ class Library(Subject):
             self.log_text = "Displayed available books fail"
             self.log_level = logging.ERROR
 
-    def get_borrowed_books_by_user(self, librarian: User):
+    def get_borrowed_books_by_user(self):
         """
         This function returns all the books that are currently borrowed from the library
         :return: a list of books
         """
         try:
-            books = FileManagement.get_borrowed_books(librarian)
+            books = FileManagement.get_borrowed_books()
             if len(books) > 0:
                 self.log_text = "Displayed borrowed books successfully"
                 self.log_level = logging.INFO

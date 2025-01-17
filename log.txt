@@ -1,952 +1,274 @@
+2025-01-17 17:26:01,766 - INFO - Displayed all books successfully
+2025-01-17 17:27:00,195 - INFO - Displayed available books successfully
+Displayed all books successfully
+logged in successfully
+Displayed available books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+logged in successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
 book removed successfully
 book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
 book removed successfully
-book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
 book added successfully
 book added successfully
-book added successfully
-book added successfully
-book added successfully
-book added successfully
-book added successfully
-book added successfully
-book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
 book borrowed successfully
 book borrowed successfully
 book borrowed fail
-registered fail
-registered fail
-Successfully update the book: Title2
-book added failed
-book added failed
+book borrowed fail
+book borrowed fail
 book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
 book returned successfully
-2025-01-13 11:34:07,416 - INFO - Successfully removed user1: dvirbto
-2025-01-13 11:34:07,417 - INFO - registered successfully
-2025-01-13 11:34:07,418 - INFO - Successfully removed user1: dvirbto
-2025-01-13 11:34:07,419 - INFO - Successfully removed user1: dvirbto
-2025-01-13 11:34:07,419 - ERROR - book removed failed
-2025-01-13 11:34:07,420 - ERROR - book removed failed
-2025-01-13 11:34:07,420 - INFO - book added successfully
-2025-01-13 11:34:07,421 - INFO - Search book Title1 by name completed successfully
-2025-01-13 11:34:07,422 - INFO - Search book Title1 by name completed successfully
-2025-01-13 11:34:07,424 - INFO - book removed successfully
-2025-01-13 11:34:07,425 - INFO - book borrowed fail
-2025-01-13 11:34:07,425 - INFO - book borrowed fail
-2025-01-13 11:34:07,426 - INFO - book borrowed fail
-2025-01-13 11:34:07,427 - INFO - book added successfully
-2025-01-13 11:34:07,428 - INFO - book added successfully
-2025-01-13 11:34:07,430 - INFO - book borrowed successfully
-2025-01-13 11:34:07,430 - INFO - book borrowed successfully
-2025-01-13 11:34:07,432 - INFO - book borrowed successfully
-2025-01-13 11:34:07,434 - INFO - book borrowed successfully
-2025-01-13 11:34:07,435 - INFO - book borrowed successfully
-2025-01-13 11:34:07,435 - INFO - book borrowed fail
-2025-01-13 11:34:07,436 - INFO - book borrowed fail
-2025-01-13 11:34:07,437 - INFO - book borrowed fail
-2025-01-13 11:34:07,438 - INFO - book removed successfully
-2025-01-13 11:34:07,439 - INFO - book removed successfully
-2025-01-13 11:34:07,439 - INFO - book added successfully
-2025-01-13 11:34:07,441 - INFO - book borrowed successfully
-2025-01-13 11:34:07,442 - INFO - book borrowed fail
-2025-01-13 11:34:07,444 - INFO - book borrowed fail
-2025-01-13 11:34:07,445 - INFO - book removed successfully
-2025-01-13 11:34:07,446 - INFO - book removed successfully
-2025-01-13 11:34:07,447 - INFO - book added successfully
-2025-01-13 11:34:07,448 - INFO - registered successfully
-2025-01-13 11:34:07,449 - INFO - book borrowed successfully
-2025-01-13 11:34:07,451 - INFO - book borrowed successfully
-2025-01-13 11:34:07,453 - INFO - book removed successfully
-2025-01-13 11:34:07,454 - INFO - book removed successfully
-2025-01-13 11:34:07,454 - INFO - book added successfully
-2025-01-13 11:34:07,456 - INFO - book borrowed successfully
-2025-01-13 11:34:07,457 - INFO - book borrowed successfully
-2025-01-13 11:34:07,457 - INFO - book borrowed successfully
-2025-01-13 11:34:07,458 - INFO - book borrowed successfully
-2025-01-13 11:34:07,459 - INFO - book removed successfully
-2025-01-13 11:34:07,460 - INFO - Search book Title1 by name completed fail
-2025-01-13 11:34:07,461 - INFO - Search book Title1 by name completed fail
-2025-01-13 11:34:07,461 - ERROR - book removed failed
-2025-01-13 11:34:07,462 - INFO - book returned fail
-2025-01-13 11:34:07,462 - INFO - book returned fail
-2025-01-13 11:34:07,463 - INFO - book added successfully
-2025-01-13 11:34:07,464 - INFO - book returned fail
-2025-01-13 11:34:07,466 - INFO - book borrowed successfully
-2025-01-13 11:34:07,469 - INFO - book returned successfully
-2025-01-13 11:34:07,469 - INFO - book returned successfully
-2025-01-13 11:34:07,472 - INFO - book returned successfully
-2025-01-13 11:34:07,472 - INFO - book returned successfully
-2025-01-13 11:34:07,473 - INFO - book returned successfully
-2025-01-13 11:34:07,473 - INFO - book returned successfully
-2025-01-13 11:34:07,474 - INFO - book returned successfully
-2025-01-13 11:34:07,474 - INFO - Successfully update the book: Title1
-2025-01-13 11:34:07,475 - INFO - Search book Title1 by name completed successfully
-2025-01-13 11:34:07,475 - INFO - Search book Title1 by name completed successfully
-2025-01-13 11:34:07,476 - INFO - Successfully update the book: Title1
-2025-01-13 11:34:07,477 - INFO - Search book Title1 by name completed successfully
-2025-01-13 11:34:58,177 - INFO - logged in fail
-2025-01-13 11:56:08,829 - INFO - book removed successfully
-2025-01-13 11:56:08,830 - INFO - book removed successfully
-2025-01-13 11:56:08,832 - INFO - book removed successfully
-2025-01-13 11:56:08,834 - INFO - book removed successfully
-2025-01-13 11:56:08,834 - INFO - book added successfully
-2025-01-13 11:56:08,836 - INFO - book added successfully
-2025-01-13 11:56:08,836 - INFO - book added successfully
-2025-01-13 11:56:08,837 - INFO - book added successfully
-2025-01-13 11:56:08,837 - INFO - book added successfully
-2025-01-13 11:56:08,838 - INFO - book added successfully
-2025-01-13 11:56:08,838 - INFO - book added successfully
-2025-01-13 11:56:08,839 - INFO - book added successfully
-2025-01-13 11:56:08,839 - INFO - book added successfully
-2025-01-13 11:56:08,842 - INFO - book borrowed successfully
-2025-01-13 11:56:08,845 - INFO - book borrowed successfully
-2025-01-13 11:56:08,845 - INFO - book borrowed fail
-2025-01-13 11:56:08,846 - INFO - registered fail
-2025-01-13 11:56:08,847 - INFO - registered fail
-2025-01-13 11:56:08,848 - INFO - Successfully update the book: Title2
-2025-01-13 11:56:08,849 - ERROR - book added failed
-2025-01-13 11:56:08,849 - ERROR - book added failed
-2025-01-13 11:56:08,851 - INFO - book removed successfully
-2025-01-13 11:56:08,855 - INFO - book returned successfully
-2025-01-13 12:00:04,242 - ERROR - book removed failed
-2025-01-13 12:00:04,244 - ERROR - book removed failed
-2025-01-13 12:00:04,246 - INFO - book added successfully
-2025-01-13 12:00:04,250 - INFO - book borrowed successfully
-2025-01-13 12:00:40,036 - INFO - book removed successfully
-2025-01-13 12:00:40,036 - INFO - book removed successfully
-2025-01-13 12:00:40,036 - INFO - book added successfully
-2025-01-13 12:00:40,051 - INFO - book borrowed successfully
-2025-01-13 12:01:24,787 - INFO - book removed successfully
-2025-01-13 12:01:24,789 - INFO - book removed successfully
-2025-01-13 12:01:24,790 - INFO - book added successfully
-2025-01-13 12:01:24,797 - INFO - book borrowed successfully
-2025-01-13 12:10:18,753 - INFO - book removed successfully
-2025-01-13 12:10:18,753 - INFO - book removed successfully
-2025-01-13 12:10:18,753 - INFO - book removed successfully
-2025-01-13 12:10:18,753 - INFO - book removed successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book added successfully
-2025-01-13 12:10:18,753 - INFO - book borrowed successfully
-2025-01-13 12:10:18,769 - INFO - book borrowed successfully
-2025-01-13 12:10:18,769 - INFO - book borrowed fail
-2025-01-13 12:10:18,769 - INFO - registered fail
-2025-01-13 12:10:18,769 - INFO - registered fail
-2025-01-13 12:10:18,769 - INFO - Successfully update the book: Title2
-2025-01-13 12:10:18,769 - ERROR - book added failed
-2025-01-13 12:10:18,769 - ERROR - book added failed
-2025-01-13 12:10:18,769 - INFO - book removed successfully
-2025-01-13 12:10:18,780 - INFO - book returned successfully
-2025-01-13 12:46:40,423 - INFO - book removed successfully
-2025-01-13 12:46:40,423 - INFO - book removed successfully
-2025-01-13 12:46:40,423 - INFO - book removed successfully
-2025-01-13 12:46:40,429 - INFO - book removed successfully
-2025-01-13 12:46:40,429 - INFO - book added successfully
-2025-01-13 12:46:40,429 - INFO - book added successfully
-2025-01-13 12:46:40,433 - INFO - book added successfully
-2025-01-13 12:46:40,434 - INFO - book added successfully
-2025-01-13 12:46:40,435 - INFO - book added successfully
-2025-01-13 12:46:40,437 - INFO - book added successfully
-2025-01-13 12:46:40,437 - INFO - book added successfully
-2025-01-13 12:46:40,438 - INFO - book added successfully
-2025-01-13 12:46:40,438 - INFO - book added successfully
-2025-01-13 12:46:40,442 - INFO - book borrowed successfully
-2025-01-13 12:46:40,447 - INFO - book borrowed successfully
-2025-01-13 12:46:40,449 - INFO - book borrowed fail
-2025-01-13 12:46:40,449 - INFO - registered fail
-2025-01-13 12:46:40,450 - INFO - registered fail
-2025-01-13 12:46:40,451 - INFO - Successfully update the book: Title2
-2025-01-13 12:46:40,451 - ERROR - book added failed
-2025-01-13 12:46:40,452 - ERROR - book added failed
-2025-01-13 12:46:40,458 - INFO - book removed successfully
-2025-01-13 12:46:40,462 - INFO - book returned successfully
-2025-01-13 12:47:04,886 - INFO - book removed successfully
-2025-01-13 12:47:04,887 - INFO - book removed successfully
-2025-01-13 12:47:04,889 - INFO - book removed successfully
-2025-01-13 12:47:04,891 - INFO - book removed successfully
-2025-01-13 12:47:04,891 - INFO - book added successfully
-2025-01-13 12:47:04,893 - INFO - book added successfully
-2025-01-13 12:47:04,893 - INFO - book added successfully
-2025-01-13 12:47:04,894 - INFO - book added successfully
-2025-01-13 12:47:04,895 - INFO - book added successfully
-2025-01-13 12:47:04,896 - INFO - book added successfully
-2025-01-13 12:47:04,896 - INFO - book added successfully
-2025-01-13 12:47:04,897 - INFO - book added successfully
-2025-01-13 12:47:04,897 - INFO - book added successfully
-2025-01-13 12:47:04,899 - INFO - book borrowed successfully
-2025-01-13 12:47:04,903 - INFO - book borrowed successfully
-2025-01-13 12:47:04,904 - INFO - book borrowed fail
-2025-01-13 12:47:04,904 - INFO - registered fail
-2025-01-13 12:47:04,905 - INFO - registered fail
-2025-01-13 12:47:04,906 - INFO - Successfully update the book: Title2
-2025-01-13 12:47:04,906 - ERROR - book added failed
-2025-01-13 12:47:04,907 - ERROR - book added failed
-2025-01-13 12:47:04,909 - INFO - book removed successfully
-2025-01-13 12:47:04,912 - INFO - book returned successfully
-2025-01-13 12:58:28,912 - INFO - book removed successfully
-2025-01-13 12:58:28,914 - INFO - book removed successfully
-2025-01-13 12:58:28,920 - INFO - book removed successfully
-2025-01-13 12:58:28,922 - INFO - book removed successfully
-2025-01-13 12:58:28,924 - INFO - book added successfully
-2025-01-13 12:58:28,926 - INFO - book added successfully
-2025-01-13 12:58:28,927 - INFO - book added successfully
-2025-01-13 12:58:28,929 - INFO - book added successfully
-2025-01-13 12:58:28,931 - INFO - book added successfully
-2025-01-13 12:58:28,934 - INFO - book added successfully
-2025-01-13 12:58:28,935 - INFO - book added successfully
-2025-01-13 12:58:28,937 - INFO - book added successfully
-2025-01-13 12:58:28,937 - INFO - book added successfully
-2025-01-13 12:58:28,942 - INFO - book borrowed successfully
-2025-01-13 12:58:28,951 - INFO - book borrowed successfully
-2025-01-13 12:58:28,953 - INFO - book borrowed fail
-2025-01-13 12:58:28,954 - INFO - registered fail
-2025-01-13 12:58:28,955 - INFO - registered fail
-2025-01-13 12:58:28,957 - INFO - Successfully update the book: Title2
-2025-01-13 12:58:28,958 - ERROR - book added failed
-2025-01-13 12:58:28,959 - ERROR - book added failed
-2025-01-13 12:58:28,963 - INFO - book removed successfully
-2025-01-13 12:58:28,970 - INFO - book returned successfully
-2025-01-13 13:13:12,778 - INFO - book removed successfully
-2025-01-13 13:13:12,793 - INFO - book removed successfully
-2025-01-13 13:13:12,796 - INFO - book removed successfully
-2025-01-13 13:13:12,796 - INFO - book removed successfully
-2025-01-13 13:13:12,800 - INFO - book added successfully
-2025-01-13 13:13:12,802 - INFO - book added successfully
-2025-01-13 13:13:12,804 - INFO - book added successfully
-2025-01-13 13:13:12,804 - INFO - book added successfully
-2025-01-13 13:13:12,804 - INFO - book added successfully
-2025-01-13 13:13:12,809 - INFO - book added successfully
-2025-01-13 13:13:12,809 - INFO - book added successfully
-2025-01-13 13:13:12,809 - INFO - book added successfully
-2025-01-13 13:13:12,809 - INFO - book added successfully
-2025-01-13 13:13:12,813 - INFO - book borrowed successfully
-2025-01-13 13:13:12,813 - INFO - book borrowed successfully
-2025-01-13 13:13:12,822 - INFO - book borrowed fail
-2025-01-13 13:13:12,822 - INFO - registered fail
-2025-01-13 13:13:12,825 - INFO - registered fail
-2025-01-13 13:13:12,825 - INFO - Successfully update the book: Title2
-2025-01-13 13:13:12,825 - ERROR - book added failed
-2025-01-13 13:13:12,825 - ERROR - book added failed
-2025-01-13 13:13:12,831 - INFO - book removed successfully
-2025-01-13 13:14:12,934 - INFO - book returned successfully
-2025-01-13 13:14:16,808 - INFO - book removed successfully
-2025-01-13 13:14:16,808 - INFO - book removed successfully
-2025-01-13 13:14:16,812 - INFO - book removed successfully
-2025-01-13 13:14:16,813 - INFO - book removed successfully
-2025-01-13 13:14:16,814 - INFO - book added successfully
-2025-01-13 13:14:16,815 - INFO - book added successfully
-2025-01-13 13:14:16,816 - INFO - book added successfully
-2025-01-13 13:14:16,818 - INFO - book added successfully
-2025-01-13 13:14:16,818 - INFO - book added successfully
-2025-01-13 13:14:16,818 - INFO - book added successfully
-2025-01-13 13:14:16,818 - INFO - book added successfully
-2025-01-13 13:14:16,818 - INFO - book added successfully
-2025-01-13 13:14:16,821 - INFO - book added successfully
-2025-01-13 13:14:16,825 - INFO - book borrowed successfully
-2025-01-13 13:14:16,830 - INFO - book borrowed successfully
-2025-01-13 13:14:16,833 - INFO - book borrowed fail
-2025-01-13 13:14:16,834 - INFO - registered fail
-2025-01-13 13:14:16,835 - INFO - registered fail
-2025-01-13 13:14:16,836 - INFO - Successfully update the book: Title2
-2025-01-13 13:14:16,836 - ERROR - book added failed
-2025-01-13 13:14:16,837 - ERROR - book added failed
-2025-01-13 13:14:16,840 - INFO - book removed successfully
-2025-01-13 13:14:16,843 - INFO - book returned successfully
-2025-01-13 13:14:20,586 - INFO - book removed successfully
-2025-01-13 13:14:20,594 - INFO - book removed successfully
-2025-01-13 13:14:20,594 - INFO - book removed successfully
-2025-01-13 13:14:20,594 - INFO - book removed successfully
-2025-01-13 13:14:20,594 - INFO - book added successfully
-2025-01-13 13:14:20,600 - INFO - book added successfully
-2025-01-13 13:14:20,600 - INFO - book added successfully
-2025-01-13 13:14:20,602 - INFO - book added successfully
-2025-01-13 13:14:20,603 - INFO - book added successfully
-2025-01-13 13:14:20,603 - INFO - book added successfully
-2025-01-13 13:14:20,603 - INFO - book added successfully
-2025-01-13 13:14:20,603 - INFO - book added successfully
-2025-01-13 13:14:20,603 - INFO - book added successfully
-2025-01-13 13:14:20,608 - INFO - book borrowed successfully
-2025-01-13 13:14:20,615 - INFO - book borrowed successfully
-2025-01-13 13:14:20,615 - INFO - book borrowed fail
-2025-01-13 13:14:20,618 - INFO - registered fail
-2025-01-13 13:14:20,618 - INFO - registered fail
-2025-01-13 13:14:20,618 - INFO - Successfully update the book: Title2
-2025-01-13 13:14:20,618 - ERROR - book added failed
-2025-01-13 13:14:20,618 - ERROR - book added failed
-2025-01-13 13:14:20,624 - INFO - book removed successfully
-2025-01-13 13:14:20,624 - INFO - book returned successfully
-2025-01-13 13:15:07,013 - INFO - book removed successfully
-2025-01-13 13:15:07,015 - INFO - book removed successfully
-2025-01-13 13:15:07,019 - INFO - book removed successfully
-2025-01-13 13:15:07,019 - INFO - book removed successfully
-2025-01-13 13:15:07,019 - INFO - book added successfully
-2025-01-13 13:15:07,025 - INFO - book added successfully
-2025-01-13 13:15:07,027 - INFO - book added successfully
-2025-01-13 13:15:07,028 - INFO - book added successfully
-2025-01-13 13:15:07,029 - INFO - book added successfully
-2025-01-13 13:15:07,031 - INFO - book added successfully
-2025-01-13 13:15:07,031 - INFO - book added successfully
-2025-01-13 13:15:07,031 - INFO - book added successfully
-2025-01-13 13:15:07,031 - INFO - book added successfully
-2025-01-13 13:15:07,031 - INFO - book borrowed successfully
-2025-01-13 13:15:07,041 - INFO - book borrowed successfully
-2025-01-13 13:15:07,046 - INFO - book borrowed fail
-2025-01-13 13:15:07,047 - INFO - registered fail
-2025-01-13 13:15:07,047 - INFO - registered fail
-2025-01-13 13:15:07,047 - INFO - Successfully update the book: Title2
-2025-01-13 13:15:07,047 - ERROR - book added failed
-2025-01-13 13:15:07,047 - ERROR - book added failed
-2025-01-13 13:15:07,047 - INFO - book removed successfully
-2025-01-13 13:17:07,607 - INFO - book removed successfully
-2025-01-13 13:17:07,609 - INFO - book removed successfully
-2025-01-13 13:17:07,615 - INFO - book removed successfully
-2025-01-13 13:17:07,617 - INFO - book removed successfully
-2025-01-13 13:17:07,618 - INFO - book added successfully
-2025-01-13 13:17:07,621 - INFO - book added successfully
-2025-01-13 13:17:07,623 - INFO - book added successfully
-2025-01-13 13:17:07,624 - INFO - book added successfully
-2025-01-13 13:17:07,625 - INFO - book added successfully
-2025-01-13 13:17:07,628 - INFO - book added successfully
-2025-01-13 13:17:07,628 - INFO - book added successfully
-2025-01-13 13:17:07,629 - INFO - book added successfully
-2025-01-13 13:17:07,629 - INFO - book added successfully
-2025-01-13 13:17:07,634 - INFO - book borrowed successfully
-2025-01-13 13:17:07,641 - INFO - book borrowed successfully
-2025-01-13 13:17:07,643 - INFO - book borrowed fail
-2025-01-13 13:17:07,644 - INFO - registered fail
-2025-01-13 13:17:07,646 - INFO - registered fail
-2025-01-13 13:17:07,648 - INFO - Successfully update the book: Title2
-2025-01-13 13:17:07,649 - ERROR - book added failed
-2025-01-13 13:17:07,651 - ERROR - book added failed
-2025-01-13 13:17:07,656 - INFO - book removed successfully
-2025-01-13 13:17:07,665 - INFO - book returned successfully
-2025-01-13 13:25:00,291 - INFO - book removed successfully
-2025-01-13 13:25:00,291 - INFO - book removed successfully
-2025-01-13 13:25:00,291 - INFO - book removed successfully
-2025-01-13 13:25:00,291 - INFO - book removed successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,291 - INFO - book added successfully
-2025-01-13 13:25:00,307 - INFO - book added successfully
-2025-01-13 13:25:00,307 - INFO - book added successfully
-2025-01-13 13:25:00,307 - INFO - book added successfully
-2025-01-13 13:25:00,307 - INFO - book borrowed successfully
-2025-01-13 13:25:00,307 - INFO - book borrowed successfully
-2025-01-13 13:25:00,307 - INFO - book borrowed fail
-2025-01-13 13:25:00,317 - INFO - registered fail
-2025-01-13 13:25:00,317 - INFO - registered fail
-2025-01-13 13:25:00,317 - INFO - Successfully update the book: Title2
-2025-01-13 13:25:00,317 - ERROR - book added failed
-2025-01-13 13:25:00,317 - ERROR - book added failed
-2025-01-13 13:25:00,322 - INFO - book removed successfully
-2025-01-13 13:28:29,757 - INFO - book removed successfully
-2025-01-13 13:28:29,758 - INFO - book removed successfully
-2025-01-13 13:28:29,760 - INFO - book removed successfully
-2025-01-13 13:28:29,761 - INFO - book removed successfully
-2025-01-13 13:28:29,762 - INFO - book added successfully
-2025-01-13 13:28:29,764 - INFO - book added successfully
-2025-01-13 13:28:29,765 - INFO - book added successfully
-2025-01-13 13:28:29,766 - INFO - book added successfully
-2025-01-13 13:28:29,767 - INFO - book added successfully
-2025-01-13 13:28:29,768 - INFO - book added successfully
-2025-01-13 13:28:29,768 - INFO - book added successfully
-2025-01-13 13:28:29,768 - INFO - book added successfully
-2025-01-13 13:28:29,769 - INFO - book added successfully
-2025-01-13 13:28:29,771 - INFO - book borrowed successfully
-2025-01-13 13:28:29,776 - INFO - book borrowed successfully
-2025-01-13 13:28:29,777 - INFO - book borrowed fail
-2025-01-13 13:28:29,778 - INFO - registered fail
-2025-01-13 13:28:29,779 - INFO - registered fail
-2025-01-13 13:28:29,780 - INFO - Successfully update the book: Title2
-2025-01-13 13:28:29,780 - ERROR - book added failed
-2025-01-13 13:28:29,781 - ERROR - book added failed
-2025-01-13 13:28:29,782 - INFO - book removed successfully
-2025-01-13 13:28:29,788 - INFO - book returned successfully
-2025-01-13 13:30:03,305 - INFO - book removed successfully
-2025-01-13 13:30:03,307 - INFO - book removed successfully
-2025-01-13 13:30:03,309 - INFO - book removed successfully
-2025-01-13 13:30:03,311 - INFO - book removed successfully
-2025-01-13 13:30:03,312 - INFO - book added successfully
-2025-01-13 13:30:03,314 - INFO - book added successfully
-2025-01-13 13:30:03,316 - INFO - book added successfully
-2025-01-13 13:30:03,318 - INFO - book added successfully
-2025-01-13 13:30:03,320 - INFO - book added successfully
-2025-01-13 13:30:03,321 - INFO - book added successfully
-2025-01-13 13:30:03,321 - INFO - book added successfully
-2025-01-13 13:30:03,322 - INFO - book added successfully
-2025-01-13 13:30:03,322 - INFO - book added successfully
-2025-01-13 13:30:03,325 - INFO - book borrowed successfully
-2025-01-13 13:30:03,331 - INFO - book borrowed successfully
-2025-01-13 13:30:03,333 - INFO - book borrowed fail
-2025-01-13 13:30:03,334 - INFO - registered fail
-2025-01-13 13:30:03,335 - INFO - registered fail
-2025-01-13 13:30:03,337 - INFO - Successfully update the book: Title2
-2025-01-13 13:30:03,337 - ERROR - book added failed
-2025-01-13 13:30:03,340 - ERROR - book added failed
-2025-01-13 13:30:03,342 - INFO - book removed successfully
-2025-01-13 13:30:03,351 - INFO - book returned successfully
-2025-01-13 13:31:47,409 - INFO - logged in fail
-2025-01-13 13:32:58,645 - INFO - logged in fail
-2025-01-13 15:49:53,468 - INFO - book removed successfully
-2025-01-13 15:49:53,469 - INFO - book removed successfully
-2025-01-13 15:49:53,472 - INFO - book removed successfully
-2025-01-13 15:49:53,474 - INFO - book removed successfully
-2025-01-13 15:49:53,474 - INFO - book added successfully
-2025-01-13 15:49:53,475 - INFO - book added successfully
-2025-01-13 15:49:53,477 - INFO - book added successfully
-2025-01-13 15:49:53,479 - INFO - book added successfully
-2025-01-13 15:49:53,479 - INFO - book added successfully
-2025-01-13 15:49:53,480 - INFO - book added successfully
-2025-01-13 15:49:53,480 - INFO - book added successfully
-2025-01-13 15:49:53,481 - INFO - book added successfully
-2025-01-13 15:49:53,481 - INFO - book added successfully
-2025-01-13 15:59:15,669 - INFO - book removed successfully
-2025-01-13 15:59:15,670 - INFO - book removed successfully
-2025-01-13 15:59:15,673 - INFO - book removed successfully
-2025-01-13 15:59:15,674 - INFO - book removed successfully
-2025-01-13 15:59:15,675 - INFO - book added successfully
-2025-01-13 15:59:15,675 - INFO - book added successfully
-2025-01-13 15:59:15,676 - INFO - book added successfully
-2025-01-13 15:59:15,677 - INFO - book added successfully
-2025-01-13 15:59:15,678 - INFO - book added successfully
-2025-01-13 15:59:15,678 - INFO - book added successfully
-2025-01-13 15:59:15,678 - INFO - book added successfully
-2025-01-13 15:59:15,679 - INFO - book added successfully
-2025-01-13 15:59:15,679 - INFO - book added successfully
-2025-01-13 15:59:15,679 - ERROR - book borrowed fail
-2025-01-13 15:59:15,680 - ERROR - book borrowed fail
-2025-01-13 15:59:15,680 - ERROR - book borrowed fail
-2025-01-13 15:59:15,681 - INFO - registered fail
-2025-01-13 15:59:15,682 - INFO - registered fail
-2025-01-13 15:59:15,683 - INFO - Successfully update the book: Title2
-2025-01-13 15:59:15,683 - ERROR - book added failed
-2025-01-13 15:59:15,684 - ERROR - book added failed
-2025-01-13 15:59:15,686 - INFO - book removed successfully
-2025-01-13 15:59:15,689 - INFO - book returned fail
-2025-01-13 15:59:28,776 - INFO - Successfully removed user1: dvirbto
-2025-01-13 15:59:28,776 - INFO - registered successfully
-2025-01-13 15:59:28,790 - INFO - Successfully removed user1: dvirbto
-2025-01-13 15:59:28,794 - INFO - Successfully removed user1: dvirbto
-2025-01-13 15:59:28,794 - ERROR - book removed failed
-2025-01-13 15:59:28,795 - ERROR - book removed failed
-2025-01-13 15:59:28,797 - INFO - book added successfully
-2025-01-13 15:59:28,798 - INFO - Search book Title1 by name completed successfully
-2025-01-13 15:59:28,800 - INFO - Search book Title1 by name completed successfully
-2025-01-13 15:59:28,803 - INFO - book removed successfully
-2025-01-13 15:59:28,804 - ERROR - book borrowed fail
-2025-01-13 15:59:28,806 - ERROR - book borrowed fail
-2025-01-13 15:59:28,807 - ERROR - book borrowed fail
-2025-01-13 15:59:28,808 - INFO - book added successfully
-2025-01-13 15:59:28,809 - INFO - book added successfully
-2025-01-13 15:59:28,809 - ERROR - book borrowed fail
-2025-01-13 15:59:28,810 - ERROR - book borrowed fail
-2025-01-13 15:59:28,816 - ERROR - book borrowed fail
-2025-01-13 15:59:28,818 - INFO - book removed successfully
-2025-01-13 15:59:28,819 - INFO - book removed successfully
-2025-01-13 15:59:28,819 - INFO - book added successfully
-2025-01-13 15:59:28,821 - INFO - registered successfully
-2025-01-13 15:59:28,822 - ERROR - book borrowed fail
-2025-01-13 15:59:28,825 - ERROR - book borrowed fail
-2025-01-13 15:59:28,828 - INFO - book removed successfully
-2025-01-13 15:59:28,829 - INFO - book removed successfully
-2025-01-13 15:59:28,830 - INFO - book added successfully
-2025-01-13 15:59:28,831 - ERROR - book borrowed fail
-2025-01-13 15:59:28,835 - ERROR - book borrowed fail
-2025-01-13 15:59:28,837 - INFO - book removed successfully
-2025-01-13 15:59:28,838 - INFO - book removed successfully
-2025-01-13 15:59:28,840 - INFO - book added successfully
-2025-01-13 15:59:28,841 - ERROR - book borrowed fail
-2025-01-13 15:59:28,844 - ERROR - book borrowed fail
-2025-01-13 15:59:28,844 - ERROR - book borrowed fail
-2025-01-13 15:59:28,846 - ERROR - book borrowed fail
-2025-01-13 15:59:28,850 - INFO - book removed successfully
-2025-01-13 15:59:28,851 - INFO - Search book Title1 by name completed fail
-2025-01-13 15:59:28,852 - INFO - Search book Title1 by name completed fail
-2025-01-13 15:59:28,852 - ERROR - book removed failed
-2025-01-13 15:59:28,853 - INFO - book returned fail
-2025-01-13 15:59:28,854 - INFO - book returned fail
-2025-01-13 15:59:28,855 - INFO - book added successfully
-2025-01-13 15:59:28,856 - INFO - book returned fail
-2025-01-13 15:59:28,856 - ERROR - book borrowed fail
-2025-01-13 15:59:28,859 - INFO - book returned fail
-2025-01-13 15:59:28,860 - INFO - book returned fail
-2025-01-13 15:59:28,862 - INFO - book returned fail
-2025-01-13 15:59:28,862 - INFO - book returned fail
-2025-01-13 15:59:28,862 - INFO - book returned fail
-2025-01-13 15:59:28,863 - INFO - Successfully update the book: Title1
-2025-01-13 15:59:28,864 - INFO - Search book Title1 by name completed successfully
-2025-01-13 15:59:28,866 - INFO - Search book Title1 by name completed successfully
-2025-01-13 15:59:28,867 - INFO - Successfully update the book: Title1
-2025-01-13 15:59:28,868 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:13,294 - INFO - Successfully removed user1: dvirbto
-2025-01-13 16:00:13,297 - INFO - registered successfully
-2025-01-13 16:00:13,299 - INFO - Successfully removed user1: dvirbto
-2025-01-13 16:00:13,301 - INFO - Successfully removed user1: dvirbto
-2025-01-13 16:00:13,303 - INFO - book removed successfully
-2025-01-13 16:00:13,305 - INFO - book removed successfully
-2025-01-13 16:00:13,306 - INFO - book added successfully
-2025-01-13 16:00:13,307 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:13,309 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:13,311 - INFO - book removed successfully
-2025-01-13 16:00:13,313 - INFO - book borrowed fail
-2025-01-13 16:00:13,314 - INFO - book borrowed fail
-2025-01-13 16:00:13,315 - INFO - book borrowed fail
-2025-01-13 16:00:13,316 - INFO - book added successfully
-2025-01-13 16:00:13,317 - INFO - book added successfully
-2025-01-13 16:00:13,319 - INFO - book borrowed successfully
-2025-01-13 16:00:13,320 - INFO - book borrowed successfully
-2025-01-13 16:00:13,323 - INFO - book borrowed successfully
-2025-01-13 16:00:13,328 - INFO - book borrowed successfully
-2025-01-13 16:00:13,330 - INFO - book borrowed successfully
-2025-01-13 16:00:13,332 - INFO - book borrowed fail
-2025-01-13 16:00:13,333 - INFO - book borrowed fail
-2025-01-13 16:00:13,334 - INFO - book borrowed fail
-2025-01-13 16:00:13,336 - INFO - book removed successfully
-2025-01-13 16:00:13,338 - INFO - book removed successfully
-2025-01-13 16:00:13,340 - INFO - book added successfully
-2025-01-13 16:00:13,343 - INFO - book borrowed successfully
-2025-01-13 16:00:13,345 - INFO - book borrowed fail
-2025-01-13 16:00:13,348 - INFO - book borrowed fail
-2025-01-13 16:00:13,352 - INFO - book removed successfully
-2025-01-13 16:00:13,354 - INFO - book removed successfully
-2025-01-13 16:00:13,355 - INFO - book added successfully
-2025-01-13 16:00:13,358 - INFO - registered successfully
-2025-01-13 16:00:13,360 - INFO - book borrowed successfully
-2025-01-13 16:00:13,363 - INFO - book borrowed successfully
-2025-01-13 16:00:13,368 - INFO - book removed successfully
-2025-01-13 16:00:13,370 - INFO - book removed successfully
-2025-01-13 16:00:13,371 - INFO - book added successfully
-2025-01-13 16:00:13,375 - INFO - book borrowed successfully
-2025-01-13 16:00:13,378 - INFO - book borrowed successfully
-2025-01-13 16:00:13,381 - INFO - book removed successfully
-2025-01-13 16:00:13,383 - INFO - book removed successfully
-2025-01-13 16:00:13,385 - INFO - book added successfully
-2025-01-13 16:00:13,388 - INFO - book borrowed successfully
-2025-01-13 16:00:13,391 - INFO - book borrowed successfully
-2025-01-13 16:00:13,391 - INFO - book borrowed successfully
-2025-01-13 16:00:13,393 - INFO - book borrowed successfully
-2025-01-13 16:00:13,396 - INFO - book removed successfully
-2025-01-13 16:00:13,397 - INFO - Search book Title1 by name completed fail
-2025-01-13 16:00:13,399 - INFO - Search book Title1 by name completed fail
-2025-01-13 16:00:13,400 - ERROR - book removed failed
-2025-01-13 16:00:13,401 - INFO - book returned fail
-2025-01-13 16:00:13,402 - INFO - book returned fail
-2025-01-13 16:00:13,403 - INFO - book added successfully
-2025-01-13 16:00:13,406 - INFO - book returned fail
-2025-01-13 16:00:13,410 - INFO - book borrowed successfully
-2025-01-13 16:00:13,415 - INFO - book returned successfully
-2025-01-13 16:00:13,416 - INFO - book returned successfully
-2025-01-13 16:00:13,420 - INFO - book returned successfully
-2025-01-13 16:00:13,421 - INFO - book returned successfully
-2025-01-13 16:00:13,423 - INFO - book returned successfully
-2025-01-13 16:00:13,423 - INFO - book returned successfully
-2025-01-13 16:00:13,424 - INFO - book returned successfully
-2025-01-13 16:00:13,425 - INFO - Successfully update the book: Title1
-2025-01-13 16:00:13,426 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:13,427 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:13,428 - INFO - Successfully update the book: Title1
-2025-01-13 16:00:13,429 - INFO - Search book Title1 by name completed successfully
-2025-01-13 16:00:19,065 - INFO - book removed successfully
-2025-01-13 16:00:19,067 - INFO - book removed successfully
-2025-01-13 16:00:19,070 - INFO - book removed successfully
-2025-01-13 16:00:19,073 - INFO - book removed successfully
-2025-01-13 16:00:19,074 - INFO - book added successfully
-2025-01-13 16:00:19,075 - INFO - book added successfully
-2025-01-13 16:00:19,076 - INFO - book added successfully
-2025-01-13 16:00:19,077 - INFO - book added successfully
-2025-01-13 16:00:19,077 - INFO - book added successfully
-2025-01-13 16:00:19,078 - INFO - book added successfully
-2025-01-13 16:00:19,078 - INFO - book added successfully
-2025-01-13 16:00:19,078 - INFO - book added successfully
-2025-01-13 16:00:19,079 - INFO - book added successfully
-2025-01-13 16:00:19,083 - INFO - book borrowed successfully
-2025-01-13 16:00:19,090 - INFO - book borrowed successfully
-2025-01-13 16:00:19,092 - INFO - book borrowed fail
-2025-01-13 16:00:19,093 - INFO - registered fail
-2025-01-13 16:00:19,094 - INFO - registered fail
-2025-01-13 16:00:19,095 - INFO - Successfully update the book: Title2
-2025-01-13 16:00:19,095 - ERROR - book added failed
-2025-01-13 16:00:19,097 - ERROR - book added failed
-2025-01-13 16:00:19,100 - INFO - book removed successfully
-2025-01-13 16:00:19,106 - INFO - book returned successfully
-2025-01-13 16:03:03,185 - INFO - book removed successfully
-2025-01-13 16:03:03,187 - INFO - book removed successfully
-2025-01-13 16:03:03,191 - INFO - book removed successfully
-2025-01-13 16:03:03,192 - INFO - book removed successfully
-2025-01-13 16:03:03,195 - INFO - book added successfully
-2025-01-13 16:03:03,197 - INFO - book added successfully
-2025-01-13 16:03:03,198 - INFO - book added successfully
-2025-01-13 16:03:03,200 - INFO - book added successfully
-2025-01-13 16:03:03,201 - INFO - book added successfully
-2025-01-13 16:03:03,204 - INFO - book added successfully
-2025-01-13 16:03:03,204 - INFO - book added successfully
-2025-01-13 16:03:03,205 - INFO - book added successfully
-2025-01-13 16:03:03,206 - INFO - book added successfully
-2025-01-13 16:03:03,210 - INFO - book borrowed successfully
-2025-01-13 16:03:03,219 - INFO - book borrowed successfully
-2025-01-13 16:03:03,222 - INFO - book borrowed fail
-2025-01-13 16:03:03,223 - INFO - registered fail
-2025-01-13 16:03:03,226 - INFO - registered fail
-2025-01-13 16:03:03,228 - INFO - Successfully update the book: Title2
-2025-01-13 16:03:03,229 - ERROR - book added failed
-2025-01-13 16:03:03,231 - ERROR - book added failed
-2025-01-13 16:03:03,235 - INFO - book removed successfully
-2025-01-13 16:04:26,391 - INFO - book removed successfully
-2025-01-13 16:04:26,393 - INFO - book removed successfully
-2025-01-13 16:04:26,395 - INFO - book removed successfully
-2025-01-13 16:04:26,397 - INFO - book removed successfully
-2025-01-13 16:04:26,398 - INFO - book added successfully
-2025-01-13 16:04:26,399 - INFO - book added successfully
-2025-01-13 16:04:26,400 - INFO - book added successfully
-2025-01-13 16:04:26,401 - INFO - book added successfully
-2025-01-13 16:04:26,402 - INFO - book added successfully
-2025-01-13 16:04:26,403 - INFO - book added successfully
-2025-01-13 16:04:26,403 - INFO - book added successfully
-2025-01-13 16:04:26,403 - INFO - book added successfully
-2025-01-13 16:04:26,404 - INFO - book added successfully
-2025-01-13 16:04:26,406 - INFO - book borrowed successfully
-2025-01-13 16:04:26,410 - INFO - book borrowed successfully
-2025-01-13 16:04:26,411 - INFO - book borrowed fail
-2025-01-13 16:04:26,411 - INFO - registered fail
-2025-01-13 16:04:26,413 - INFO - registered fail
-2025-01-13 16:04:26,413 - INFO - Successfully update the book: Title2
-2025-01-13 16:04:26,414 - ERROR - book added failed
-2025-01-13 16:04:26,415 - ERROR - book added failed
-2025-01-13 16:04:26,417 - INFO - book removed successfully
-2025-01-13 16:04:46,478 - INFO - book removed successfully
-2025-01-13 16:04:46,479 - INFO - book removed successfully
-2025-01-13 16:04:46,482 - INFO - book removed successfully
-2025-01-13 16:04:46,483 - INFO - book removed successfully
-2025-01-13 16:04:46,484 - INFO - book added successfully
-2025-01-13 16:04:46,485 - INFO - book added successfully
-2025-01-13 16:04:46,485 - INFO - book added successfully
-2025-01-13 16:04:46,486 - INFO - book added successfully
-2025-01-13 16:04:46,487 - INFO - book added successfully
-2025-01-13 16:04:46,488 - INFO - book added successfully
-2025-01-13 16:04:46,489 - INFO - book added successfully
-2025-01-13 16:04:46,490 - INFO - book added successfully
-2025-01-13 16:04:46,490 - INFO - book added successfully
-2025-01-13 16:04:46,492 - INFO - book borrowed successfully
-2025-01-13 16:04:46,497 - INFO - book borrowed successfully
-2025-01-13 16:04:46,498 - INFO - book borrowed fail
-2025-01-13 16:04:46,498 - INFO - registered fail
-2025-01-13 16:04:46,499 - INFO - registered fail
-2025-01-13 16:04:46,501 - INFO - Successfully update the book: Title2
-2025-01-13 16:04:46,501 - ERROR - book added failed
-2025-01-13 16:04:46,502 - ERROR - book added failed
-2025-01-13 16:04:46,504 - INFO - book removed successfully
-2025-01-13 16:04:46,509 - INFO - book returned successfully
-2025-01-13 18:19:17,398 - INFO - logged in fail
-2025-01-13 18:19:32,323 - INFO - logged in fail
-2025-01-13 18:39:34,427 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:39:34,429 - INFO - registered successfully
-2025-01-13 18:39:34,431 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:39:34,432 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:39:34,432 - ERROR - book removed failed
-2025-01-13 18:39:34,433 - ERROR - book removed failed
-2025-01-13 18:39:34,434 - INFO - book added successfully
-2025-01-13 18:39:34,435 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:39:34,439 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:39:34,440 - ERROR - book removed failed
-2025-01-13 18:39:34,441 - INFO - book borrowed successfully
-2025-01-13 18:39:34,449 - INFO - book borrowed successfully
-2025-01-13 18:39:34,449 - ERROR - book removed failed
-2025-01-13 18:39:34,450 - ERROR - book removed failed
-2025-01-13 18:39:34,451 - INFO - book added successfully
-2025-01-13 18:39:34,453 - INFO - registered successfully
-2025-01-13 18:39:34,457 - INFO - book borrowed successfully
-2025-01-13 18:39:34,459 - INFO - book borrowed successfully
-2025-01-13 18:39:34,463 - INFO - book removed successfully
-2025-01-13 18:39:34,464 - INFO - book removed successfully
-2025-01-13 18:39:34,465 - INFO - book added successfully
-2025-01-13 18:39:34,468 - INFO - book borrowed successfully
-2025-01-13 18:39:34,470 - INFO - book borrowed successfully
-2025-01-13 18:39:34,472 - INFO - book removed successfully
-2025-01-13 18:39:34,472 - INFO - book removed successfully
-2025-01-13 18:39:34,473 - INFO - book added successfully
-2025-01-13 18:39:34,477 - INFO - book borrowed successfully
-2025-01-13 18:39:34,480 - INFO - book borrowed successfully
-2025-01-13 18:39:34,480 - INFO - book borrowed successfully
-2025-01-13 18:39:34,481 - INFO - book borrowed successfully
-2025-01-13 18:39:34,483 - INFO - book removed successfully
-2025-01-13 18:39:34,484 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:39:34,485 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:39:34,486 - ERROR - book removed failed
-2025-01-13 18:39:34,487 - ERROR - book returned fail
-2025-01-13 18:39:34,488 - ERROR - book returned fail
-2025-01-13 18:39:34,489 - INFO - book added successfully
-2025-01-13 18:39:34,490 - ERROR - book returned fail
-2025-01-13 18:39:34,493 - INFO - book borrowed successfully
-2025-01-13 18:39:34,499 - INFO - book returned successfully
-2025-01-13 18:39:34,500 - INFO - book returned successfully
-2025-01-13 18:39:34,504 - INFO - book returned successfully
-2025-01-13 18:39:34,505 - INFO - book returned successfully
-2025-01-13 18:39:34,506 - INFO - book returned successfully
-2025-01-13 18:39:34,506 - INFO - book returned successfully
-2025-01-13 18:39:34,507 - INFO - book returned successfully
-2025-01-13 18:39:34,507 - INFO - Successfully update the book: Title1
-2025-01-13 18:39:34,509 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:39:34,510 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:39:34,511 - INFO - Successfully update the book: Title1
-2025-01-13 18:39:34,511 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:40:15,336 - INFO - book removed successfully
-2025-01-13 18:40:15,336 - INFO - book removed successfully
-2025-01-13 18:40:15,336 - INFO - book added successfully
-2025-01-13 18:40:15,336 - INFO - book borrowed successfully
-2025-01-13 18:40:36,712 - INFO - book removed successfully
-2025-01-13 18:40:36,712 - INFO - book removed successfully
-2025-01-13 18:40:36,712 - INFO - book added successfully
-2025-01-13 18:40:36,719 - INFO - book borrowed successfully
-2025-01-13 18:42:46,830 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:42:46,832 - INFO - registered successfully
-2025-01-13 18:42:46,834 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:42:46,835 - INFO - Successfully removed user1: dvirbto
-2025-01-13 18:42:46,837 - INFO - book removed successfully
-2025-01-13 18:42:46,839 - INFO - book removed successfully
-2025-01-13 18:42:46,839 - INFO - book added successfully
-2025-01-13 18:42:46,841 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:42:46,842 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:42:46,845 - INFO - book removed successfully
-2025-01-13 18:42:46,846 - INFO - book borrowed fail
-2025-01-13 18:42:46,847 - INFO - book borrowed fail
-2025-01-13 18:42:46,848 - INFO - book borrowed fail
-2025-01-13 18:42:46,848 - INFO - book added successfully
-2025-01-13 18:42:46,849 - INFO - book added successfully
-2025-01-13 18:42:46,851 - INFO - book borrowed successfully
-2025-01-13 18:42:46,852 - INFO - book borrowed successfully
-2025-01-13 18:42:46,854 - INFO - book borrowed successfully
-2025-01-13 18:42:46,858 - INFO - book borrowed successfully
-2025-01-13 18:42:46,859 - INFO - book borrowed successfully
-2025-01-13 18:42:46,861 - INFO - book borrowed fail
-2025-01-13 18:42:46,861 - INFO - book borrowed fail
-2025-01-13 18:42:46,862 - INFO - book borrowed fail
-2025-01-13 18:42:46,864 - INFO - book removed successfully
-2025-01-13 18:42:46,865 - INFO - book removed successfully
-2025-01-13 18:42:46,867 - INFO - book added successfully
-2025-01-13 18:42:46,869 - INFO - book borrowed successfully
-2025-01-13 18:42:46,870 - INFO - book borrowed fail
-2025-01-13 18:42:46,876 - INFO - book borrowed fail
-2025-01-13 18:42:46,879 - INFO - book removed successfully
-2025-01-13 18:42:46,881 - INFO - book removed successfully
-2025-01-13 18:42:46,881 - INFO - book added successfully
-2025-01-13 18:42:46,883 - INFO - registered successfully
-2025-01-13 18:42:46,885 - INFO - book borrowed successfully
-2025-01-13 18:42:46,887 - INFO - book borrowed successfully
-2025-01-13 18:42:46,890 - INFO - book removed successfully
-2025-01-13 18:42:46,892 - INFO - book removed successfully
-2025-01-13 18:42:46,893 - INFO - book added successfully
-2025-01-13 18:42:46,898 - INFO - book borrowed successfully
-2025-01-13 18:42:46,900 - INFO - book borrowed successfully
-2025-01-13 18:42:46,902 - INFO - book removed successfully
-2025-01-13 18:42:46,903 - INFO - book removed successfully
-2025-01-13 18:42:46,904 - INFO - book added successfully
-2025-01-13 18:42:46,908 - INFO - book borrowed successfully
-2025-01-13 18:42:46,911 - INFO - book borrowed successfully
-2025-01-13 18:42:46,911 - INFO - book borrowed successfully
-2025-01-13 18:42:46,912 - INFO - book borrowed successfully
-2025-01-13 18:42:46,915 - INFO - book removed successfully
-2025-01-13 18:42:46,916 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:42:46,917 - INFO - Search book Title1 by name completed fail
-2025-01-13 18:42:46,917 - ERROR - book removed failed
-2025-01-13 18:42:46,918 - ERROR - book returned fail
-2025-01-13 18:42:46,918 - ERROR - book returned fail
-2025-01-13 18:42:46,919 - INFO - book added successfully
-2025-01-13 18:42:46,921 - ERROR - book returned fail
-2025-01-13 18:42:46,924 - INFO - book borrowed successfully
-2025-01-13 18:42:46,929 - INFO - book returned successfully
-2025-01-13 18:42:46,930 - INFO - book returned successfully
-2025-01-13 18:42:46,933 - INFO - book returned successfully
-2025-01-13 18:42:46,934 - INFO - book returned successfully
-2025-01-13 18:42:46,935 - INFO - book returned successfully
-2025-01-13 18:42:46,935 - INFO - book returned successfully
-2025-01-13 18:42:46,936 - INFO - book returned successfully
-2025-01-13 18:42:46,937 - INFO - Successfully update the book: Title1
-2025-01-13 18:42:46,938 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:42:46,939 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:42:46,941 - INFO - Successfully update the book: Title1
-2025-01-13 18:42:46,942 - INFO - Search book Title1 by name completed successfully
-2025-01-13 18:44:28,003 - INFO - book removed successfully
-2025-01-13 18:44:28,005 - INFO - book removed successfully
-2025-01-13 18:44:28,006 - INFO - book added successfully
-2025-01-13 18:44:28,008 - INFO - book borrowed successfully
-2025-01-13 18:45:12,324 - INFO - book removed successfully
-2025-01-13 18:46:21,973 - INFO - book removed successfully
-2025-01-13 18:48:22,708 - INFO - book added successfully
-2025-01-13 18:48:22,713 - INFO - book borrowed successfully
-2025-01-13 18:52:37,039 - ERROR - book removed failed
-2025-01-13 18:52:37,040 - ERROR - book removed failed
-2025-01-13 18:52:37,042 - INFO - book added successfully
-2025-01-13 18:52:37,050 - INFO - book borrowed successfully
-2025-01-13 18:53:53,605 - INFO - book removed successfully
-2025-01-13 18:53:58,132 - INFO - book removed successfully
-2025-01-13 18:53:58,141 - INFO - book added successfully
-2025-01-13 18:53:58,142 - INFO - book borrowed successfully
-2025-01-13 18:54:47,661 - INFO - book removed successfully
-2025-01-13 18:54:47,661 - INFO - book removed successfully
-2025-01-13 18:54:47,661 - INFO - book added successfully
-2025-01-13 18:54:47,671 - INFO - book borrowed successfully
-2025-01-13 18:55:04,460 - INFO - book removed successfully
-2025-01-13 18:55:04,460 - INFO - book removed successfully
-2025-01-13 18:55:04,460 - INFO - book added successfully
-2025-01-13 18:55:04,460 - INFO - book borrowed successfully
-2025-01-13 18:55:33,568 - INFO - book removed successfully
-2025-01-13 18:55:33,568 - INFO - book removed successfully
-2025-01-13 18:55:33,568 - INFO - book added successfully
-2025-01-13 18:55:33,568 - INFO - book borrowed successfully
-2025-01-13 18:57:06,505 - INFO - book removed successfully
-2025-01-13 18:57:06,508 - INFO - book removed successfully
-2025-01-13 18:57:06,511 - INFO - book added successfully
-2025-01-13 18:57:06,515 - INFO - book borrowed successfully
-2025-01-13 18:59:13,771 - INFO - book removed successfully
-2025-01-13 18:59:13,771 - INFO - book removed successfully
-2025-01-13 18:59:13,771 - INFO - book added successfully
-2025-01-13 18:59:13,771 - INFO - book borrowed successfully
-2025-01-13 19:00:20,455 - INFO - book removed successfully
-2025-01-13 19:00:20,457 - INFO - book removed successfully
-2025-01-13 19:00:20,457 - INFO - book added successfully
-2025-01-13 19:00:20,460 - INFO - book borrowed successfully
-2025-01-13 19:00:25,722 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:00:25,726 - INFO - registered successfully
-2025-01-13 19:00:25,731 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:00:25,734 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:00:25,740 - INFO - book removed successfully
-2025-01-13 19:00:25,742 - INFO - book removed successfully
-2025-01-13 19:00:25,744 - INFO - book added successfully
-2025-01-13 19:00:25,746 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:00:25,748 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:00:25,753 - INFO - book removed successfully
-2025-01-13 19:00:25,756 - INFO - book borrowed fail
-2025-01-13 19:00:25,757 - INFO - book borrowed fail
-2025-01-13 19:00:25,758 - INFO - book borrowed fail
-2025-01-13 19:00:25,760 - INFO - book added successfully
-2025-01-13 19:00:25,761 - INFO - book added successfully
-2025-01-13 19:00:25,763 - INFO - book borrowed successfully
-2025-01-13 19:00:25,764 - INFO - book borrowed successfully
-2025-01-13 19:00:25,766 - INFO - book borrowed successfully
-2025-01-13 19:00:25,770 - INFO - book borrowed successfully
-2025-01-13 19:00:25,771 - INFO - book borrowed successfully
-2025-01-13 19:00:25,773 - INFO - book borrowed fail
-2025-01-13 19:00:25,773 - INFO - book borrowed fail
-2025-01-13 19:00:25,775 - INFO - book borrowed fail
-2025-01-13 19:00:25,779 - INFO - book removed successfully
-2025-01-13 19:00:25,781 - INFO - book removed successfully
-2025-01-13 19:00:25,782 - INFO - book added successfully
-2025-01-13 19:00:25,788 - INFO - book borrowed successfully
-2025-01-13 19:00:25,791 - INFO - book borrowed fail
-2025-01-13 19:00:25,795 - INFO - book borrowed fail
-2025-01-13 19:00:25,799 - INFO - book removed successfully
-2025-01-13 19:00:25,801 - INFO - book removed successfully
-2025-01-13 19:00:25,803 - INFO - book added successfully
-2025-01-13 19:00:25,806 - INFO - registered successfully
-2025-01-13 19:00:25,809 - INFO - book borrowed successfully
-2025-01-13 19:00:25,812 - INFO - book borrowed successfully
-2025-01-13 19:00:25,815 - INFO - book removed successfully
-2025-01-13 19:00:25,816 - INFO - book removed successfully
-2025-01-13 19:00:25,817 - INFO - book added successfully
-2025-01-13 19:00:25,821 - INFO - book borrowed successfully
-2025-01-13 19:00:25,824 - INFO - book borrowed successfully
-2025-01-13 19:00:25,827 - INFO - book removed successfully
-2025-01-13 19:00:25,828 - INFO - book removed successfully
-2025-01-13 19:00:25,829 - INFO - book added successfully
-2025-01-13 19:00:25,832 - INFO - book borrowed successfully
-2025-01-13 19:00:25,835 - INFO - book borrowed successfully
-2025-01-13 19:00:25,836 - INFO - book borrowed successfully
-2025-01-13 19:00:25,836 - INFO - book borrowed successfully
-2025-01-13 19:00:25,840 - INFO - book removed successfully
-2025-01-13 19:00:25,841 - INFO - Search book Title1 by name completed fail
-2025-01-13 19:00:25,842 - INFO - Search book Title1 by name completed fail
-2025-01-13 19:00:25,842 - ERROR - book removed failed
-2025-01-13 19:00:25,843 - ERROR - book returned fail
-2025-01-13 19:00:25,845 - ERROR - book returned fail
-2025-01-13 19:00:25,846 - INFO - book added successfully
-2025-01-13 19:00:25,849 - ERROR - book returned fail
-2025-01-13 19:00:25,854 - INFO - book borrowed successfully
-2025-01-13 19:00:25,861 - INFO - book returned successfully
-2025-01-13 19:00:25,862 - INFO - book returned successfully
-2025-01-13 19:00:25,868 - INFO - book returned successfully
-2025-01-13 19:00:25,869 - INFO - book returned successfully
-2025-01-13 19:00:25,871 - INFO - book returned successfully
-2025-01-13 19:00:25,871 - INFO - book returned successfully
-2025-01-13 19:00:25,872 - INFO - book returned successfully
-2025-01-13 19:00:25,873 - INFO - Successfully update the book: Title1
-2025-01-13 19:00:25,874 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:00:25,875 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:00:25,876 - INFO - Successfully update the book: Title1
-2025-01-13 19:00:25,878 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:03:37,273 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:03:37,277 - INFO - registered successfully
-2025-01-13 19:03:37,280 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:03:37,282 - INFO - Successfully removed user1: dvirbto
-2025-01-13 19:03:37,287 - INFO - book removed successfully
-2025-01-13 19:03:37,289 - INFO - book removed successfully
-2025-01-13 19:03:37,290 - INFO - book added successfully
-2025-01-13 19:03:37,292 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:03:37,294 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:03:37,300 - INFO - book removed successfully
-2025-01-13 19:03:37,303 - INFO - book borrowed fail
-2025-01-13 19:03:37,304 - INFO - book borrowed fail
-2025-01-13 19:03:37,306 - INFO - book borrowed fail
-2025-01-13 19:03:37,307 - INFO - book added successfully
-2025-01-13 19:03:37,308 - INFO - book added successfully
-2025-01-13 19:03:37,311 - INFO - book borrowed successfully
-2025-01-13 19:03:37,312 - INFO - book borrowed successfully
-2025-01-13 19:03:37,315 - INFO - book borrowed successfully
-2025-01-13 19:03:37,321 - INFO - book borrowed successfully
-2025-01-13 19:03:37,322 - INFO - book borrowed successfully
-2025-01-13 19:03:37,325 - INFO - book borrowed fail
-2025-01-13 19:03:37,326 - INFO - book borrowed fail
-2025-01-13 19:03:37,328 - INFO - book borrowed fail
-2025-01-13 19:03:37,332 - INFO - book removed successfully
-2025-01-13 19:03:37,334 - INFO - book removed successfully
-2025-01-13 19:03:37,336 - INFO - book added successfully
-2025-01-13 19:03:37,343 - INFO - book borrowed successfully
-2025-01-13 19:03:37,347 - INFO - book borrowed fail
-2025-01-13 19:03:37,352 - INFO - book borrowed fail
-2025-01-13 19:03:37,357 - INFO - book removed successfully
-2025-01-13 19:03:37,360 - INFO - book removed successfully
-2025-01-13 19:03:37,361 - INFO - book added successfully
-2025-01-13 19:03:37,364 - INFO - registered successfully
-2025-01-13 19:03:37,368 - INFO - book borrowed successfully
-2025-01-13 19:03:37,372 - INFO - book borrowed successfully
-2025-01-13 19:03:37,378 - INFO - book removed successfully
-2025-01-13 19:03:37,380 - INFO - book removed successfully
-2025-01-13 19:03:37,382 - INFO - book added successfully
-2025-01-13 19:03:37,403 - INFO - book borrowed successfully
-2025-01-13 19:03:37,406 - INFO - book borrowed successfully
-2025-01-13 19:03:37,410 - INFO - book removed successfully
-2025-01-13 19:03:37,412 - INFO - book removed successfully
-2025-01-13 19:03:37,414 - INFO - book added successfully
-2025-01-13 19:03:37,417 - INFO - book borrowed successfully
-2025-01-13 19:03:37,423 - INFO - book borrowed successfully
-2025-01-13 19:03:37,423 - INFO - book borrowed successfully
-2025-01-13 19:03:37,424 - INFO - book borrowed successfully
-2025-01-13 19:03:37,430 - INFO - book removed successfully
-2025-01-13 19:03:37,432 - INFO - Search book Title1 by name completed fail
-2025-01-13 19:03:37,434 - INFO - Search book Title1 by name completed fail
-2025-01-13 19:03:37,434 - ERROR - book removed failed
-2025-01-13 19:03:37,436 - ERROR - book returned fail
-2025-01-13 19:03:37,438 - ERROR - book returned fail
-2025-01-13 19:03:37,439 - INFO - book added successfully
-2025-01-13 19:03:37,442 - ERROR - book returned fail
-2025-01-13 19:03:37,446 - INFO - book borrowed successfully
-2025-01-13 19:03:37,454 - INFO - book returned successfully
-2025-01-13 19:03:37,455 - INFO - book returned successfully
-2025-01-13 19:03:37,462 - INFO - book returned successfully
-2025-01-13 19:03:37,463 - INFO - book returned successfully
-2025-01-13 19:03:37,465 - INFO - book returned successfully
-2025-01-13 19:03:37,465 - INFO - book returned successfully
-2025-01-13 19:03:37,466 - INFO - book returned successfully
-2025-01-13 19:03:37,468 - INFO - Successfully update the book: Title1
-2025-01-13 19:03:37,469 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:03:37,471 - INFO - Search book Title1 by name completed successfully
-2025-01-13 19:03:37,472 - INFO - Successfully update the book: Title1
-2025-01-13 19:03:37,474 - INFO - Search book Title1 by name completed successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered fail
+book borrowed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Displayed all books successfully
+logged in successfully

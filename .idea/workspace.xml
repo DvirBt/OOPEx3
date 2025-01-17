@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Added stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/Book_Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Book_Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +87,7 @@
       <recent name="C:\Users\Shaked\PycharmProjects\Book_Library\Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Test.Test">
+  <component name="RunManager" selected="Python.gui">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -144,7 +147,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test.Test.test_get_all_borrowed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +158,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_get_borrowed_copies_by_book_and_user&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_get_all_borrowed&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -176,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for Test.Test" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_popular_books" />
         <item itemvalue="Python.gui" />
+        <item itemvalue="Python tests.Python tests for Test.Test" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_get_all_borrowed" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_popular_books" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user" />
       </list>
     </recent_temporary>
   </component>
@@ -345,5 +348,16 @@
     <MESSAGE value="Finished implementing a new iterator for FileManagement.py. In addition, added comments on all the functions in Library.py and FileManagement.py." />
     <MESSAGE value="Added stuff" />
     <option name="LAST_COMMIT_MESSAGE" value="Added stuff" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gui.py</url>
+          <line>492</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
