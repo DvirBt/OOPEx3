@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Added tests">
-      <change afterPath="$PROJECT_DIR$/BookObserver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.py" beforeDir="false" afterPath="$PROJECT_DIR$/Book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/library.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for Test.Test.executor": "Run",
+    "Python tests.Python tests for Test.Test.executor": "Debug",
     "Python tests.Python tests for Test.Test.test_add_and_remove_user.executor": "Run",
     "Python tests.Python tests for Test.Test.test_add_book.executor": "Run",
     "Python tests.Python tests for Test.Test.test_add_user.executor": "Run",
@@ -176,8 +172,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.gui" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
         <item itemvalue="Python tests.Python tests for Test.Test" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_search_book_by_name" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_search_book_by_author" />
       </list>
@@ -359,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737288002222</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added tests">
+      <option name="closed" value="true" />
+      <created>1737299289674</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737299289674</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -386,18 +390,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Test.py</url>
-          <line>199</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Test.py</url>
           <line>51</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Library.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="96" />
+          <line>165</line>
+          <option name="timeStamp" value="110" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

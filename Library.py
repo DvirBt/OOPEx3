@@ -31,7 +31,7 @@ class Subject:
         check = False
         for observer in self._observers:
             if not check:
-                check = observer.update(self, book_name, client_name)
+                check = observer.update(book_name, client_name)
                 if check:
                     self._observers.remove(observer)
 
@@ -156,15 +156,15 @@ class Library(Subject):
         """
         if book_to_return is not None:
             try:
-                check, clients_to_update = FileManagement.return_book(book_to_return)
+                check, client_to_update = FileManagement.return_book(book_to_return)
                 if check:
                     self.log_text = "book_name returned successfully"
                     self.log_level = logging.INFO
                 else:
                     self.log_text = "book_name returned fail"
                     self.log_level = logging.INFO
-                if clients_to_update is not None and len(clients_to_update) > 0:
-                    self.notify(book_to_return.get_title(), clients_to_update)
+                if client_to_update is not None and len(client_to_update) > 0:
+                    self.notify(book_to_return.get_title(), client_to_update[3])
                 return check
             except Exception as e:
                 self.log_text = "book_name returned fail"

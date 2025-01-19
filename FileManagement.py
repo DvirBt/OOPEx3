@@ -177,13 +177,13 @@ def decrease_from_availability(book: Book):
                 x = int(row[1])
                 if check_found != 2:
                     check_found = 1
-                if x > 0:
-                    x -= 1
                 if x == 0:
                     check_found = 2
                     if get_book_loaned_status(book) == "No":
                         change_loaned_status(book.get_title())
                     book.set_is_loaned(True)
+                if x > 0:
+                    x -= 1
                 row[1] = str(x)
             rows.append(row)
 
@@ -318,9 +318,11 @@ def increase_available_book(book: Book):
                 x = int(row[1])
                 if x == book.get_copies():
                     return False
-                if x == 0:
+                if x == 0 and not check_is_there_queue(book):
                     change_loaned_status(row[0])
-                x += 1
+                    x += 1
+                elif x > 0:
+                    x += 1
                 row[1] = str(x)
                 check_found = True
             rows.append(row)
@@ -331,6 +333,15 @@ def increase_available_book(book: Book):
 
     return check_found
 
+
+def check_is_there_queue(book: Book):
+    check_found = False
+    with CSVIterator(borrowed_books_path, "r") as iterator:
+        for row in iterator:
+            if row[0] == book.get_title() and row[2] == "True":
+                check_found = True
+
+    return check_found
 
 @check
 def get_book_name_list():
