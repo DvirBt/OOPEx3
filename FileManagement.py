@@ -150,15 +150,8 @@ def available_copies(book: Book):
     return 0
 
 
-def check_can_decrease(book: Book, count):
-    available = available_copies(book)
-    if available >= count:
-        return True
-    return False
-
-
 @check
-def decrease_from_availability(book: Book, count):
+def decrease_from_availability(book: Book):
     """
     This function reduces the availability of a given book if possible
     and if the current copies amount drops to zero it calls to change
@@ -167,22 +160,22 @@ def decrease_from_availability(book: Book, count):
     :return: True if succeeded, False otherwise
     """
     rows = []
-    check_found = False
+    check_found = 0
     with CSVIterator(available_books_path, "r") as iterator:
         for row in iterator:
             if row[0] == book.get_title():
                 x = int(row[1])
-                check_found = True
+                check_found = 1
                 if x == 0:
-                    return False
-                x -= count
+                    return 2
+                x -= 1
                 if x == 0:
                     change_loaned_status(row[0])
                     book.set_is_loaned(True)
                 row[1] = str(x)
             rows.append(row)
 
-    if check_found:
+    if check_found > 0:
         with CSVIterator(available_books_path, "w") as iterator:
             iterator.write_rows(rows)
 
@@ -212,95 +205,83 @@ def change_loaned_status(name):
 
 
 @check
-def add_borrowed_books_list(book: Book, librarian: User, count, full_name, email, phone):
+def add_borrowed_books_list(book: Book, librarian: User, full_name, email, phone):
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
-        for i in range(count):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False, full_name, email, phone])
-            i += 1
+        borrowed_iterator.write_row([book.get_title(), librarian.get_username(), False, full_name, email, phone])
 
 
 @check
-def lend_book(book: Book, librarian: User, count, full_name, email, phone):
+def lend_book(book: Book, librarian: User, full_name, email, phone):
     """
     This function takes care of the logic behind borrowing a book
     :param book: the book to borrow
     :param librarian: the librarian that lends the book
-    :param count: how many books of this type to lend
     :return: True if succeeded, False otherwise
     """
     try:
-        if check_can_decrease(book, count):
-            check_borrow = decrease_from_availability(book, count)
-            if check_borrow:
-                add_borrowed_books_list(book, librarian, count, full_name, email, phone)
-                return True
-        else:
-            currently_available = available_copies(book)
-            left_over = count - currently_available
-            check_borrow = decrease_from_availability(book, currently_available)
-            if check_borrow:
-                add_borrowed_books_list(book, librarian, currently_available,full_name, email, phone)
-            else:
-                return False #Logically shouldn't reach here
+        check_borrow = decrease_from_availability(book)
+        if check_borrow == 1:
+            add_borrowed_books_list(book, librarian, full_name, email, phone)
+            return check_borrow
+        elif check_borrow == 2:
+            add_books_to_queue(book, librarian, full_name, email, phone)
 
-            add_books_to_queue(book, librarian, left_over, full_name, email, phone)
-            return True
+        return check_borrow
     except Exception as e:
-        return False
+        return 0
+
 
 @check
-def add_books_to_queue(book: Book, librarian: User, count, full_name, email, phone):
-    left_over = count - available_copies(book)
-
+def add_books_to_queue(book: Book, librarian: User, full_name, email, phone):
     with CSVIterator(borrowed_books_path, "a") as borrowed_iterator:
-        for i in range(left_over):
-            borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True, full_name, email, phone])
+        borrowed_iterator.write_row([book.get_title(), librarian.get_username(), True, full_name, email, phone])
 
 
 @check
-def return_book(book: Book, count):
+def return_book(book: Book):
     """
         This function takes care of the logic behind returning a book
         :param book: the book to return
-        :param count:
         :return: True if succeeded, False otherwise
         """
     try:
-        if check_can_increase(book, count):
-            check_return = increase_available_book(book, count)
-            if check_return:
-                remove_borrowed_books_list(book, count)
-                refreshed_rows = refresh_queue(book, count)
-                return True, refreshed_rows
+        check_return = increase_available_book(book)
+        if check_return:
+            remove_borrowed_books_list(book)
+            refreshed_row = refresh_queue(book)
+            return True, refreshed_row
         return False
     except Exception as e:
         return False
 
+
 @check
-def refresh_queue(book: Book, count):
+def refresh_queue(book: Book):
     rows = []
-    refreshed_rows = []
+    refreshed_row = None
+    found = False
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
         for row in borrowed_iterator:
-            if row[0] == book.get_title() and row[2] == "True" and count > 0:
+            if row[0] == book.get_title() and row[2] == "True" and not found:
                 row[2] = "False"
-                count -= 1
-                refreshed_rows.append(row)
+                found = True
+                refreshed_row = row
             rows.append(row)
 
     with CSVIterator(borrowed_books_path, "w") as borrowed_iterator:
         borrowed_iterator.write_rows(rows)
 
-    return refreshed_rows
+    return refreshed_row
 
 
-def remove_borrowed_books_list(book: Book, count):
+def remove_borrowed_books_list(book: Book):
     rows = []
+    found = False
     with CSVIterator(borrowed_books_path, mode="r") as iterator:
         header = next(iterator)
         for row in iterator:
-            if row[0] == book.get_title() and count > 0:
-                count -= 1
+            if row[0] == book.get_title() and not found:
+                found = True
             else:
                 rows.append(row)
 
@@ -310,28 +291,7 @@ def remove_borrowed_books_list(book: Book, count):
 
 
 @check
-def check_can_increase(book: Book, count):
-    maximum_copies = 0
-    currently_available = 0
-
-    with CSVIterator(book_path, "r") as books_iterator:
-        for row in books_iterator:
-            if row[0] == book.get_title():
-                maximum_copies = int(row[3])
-
-    with CSVIterator(available_books_path, "r") as available_iterator:
-        for row in available_iterator:
-            if row[0] == book.get_title():
-                currently_available = int(row[1])
-
-    if count > maximum_copies - currently_available:
-        return False
-
-    return True
-
-
-@check
-def increase_available_book(book: Book, count):
+def increase_available_book(book: Book):
     """
         This function increases the availability of a given book if possible
         and if the current copies amount increases to one it calls to change
@@ -345,9 +305,11 @@ def increase_available_book(book: Book, count):
         for row in iterator:
             if row[0] == book.get_title():
                 x = int(row[1])
+                if x == book.get_copies():
+                    return False
                 if x == 0:
                     change_loaned_status(row[0])
-                x += count
+                x += 1
                 row[1] = str(x)
                 check_found = True
             rows.append(row)
@@ -499,13 +461,14 @@ def select_book_by_name(name):
     :param name: the books name
     :return: book
     """
-    book = None
+    books = []
     with CSVIterator(book_path, "r") as iterator:
         for row in iterator:
             if row[0] == name:
                 book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
+                books.append(book)
 
-    return book
+    return books
 
 
 @check
@@ -538,24 +501,6 @@ def select_book_by_genre(genre):
     with CSVIterator(book_path, "r") as iterator:
         for row in iterator:
             if row[4] == genre:
-                book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
-                books.append(book)
-
-    return books
-
-
-@check
-def select_book_by_year(year):
-    """
-    Given a year the function returns a list with all the books
-    written at the given year
-    :param year: the year
-    :return: a list of books
-    """
-    books = []
-    with CSVIterator(book_path, "r") as iterator:
-        for row in iterator:
-            if row[5] == year:
                 book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
                 books.append(book)
 
@@ -727,6 +672,7 @@ def get_borrowed_books():
 
     return books
 
+
 def get_borrowed_copies_by_book_and_user(book: Book, librarian: User):
     """
     This function returns how many copies were lent by a given librarian
@@ -743,4 +689,3 @@ def get_borrowed_copies_by_book_and_user(book: Book, librarian: User):
                 copies += 1
 
     return copies
-
