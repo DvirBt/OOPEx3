@@ -1,1488 +1,873 @@
-2025-01-17 17:26:01,766 - INFO - Displayed all books successfully
-2025-01-17 17:27:00,195 - INFO - Displayed available books successfully
-Displayed all books successfully
-logged in successfully
-Displayed available books successfully
 Displayed all books successfully
 logged in successfully
 Displayed all books successfully
-logged in successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered fail
-book borrowed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
 Displayed all books successfully
 logged in successfully
 Displayed all books successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title2 by name completed successfully
+Search book_name Title2 by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
 logged in successfully
 Displayed all books successfully
-Displayed available books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
 Displayed all books successfully
+book_name borrowed fail
 Displayed all books successfully
-Displayed all books successfully
-Displayed available books successfully
-Displayed all books successfully
-Displayed all books successfully
-Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
 Displayed all books successfully
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed fail
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
 The user1 dvirbto doesn't exists
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-The user1 dvirbto doesn't exists
+book_name removed failed
+book_name removed failed
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-Search book Title1 by name completed fail
-book added successfully
-book added successfully
-book removed successfully
-book added successfully
-book added successfully
-book removed successfully
-book added successfully
-book added successfully
-book removed successfully
-Search book Title1 by name completed fail
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed failed
-book removed failed
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed fail
-book borrowed fail
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book removed failed
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-book returned successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed failed
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned successfully
-book removed successfully
-book returned fail
-book returned fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book removed successfully
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book removed successfully
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-book returned fail
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Displayed book by category fail
-Displayed book by category fail
-Displayed book by category fail
-Displayed book by category fail
-Displayed book by category fail
-Displayed book by category fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
 Successfully removed user1: dvirbto
 registered successfully
 Successfully removed user1: dvirbto
 Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
 registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-Successfully removed user1: dvirbto
-registered successfully
-Successfully removed user1: dvirbto
-Successfully removed user1: dvirbto
-book removed successfully
-book removed successfully
-book added successfully
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-book removed successfully
-book borrowed fail
-book borrowed fail
-book borrowed fail
-book added successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book added to queue successfully
-book added to queue successfully
-book added to queue successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-registered successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-book removed successfully
-book added successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book borrowed successfully
-book removed successfully
-Search book Title1 by name completed fail
-Search book Title1 by name completed fail
-book removed failed
-book returned fail
-book returned fail
-book added successfully
-book returned fail
-book borrowed successfully
-book returned successfully
-book returned successfully
-book returned fail
-book returned fail
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Displayed book by category successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book Title1 by name completed successfully
-Successfully update the book: Title1
-Search book Title1 by name completed successfully
-Search book A Game of Thrones by author completed successfully
-Search book The Catcher in the Rye by author completed successfully
-Displayed book by category fail
-Search book A Game of Thrones by author completed successfully
-Search book A Game of Thrones by author completed successfully
-Search book by author completed fail
-Search book by author completed fail
-Search book The Catcher in the Rye by author completed successfully
-Search book A Game of Thrones by author completed successfully
-Search book  by name completed successfully
-Search book by author completed fail
-Search book by author completed fail
-Search book by author completed fail
-Search book by author completed fail
-Search book The Catcher in the Rye by author completed successfully
-Search book A Game of Thrones by author completed successfully
-Search book The by name completed successfully
-Search book a by name completed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+book_name returned fail
+Search book_name 1984 by name completed successfully
+Search book_name Title2 by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to hgfkjfghk and text message to 74537
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghfkhgf and text message to 658
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to tujhgk and text message to 7659
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to jkgh; and text message to 3
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned successfully
