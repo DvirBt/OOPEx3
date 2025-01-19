@@ -81,8 +81,8 @@ def search_book(book_name, author_name):
 
     Returns
     -------
-    a List
-        List of books which contains the full or partial name of it's title or author.
+    list
+         Of books which contains the full or partial name of it's title or author.
     """
     if book_name == "":
         book_name = None
@@ -190,7 +190,6 @@ def login(username, password):
     """
     global user
     user = User(username,password)
-    user = User("shakedm100", "aesnhftk1")
     success = library.login_user(user)
     if success:
         notification("Login succeeded!", home_page)
@@ -447,8 +446,6 @@ def create_tree_for_view_page(topic, book_list):
         for item in book_list:
             tree.insert("", "end",
                     values=(item.get_title(), item.get_author(), item.get_is_loaned(), item.get_copies(), item.get_genre(), item.get_year()))
-
-
 
 """""
 Pages
