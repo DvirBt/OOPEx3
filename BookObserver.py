@@ -28,5 +28,5 @@ class BookObserver(Observer):
 
     def update(self, book_name, client_name):
         if self.book_name == book_name and self.client_name == client_name:
-            logging.info(f"Sending email to {self.client_email} and text message to {self.client_phone}")
+            logging.info(f"Sending an email to {self.client_email} and a text message to {self.client_phone}")
             return True
