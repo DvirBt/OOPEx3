@@ -180,3 +180,33 @@ class Test(unittest.TestCase):
             check = True
 
         self.assertEqual(check, True)
+
+    def test_search_book_by_author(self):
+        author = self.library.search_book_by_author("George")
+        check = False
+        if len(author) > 0:
+            check = True
+
+        self.assertEqual(check, True)
+
+        author = self.library.search_book_by_author("Geo")
+        check = False
+        if len(author) > 0:
+            check = True
+
+        self.assertEqual(check, True)
+
+    def test_search_book_by_name(self):
+        names = self.library.search_book_by_name("The")
+        check = False
+        if len(names) > 0:
+            check = True
+
+        self.assertEqual(check, True)
+
+        names = self.library.search_book_by_name("a")
+        check = False
+        if len(names) > 0:
+            check = True
+
+        self.assertEqual(check, True)

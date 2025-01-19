@@ -615,6 +615,7 @@ def select_book_by_author_partly(name_partly):
         """
     books = []
     with CSVIterator(book_path, "r") as iterator:
+        next(iterator)
         for row in iterator:
             if name_partly.lower() in row[1].lower():
                 book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))
@@ -633,6 +634,7 @@ def select_book_by_genre_partly(genre_partly):
     """
     books = []
     with CSVIterator(book_path, "r") as iterator:
+        next(iterator)
         for row in iterator:
             if genre_partly.lower() in row[4].lower():
                 book = book_factory.get_book("book", row[0], row[1], row[2], int(row[3]), row[4], int(row[5]))

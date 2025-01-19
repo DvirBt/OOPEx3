@@ -1398,3 +1398,91 @@ book removed successfully
 book removed successfully
 book added successfully
 book borrowed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book A Game of Thrones by author completed successfully
+Search book The Catcher in the Rye by author completed successfully
+Displayed book by category fail
+Search book A Game of Thrones by author completed successfully
+Search book A Game of Thrones by author completed successfully
+Search book by author completed fail
+Search book by author completed fail
+Search book The Catcher in the Rye by author completed successfully
+Search book A Game of Thrones by author completed successfully
+Search book  by name completed successfully
+Search book by author completed fail
+Search book by author completed fail
+Search book by author completed fail
+Search book by author completed fail
+Search book The Catcher in the Rye by author completed successfully
+Search book A Game of Thrones by author completed successfully
+Search book The by name completed successfully
+Search book a by name completed successfully

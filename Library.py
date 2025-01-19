@@ -113,9 +113,13 @@ class Library(Subject):
         This function is given a book to borrow and return True if the book was successfully borrowed
         :param book_to_lend: the book to borrow
         :param librarian: the librarians the lends the book
-        :param count: how many copies to lend
         :return: True if succeeded
         """
+        if len(client_full_name) == 0 or len(client_email) == 0 or len(client_phone) == 0:
+            self.log_text = "book borrowed fail"
+            self.log_level = logging.ERROR
+            return False
+
         if book_to_lend is not None:
             try:
                 check = FileManagement.lend_book(book_to_lend, librarian, client_full_name, client_email,
@@ -352,6 +356,9 @@ class Library(Subject):
         :param name: the books name
         :return: book
         """
+        if name is None:
+            return None
+
         try:
             self.search_context = SearchContext(FullStrategy.FullStrategy())
 
@@ -383,6 +390,9 @@ class Library(Subject):
         :param name: the author's name
         :return: a list of books
         """
+        if name is None:
+            return None
+
         try:
             self.search_context = SearchContext(FullStrategy.FullStrategy())
 
@@ -414,6 +424,9 @@ class Library(Subject):
         :param name: the genre name
         :return: a list of books
         """
+        if name is None:
+            return None
+
         try:
             self.search_context = SearchContext(FullStrategy.FullStrategy())
 
@@ -490,7 +503,7 @@ class Library(Subject):
             self.log_text = "Displayed available books fail"
             self.log_level = logging.ERROR
 
-    def get_borrowed_books_by_user(self):
+    def get_borrowed_books(self):
         """
         This function returns all the books that are currently borrowed from the library
         :return: a list of books
