@@ -133,6 +133,8 @@ class Test(unittest.TestCase):
         self.library.register_user(self.user)
 
         self.library.borrow_book(self.book, self.user, "Shaked Michael", "shaked1mi@gmail.com", "0542857333")
+        self.library.borrow_book(self.book, self.user, "Dvir Hai", "dvirking123@gmail.com", "05862475111")
+
         books = FileManagement.get_borrowed_books()
 
         if len(books) >= 2:
