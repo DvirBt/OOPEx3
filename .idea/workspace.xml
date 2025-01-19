@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Pathing is now general and unrelated to OS">
+    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Changed a small thing in test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookObserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookObserver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737307993342</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Changed a small thing in test">
+      <option name="closed" value="true" />
+      <created>1737309238950</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737309238950</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -410,7 +418,8 @@
     <MESSAGE value="Fixed lend and return functionality" />
     <MESSAGE value="Fixed is_lent field" />
     <MESSAGE value="Pathing is now general and unrelated to OS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pathing is now general and unrelated to OS" />
+    <MESSAGE value="Changed a small thing in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed a small thing in test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
