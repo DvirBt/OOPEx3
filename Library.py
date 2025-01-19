@@ -5,6 +5,9 @@ import FileManagement
 from User import User
 import logging
 from BookFactory import BookFactory
+from SearchContext import SearchContext
+import FullStrategy
+import PartialStrategy
 
 
 class Observer:
@@ -102,6 +105,7 @@ class Library(Subject):
             self.book_factory = BookFactory()
             self.notification_message = ""
             self._initialized = True  # Mark the instance as initialized
+            self.search_context = FullStrategy.FullStrategy()  # Default searching strategy
 
     @log_to_file
     def borrow_book(self, book_to_lend: Book, librarian: User, count, client_full_name, client_email, client_phone):
@@ -340,26 +344,37 @@ class Library(Subject):
             return False
 
     @log_to_file
-    def get_book_by_title(self, name):
+    def search_book_by_name(self, name):
         """
         Given a name of a book returns a Book object with all it's properties
         :param name: the books name
         :return: book
         """
         try:
-            book = FileManagement.select_book_by_name(name)
-            if book is not None:
+            self.search_context = SearchContext(FullStrategy.FullStrategy())
+
+            result = self.search_context.search_name(name)
+
+            if not result:
+                self.search_context.set_searching_strategy(PartialStrategy.PartialStrategy())
+                result = self.search_context.search_name(name)
+
+            if result:
                 self.log_text = f"Search book {name} by name completed successfully"
                 self.log_level = logging.INFO
             else:
                 self.log_text = f"Search book {name} by name completed fail"
-            return book
+                self.log_level = logging.INFO
+                return None
+
+            return result
+
         except Exception as e:
-            self.log_text = f"Search book {name} by name completed"
+            self.log_text = f"Search book {name} by name completed fail"
             self.log_level = logging.ERROR
 
     @log_to_file
-    def get_book_by_author(self, name):
+    def search_book_by_author(self, name):
         """
         Given an author's name the function returns a list with all the books
         written by the given author
@@ -367,14 +382,24 @@ class Library(Subject):
         :return: a list of books
         """
         try:
-            books = FileManagement.select_book_by_author(name)
-            if len(books) > 0:
-                self.log_text = f"Search book {books[0].get_title()} by author completed successfully"
+            self.search_context = SearchContext(FullStrategy.FullStrategy())
+
+            result = self.search_context.search_author(name)
+
+            if not result or len(result) == 0:
+                self.search_context.set_searching_strategy(PartialStrategy.PartialStrategy())
+                result = self.search_context.search_author(name)
+
+            if result and len(result) > 0:
+                self.log_text = f"Search book {result[0].get_title()} by author completed successfully"
                 self.log_level = logging.INFO
             else:
                 self.log_text = f"Search book by author completed fail"
                 self.log_level = logging.INFO
-            return books
+                return None
+
+            return result
+
         except Exception as e:
             self.log_text = f"Search book by author completed fail"
             self.log_level = logging.ERROR
@@ -388,31 +413,27 @@ class Library(Subject):
         :return: a list of books
         """
         try:
-            books = FileManagement.select_book_by_genre(name)
-            if len(books) > 0:
+            self.search_context = SearchContext(FullStrategy.FullStrategy())
+
+            result = self.search_context.search_genre(name)
+
+            if not result or len(result) == 0:
+                self.search_context.set_searching_strategy(PartialStrategy.PartialStrategy())
+                result = self.search_context.search_genre(name)
+
+            if result and len(result) > 0:
                 self.log_text = "Displayed book by category successfully"
                 self.log_level = logging.INFO
             else:
                 self.log_text = "Displayed book by category fail"
                 self.log_level = logging.INFO
-            return books
+                return None
+
+            return result
+
         except Exception as e:
             self.log_text = "Displayed book by category fail"
             self.log_level = logging.ERROR
-
-    @log_to_file
-    def get_book_by_year(self, year):
-        """
-        Given a year the function returns a list with all the books
-        written at the given year
-        :param year: the year
-        :return: a list of books
-        """
-        try:
-            books = FileManagement.select_book_by_year(year)
-            return books
-        except Exception as e:
-            return None
 
     @log_to_file
     def get_book_copies(self, book: Book):
