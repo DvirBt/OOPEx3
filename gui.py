@@ -34,7 +34,15 @@ def valid_input(parameter):
     boolean
         True if the String contains only numbers. Otherwise - False.
     """
-    return parameter.isdigit()
+
+    try:
+        # Try converting the input to an integer
+        int(parameter)
+        return True
+    except ValueError:
+        return False
+
+    #return parameter.isdigit()
 
 validate_command = main_window.register(valid_input)  # Register the function
 
@@ -61,7 +69,7 @@ def init_page():
     clear()
     back_button = Button(main_window, text="Home page")
     back_button.config(command=home_page,
-                       font=('Ink Free', 15, 'bold'),
+                       font=('Times New Roman', 15, 'bold'),
                        bg="#cae8cd")
     back_button.grid(row=10, column=2, pady=10)
 
@@ -107,13 +115,13 @@ def search_book(book_name, author_name):
         init_page()
         topic_label = Label(main_window,
                             text="Books",
-                            font=('Ink Free', 22, 'bold'),
+                            font=('Times New Roman', 22, 'bold'),
                             bg="#cae8cd")
         topic_label.grid(row=0, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
         create_tree_for_view_page("Results", books_list)
 
     else:
-        notification("No books found!", search_book)
+        notification("No books found!", search_page)
 
 def notification(message, next_page):
     """
@@ -146,7 +154,7 @@ def notification(message, next_page):
     alert_label = Label(alert_window, text=message)
     alert_label.pack(pady=10) # there is no need for grid -> pack
     alert_button = Button(alert_window, text="ok", command= lambda : alert_window.destroy())
-    alert_button.pack(pady=20)
+    alert_button.pack(pady=10)
     #alert_window.mainloop()
     if next_page:
         next_page()
@@ -169,7 +177,7 @@ def register(username, password):
     user = User(username, password)
     success = library.register_user(user)
     if success:
-        notification("User registered successfully!", login)
+        notification("User registered successfully!", login_page)
     else:
         notification("User register failed!", None)
 
@@ -231,18 +239,32 @@ def add_book(title, author, copies, genre, year):
     author : String
         The author of the book.
 
-    copies : int
+    copies : String
         The amount of copies of the book.
 
     genre : String
         The category of the book.
 
-    year : int
+    year : String
         The year the book established.
     -------
     A notification with the relevant message if the book is created successfully or failed.
     """
-    book = Book(title, author, False, copies, genre, year)
+
+    if title == "" or author == "" or copies == "" or genre == "" or year == "":
+        notification("Fill all the entries!", None)
+        return
+
+    if not valid_input(year):
+        notification("Year must be a number!", None)
+        return
+
+    # determine is_loaned? property
+    if copies == "0":
+        book = Book(title, author, True, 0, genre, int(year))
+    else:
+        book = Book(title, author, False, int(copies), genre, int(year))
+
     success = library.add_book(book)
     if success:
         add_to_categories(book.get_genre())
@@ -264,9 +286,16 @@ def try_return_book(book):
     Book
         The selected book of the TreeView.
     """
-    success = library.return_book(book)
+    if book:
+        success = library.return_book(book)
+    else:
+        success = False
+
     if success:
-        notification("Book returned successfully!", home_page)
+        if len(library.get_borrowed_books()) > 0:
+            notification("Book returned successfully!", return_book_page)
+        else:
+            notification("Book returned successfully!\nNo more books to return!", home_page)
     else:
         notification("Book returned failed!", return_book_page)
 
@@ -292,13 +321,17 @@ def try_lend_book(book, client, email, phone):
     A pop-up notification will appear with the relevant message if the Book has been lent successfully or failed.
     """
     global user
-    success = library.borrow_book(book, user, client, email, phone)
+    if book:
+        success = library.borrow_book(book, user, client, email, phone)
+    else:
+        success = False
+
     if success == 0:
         notification("Book lend failed!", None)
     elif success == 1:
         notification("Book lend successfully!", borrow_book_page)
     else:  # success == 2 -> entered the queue
-        notification("The book is unavailable at the moment\nYou entered to the waiting list!", borrow_book_page)
+        notification("This book is unavailable at the moment!\nYou entered to the waiting list!", borrow_book_page)
 
 
 def remove_book(book):
@@ -312,10 +345,13 @@ def remove_book(book):
     ----------
     A pop-up notification will appear with the relevant message if the Book has been removed successfully or failed.
     """
-    success = library.remove_book(book)
+    if book:
+        success = library.remove_book(book)
+    else:
+        success = False
+
     if success:
         notification("Book removed successfully!", remove_book_page)
-        home_page()
     else:
         notification("Book removed failed!", None)
 
@@ -349,9 +385,8 @@ def get_selected_book_from_tree(event=None):
         else:
             notification("Invalid book!", None)
     else:
-        notification("Invalid book!", None)
+        #notification("Invalid book!", None)
         return None
-
 
 def tree_select_value(books_list):
     """
@@ -408,14 +443,14 @@ def create_tree_for_view_page(topic, book_list):
     init_page()
     books_label = Label(main_window,
                            text=f"{topic}",
-                           font=('Ink Free', 22, 'bold'),
+                           font=('Times New Roman', 22, 'bold'),
                            bg="#cae8cd")
     books_label.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
     if topic != "Popular books":
         back_button = Button(main_window, text="Back")
         back_button.config(command=lambda: view_books_page(),
-                         font=('Ink Free', 15, 'bold'),
+                         font=('Times New Roman', 15, 'bold'),
                          bg="#cae8cd")
         back_button.grid(row=0, column=0, columnspan=3, padx=50, pady=25, sticky="w")
         if topic == "Results":
@@ -469,14 +504,14 @@ def login_page():
 
     login_label = Label(main_window,
                         text="Login / Register page",
-                        font=('Ink Free', 30, 'bold'),
+                        font=('Times New Roman', 30, 'bold'),
                         bg="#cae8cd",
                         pady=40)
-    login_label.grid(row=0, columnspan=3, padx=170, pady=10, sticky="nsew")
+    login_label.grid(row=0, columnspan=3, padx=150, pady=10, sticky="nsew")
 
     username_label = Label(main_window,
                         text="Username: ",
-                        font=('Ink Free', 18, 'bold'),
+                        font=('Times New Roman', 18, 'bold'),
                         bg="#cae8cd")
     username_label.grid(row=1, column=0, columnspan=1, pady=25, sticky="nsew")
 
@@ -485,7 +520,7 @@ def login_page():
 
     password_label = Label(main_window,
                         text="Password: ",
-                        font=('Ink Free', 18, 'bold'),
+                        font=('Times New Roman', 18, 'bold'),
                         bg="#cae8cd")
     password_label.grid(row=2, column=0, pady=25, sticky="nsew")
 
@@ -495,13 +530,13 @@ def login_page():
     # Buttons
     login_button = Button(main_window, text="Login")
     login_button.config(command=lambda: login(username_entry.get(), password_entry.get()),
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     login_button.grid(row=4, columnspan=3, padx=250, pady=25, sticky="nsew")
 
     register_button = Button(main_window, text="Register") # (username_entry.get(), password_entry.get())
     register_button.config(command= lambda : register(username_entry.get(), password_entry.get()),
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     register_button.grid(row=5, columnspan=3, padx=250, pady=25, sticky="nsew")
 
@@ -527,55 +562,55 @@ def home_page():
 
     welcome = Label(main_window,
                     text=f"Welcome back {user.get_username()}",
-                    font=('Ink Free', 22, 'bold'),
+                    font=('Times New Roman', 22, 'bold'),
                     bg="#cae8cd")
     welcome.grid(row=0, column=1, pady=25, sticky="nsew")
 
     add_button = Button(main_window, text="Add Book")
     add_button.config(command=add_book_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     add_button.grid(row=1, column=1, pady=10, sticky="nsew")
 
     remove_book_button = Button(main_window, text="Remove Book")
     remove_book_button.config(command=remove_book_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     remove_book_button.grid(row=2, column=1, pady=10, sticky="nsew")
 
     search_book_button = Button(main_window, text="Search Book")
     search_book_button.config(command=search_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     search_book_button.grid(row=3, column=1, pady=10, sticky="nsew")
 
     view_books_button = Button(main_window, text="View Books")
     view_books_button.config(command=view_books_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     view_books_button.grid(row=4, column=1, pady=10, sticky="nsew")
 
     borrow_book_button = Button(main_window, text="Lend Book")
     borrow_book_button.config(command=borrow_book_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     borrow_book_button.grid(row=5, column=1, pady=10, sticky="nsew")
 
     return_book_button = Button(main_window, text="Return Book")
     return_book_button.config(command=return_book_page,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     return_book_button.grid(row=6, column=1, pady=10, sticky="nsew")
 
     popular_books__button = Button(main_window, text="Popular Books")
     popular_books__button.config(command=popular_page,
-                              font=('Ink Free', 15, 'bold'),
+                              font=('Times New Roman', 15, 'bold'),
                               bg="#cae8cd")
     popular_books__button.grid(row=7, column=1, pady=10, sticky="nsew")
 
     logout_button = Button(main_window, text="Logout")
     logout_button.config(command=logout,
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     logout_button.grid(row=10, column=0, padx=15, pady=25, sticky="nsew")
 
@@ -593,13 +628,13 @@ def add_book_page():
     # create all necessary widgets
     add_book_label = Label(main_window,
                     text="Add a new book",
-                    font=('Ink Free', 22, 'bold'),
+                    font=('Times New Roman', 22, 'bold'),
                     bg="#cae8cd")
     add_book_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
 
     title_label = Label(main_window,
                            text="Title:",
-                           font=('Ink Free', 15, 'bold'),
+                           font=('Times New Roman', 15, 'bold'),
                            bg="#cae8cd")
     title_label.grid(row=1, column=1, pady=10, sticky="nsew")
 
@@ -608,7 +643,7 @@ def add_book_page():
 
     author_label = Label(main_window,
                         text="Author:",
-                        font=('Ink Free', 15, 'bold'),
+                        font=('Times New Roman', 15, 'bold'),
                         bg="#cae8cd")
     author_label.grid(row=2, column=1, pady=10, sticky="nsew")
 
@@ -617,15 +652,15 @@ def add_book_page():
 
     copies_label = Label(main_window,
                            text="Copies:",
-                           font=('Ink Free', 15, 'bold'),
+                           font=('Times New Roman', 15, 'bold'),
                            bg="#cae8cd")
     copies_label.grid(row=3, column=1, pady=10, sticky="nsew")
-    copies_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key", validatecommand=(valid_input, "%P"))
+    copies_entry = Entry(main_window, validate="key", validatecommand=(validate_command, "%P"))
     copies_entry.grid(row=3, column=2, pady=10, sticky="nsew")
 
     genre_label = Label(main_window,
                          text="Genre:",
-                         font=('Ink Free', 15, 'bold'),
+                         font=('Times New Roman', 15, 'bold'),
                          bg="#cae8cd")
     genre_label.grid(row=4, column=1, pady=10, sticky="nsew")
 
@@ -634,16 +669,16 @@ def add_book_page():
 
     year_label = Label(main_window,
                         text="Year:",
-                        font=('Ink Free', 15, 'bold'),
+                        font=('Times New Roman', 15, 'bold'),
                         bg="#cae8cd")
     year_label.grid(row=5, column=1, pady=10, sticky="nsew")
 
-    year_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key", validatecommand=(valid_input, "%P"))
+    year_entry = Entry(main_window)
     year_entry.grid(row=5, column=2, pady=10, sticky="nsew")
 
     add_button = Button(main_window, text="Add book")
-    add_button.config(command=lambda : add_book(title_entry.get(), author_entry.get(), int(copies_entry.get()), genre_entry.get(), int(year_entry.get())),
-                      font=('Ink Free', 22, 'bold'),
+    add_button.config(command=lambda : add_book(title_entry.get(), author_entry.get(), copies_entry.get(), genre_entry.get(), year_entry.get()),
+                      font=('Times New Roman', 22, 'bold'),
                       bg="#cae8cd")
     add_button.grid(row=8, column=2, pady=10, sticky="nsew")
 
@@ -662,13 +697,13 @@ def search_page():
     init_page()
     search_label = Label(main_window,
                              text="Search books",
-                             font=('Ink Free', 22, 'bold'),
+                             font=('Times New Roman', 22, 'bold'),
                              bg="#cae8cd")
     search_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
 
     title_label = Label(main_window,
                          text="Title:",
-                         font=('Ink Free', 15, 'bold'),
+                         font=('Times New Roman', 15, 'bold'),
                          bg="#cae8cd")
     title_label.grid(row=1, column=1, pady=10, sticky="nsew")
 
@@ -677,7 +712,7 @@ def search_page():
 
     author_label = Label(main_window,
                         text="Author:",
-                        font=('Ink Free', 15, 'bold'),
+                        font=('Times New Roman', 15, 'bold'),
                         bg="#cae8cd")
     author_label.grid(row=2, column=1, pady=10, sticky="nsew")
 
@@ -686,7 +721,7 @@ def search_page():
 
     search_button = Button(main_window, text="Search")
     search_button.config(command=lambda: search_book(title_entry.get(), author_entry.get()),
-                      font=('Ink Free', 22, 'bold'),
+                      font=('Times New Roman', 22, 'bold'),
                       bg="#cae8cd")
     search_button.grid(row=3, column=2, pady=25, sticky="nsew")
 
@@ -707,31 +742,31 @@ def view_books_page():
     # create all necessary widgets
     view_books_label = Label(main_window,
                              text="View books",
-                             font=('Ink Free', 22, 'bold'),
+                             font=('Times New Roman', 22, 'bold'),
                              bg="#cae8cd")
     view_books_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
 
     all_button = Button(main_window, text="All books")
     all_button.config(command=lambda: create_tree_for_view_page("All books", library.get_all_books()),
-                      font=('Ink Free', 15, 'bold'),
+                      font=('Times New Roman', 15, 'bold'),
                       bg="#cae8cd")
     all_button.grid(row=1, column=2, pady=10, sticky="nsew")
 
     available_button = Button(main_window, text="Available books")
     available_button.config(command=lambda: create_tree_for_view_page("Available books", library.get_available_books()),
-                            font=('Ink Free', 15, 'bold'),
+                            font=('Times New Roman', 15, 'bold'),
                             bg="#cae8cd")
     available_button.grid(row=2, column=2, pady=10, sticky="nsew")
     global user
     borrowed_button = Button(main_window, text="Lent books")
     borrowed_button.config(command=lambda: create_tree_for_view_page("Lent books", library.get_borrowed_books()),
-                           font=('Ink Free', 15, 'bold'),
+                           font=('Times New Roman', 15, 'bold'),
                            bg="#cae8cd")
     borrowed_button.grid(row=3, column=2, pady=10, sticky="nsew")
 
     category_button = Button(main_window, text="By category")
     category_button.config(command=category_page,
-                           font=('Ink Free', 15, 'bold'),
+                           font=('Times New Roman', 15, 'bold'),
                            bg="#cae8cd")
     category_button.grid(row=4, column=2, pady=10, sticky="nsew")
 
@@ -750,13 +785,13 @@ def category_page():
     # create all necessary widgets
     view_books_label = Label(main_window,
                            text="By category",
-                           font=('Ink Free', 22, 'bold'),
+                           font=('Times New Roman', 22, 'bold'),
                            bg="#cae8cd")
     view_books_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
 
     category_label = Label(main_window,
                          text="Category:",
-                         font=('Ink Free', 15, 'bold'),
+                         font=('Times New Roman', 15, 'bold'),
                          bg="#cae8cd")
     category_label.grid(row=1, column=1, pady=10, sticky="nsew")
     global categories
@@ -768,7 +803,7 @@ def category_page():
 
     # Create the OptionMenu
     dropdown = OptionMenu(main_window, selected_category, *categories)
-    dropdown.config(font=('Ink Free', 15, 'bold'), width=20)  # Styling the dropdown
+    dropdown.config(font=('Times New Roman', 15, 'bold'), width=20)  # Styling the dropdown
     dropdown.grid(row=1, column=2, pady=10, sticky="nsew")
 
     """"
@@ -779,7 +814,7 @@ def category_page():
 
     category_button = Button(main_window, text="Submit")
     category_button.config(command=lambda : create_tree_for_view_page(f"Books of {selected_category.get()}", library.search_book_by_genre(selected_category.get())),
-                         font=('Ink Free', 15, 'bold'),
+                         font=('Times New Roman', 15, 'bold'),
                          bg="#cae8cd")
     category_button.grid(row=2, column=2, pady=20, sticky="nsew")
 
@@ -814,7 +849,7 @@ def return_book_page():
     init_page()
     return_label = Label(main_window,
                          text="Return a book",
-                         font=('Ink Free', 22, 'bold'),
+                         font=('Times New Roman', 22, 'bold'),
                          bg="#cae8cd")
     return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     global user
@@ -824,7 +859,7 @@ def return_book_page():
         lend_button = Button(main_window, text="Return selected book")
         lend_button.config(
             command=lambda: try_return_book(get_selected_book_from_tree()),
-            font=('Ink Free', 15, 'bold'),
+            font=('Times New Roman', 15, 'bold'),
             bg="#cae8cd")
         lend_button.grid(row=3, column=1, columnspan=2, padx=100, pady=10, sticky="nsew")
 
@@ -845,7 +880,7 @@ def remove_book_page():
     init_page()
     remove_label = Label(main_window,
                          text="Remove a book",
-                         font=('Ink Free', 22, 'bold'),
+                         font=('Times New Roman', 22, 'bold'),
                          bg="#cae8cd")
     remove_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     books_list = library.get_all_books()
@@ -854,7 +889,7 @@ def remove_book_page():
         tree_select_value(books_list)
         remove_button = Button(main_window, text="Remove selected book")
         remove_button.config(command=lambda: remove_book(get_selected_book_from_tree()),
-                             font=('Ink Free', 15, 'bold'),
+                             font=('Times New Roman', 15, 'bold'),
                              bg="#cae8cd")
         remove_button.grid(row=4, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
 
@@ -880,7 +915,7 @@ def borrow_book_page():
     main_window.grid_columnconfigure(1, weight=0)
     borrow_label = Label(main_window,
                          text="Lend a book",
-                         font=('Ink Free', 22, 'bold'),
+                         font=('Times New Roman', 22, 'bold'),
                          bg="#cae8cd")
     borrow_label.grid(row=0, column=1, columnspan=3, padx=100, pady=15, sticky="nsew")
     books_list = library.get_all_books()
@@ -890,7 +925,7 @@ def borrow_book_page():
 
         client_label = Label(main_window,
                              text="Name:",
-                             font=('Ink Free', 15, 'bold'),
+                             font=('Times New Roman', 15, 'bold'),
                              bg="#cae8cd")
         client_label.grid(row=3, column=2, padx=100, pady=5, sticky="w")
         client_entry = Entry(main_window)
@@ -898,7 +933,7 @@ def borrow_book_page():
 
         email_label = Label(main_window,
                              text="Email:",
-                             font=('Ink Free', 15, 'bold'),
+                             font=('Times New Roman', 15, 'bold'),
                              bg="#cae8cd")
         email_label.grid(row=4, column=2, padx=100, pady=5, sticky="w")
         email_entry = Entry(main_window)
@@ -906,16 +941,17 @@ def borrow_book_page():
 
         phone_label = Label(main_window,
                              text="Phone:",
-                             font=('Ink Free', 15, 'bold'),
+                             font=('Times New Roman', 15, 'bold'),
                              bg="#cae8cd")
         phone_label.grid(row=5, column=2, padx=100, pady=10, sticky="w")
-        phone_entry = Entry(main_window, textvariable=StringVar(value=0), validate="key",
-                             validatecommand=(valid_input, "%P"))
+
+        phone_entry = Entry(main_window, textvariable=StringVar(value="05"), validate="key",
+                            validatecommand=(validate_command, "%P"))
         phone_entry.grid(row=5, column=2, padx=50, pady=5)
 
         lend_button = Button(main_window, text="Lend selected book")
         lend_button.config(command=lambda: try_lend_book(get_selected_book_from_tree(), client_entry.get(), email_entry.get(), phone_entry.get()),
-                             font=('Ink Free', 15, 'bold'),
+                             font=('Times New Roman', 15, 'bold'),
                              bg="#cae8cd")
         lend_button.grid(row=6, column=1, columnspan=2, padx=100, pady=10, sticky="nsew")
 
