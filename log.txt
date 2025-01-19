@@ -871,3 +871,594 @@ book_name returned successfully
 Search book_name The Catcher in the Rye by name completed successfully
 Search book_name The Catcher in the Rye by name completed successfully
 book_name returned successfully
+Displayed all books successfully
+logged in successfully
+logged in successfully
+book_name added successfully
+Search book_name witch by name completed successfully
+Search book_name witch by name completed successfully
+Search book_name The by name completed successfully
+Search book_name The by name completed successfully
+Search book_name The by name completed successfully
+Search book_name The Witcher by author completed successfully
+Search book_name The Witcher by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Search book_name The Catcher in the Rye by author completed successfully
+Displayed all books successfully
+Search book_name The Witcher by name completed successfully
+Search book_name The Witcher by name completed successfully
+Search book_name The Witcher by name completed successfully
+book_name removed successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+book_name added successfully
+Displayed all books successfully
+Displayed available books successfully
+Displayed book_name by category successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+log out successful
+logged in successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+logged in fail
+logged in successfully
+log out successful
+Displayed all books successfully
+logged in fail
+registered fail
+logged in fail
+logged in successfully
+log out successful
+logged in successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in fail
+registered successfully
+logged in successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to gfdj and text message to 0436
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghkg and text message to 437
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name To Kill a Mockingbird by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to gfdhk and text message to 054458
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghfk and text message to 5679
+book_name returned successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to gfhdk and text message to 4367
+book_name returned successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name To Kill a Mockingbird by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name Title2 by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghfkhgf and text message to 2356
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghkgk and text message to 45754
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghlkg and text message to 436
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to fgkfdgk and text message to 4376
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to ghkghk and text message to 43557
+book_name returned successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to erdsuyresu and text message to 4375
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name To Kill a Mockingbird by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+book_name borrowed fail
+Search book_name To Kill a Mockingbird by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to fdshfs and text message to 2154
+Displayed all books successfully
+logged in successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Search book_name The Catcher in the Rye by name completed successfully
+Sending email to dfshfds and text message to 32416
+book_name returned successfully
+Displayed all books successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+Sending email to dfsh and text message to 23256
+book_name returned successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Displayed all books successfully
+logged in successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Displayed all books successfully
+Displayed all books successfully
+Displayed all books successfully
+logged in successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name borrowed successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name added to queue successfully
+Displayed all books successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+Sending email to dfshd and text message to 3426
+book_name returned successfully
+Search book_name Moby Dick by name completed successfully
+Search book_name Moby Dick by name completed successfully
+book_name returned successfully
+Displayed all books successfully
+Search book_name Moby Dick by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully

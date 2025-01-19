@@ -9,7 +9,7 @@ from BookFactory import BookFactory
 from SearchContext import SearchContext
 import FullStrategy
 import PartialStrategy
-
+from pathlib import Path
 
 class Subject:
     """The Subject class maintains a list of observers and notifies them of changes."""
@@ -36,7 +36,7 @@ class Subject:
                     self._observers.remove(observer)
 
 
-LOG_FILE = rf"{os.getcwd()}\log.txt"
+LOG_FILE = Path.cwd() / "log.txt"
 
 logging.basicConfig(
     filename=LOG_FILE,  # File where logs will be saved

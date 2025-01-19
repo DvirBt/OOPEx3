@@ -1,12 +1,11 @@
 import os
-import csv
 from Book import Book
 from functools import wraps
 from User import User
 import hashlib
 from BookFactory import BookFactory
 from CSVIterator import CSVIterator
-
+from pathlib import Path
 
 def check(func):
     r"""
@@ -29,11 +28,11 @@ def check(func):
 """
 This are variables that are required for managing and accessing the .csv files
 """
-current_path = os.getcwd()
-available_books_path = rf"{current_path}\Files\available_books.csv"
-book_path = rf"{current_path}\Files\books.csv"
-users_database = rf"{current_path}\Files\users.csv"
-borrowed_books_path = rf"{current_path}\Files\borrowed_books.csv"
+current_path = Path.cwd()
+available_books_path = current_path / "Files" / "available_books.csv"
+book_path = current_path / "Files" / "books.csv"
+users_database = current_path / "Files" / "users.csv"
+borrowed_books_path = current_path / "Files" / "borrowed_books.csv"
 book_factory = BookFactory()  # Creates a factory to creates books for later
 
 
@@ -179,10 +178,11 @@ def decrease_from_availability(book: Book):
                     check_found = 1
                 if x == 0:
                     check_found = 2
-                    if get_book_loaned_status(book) == "No":
-                        change_loaned_status(book.get_title())
+                elif x == 1:
+                    change_loaned_status(book.get_title())
                     book.set_is_loaned(True)
-                if x > 0:
+                    x -= 1
+                elif x > 0:
                     x -= 1
                 row[1] = str(x)
             rows.append(row)
@@ -284,7 +284,7 @@ def refresh_queue(book: Book):
 
     return refreshed_row
 
-
+@check
 def remove_borrowed_books_list(book: Book):
     rows = []
     found = False
@@ -304,12 +304,12 @@ def remove_borrowed_books_list(book: Book):
 @check
 def increase_available_book(book: Book):
     """
-        This function increases the availability of a given book_name if possible
-        and if the current copies amount increases to one it calls to change
-        the is_loaned status of the book_name
-        :param book: a book_name
-        :return: True if succeeded, False otherwise
-        """
+    This function increases the availability of a given book_name if possible
+    and if the current copies amount increases to one it calls to change
+    the is_loaned status of the book_name
+    :param book: a book_name
+    :return: True if succeeded, False otherwise
+    """
     rows = []
     check_found = False
     with CSVIterator(available_books_path, "r") as iterator:
@@ -333,7 +333,7 @@ def increase_available_book(book: Book):
 
     return check_found
 
-
+@check
 def check_is_there_queue(book: Book):
     check_found = False
     with CSVIterator(borrowed_books_path, "r") as iterator:
@@ -697,7 +697,7 @@ def get_borrowed_books():
 
     return books
 
-
+@check
 def get_borrowed_copies_by_book_and_user(book: Book, librarian: User):
     """
     This function returns how many copies were lent by a given librarian
@@ -715,7 +715,7 @@ def get_borrowed_copies_by_book_and_user(book: Book, librarian: User):
 
     return copies
 
-
+@check
 def get_queue():
     rows = []
     with CSVIterator(borrowed_books_path, "r") as borrowed_iterator:
