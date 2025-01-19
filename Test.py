@@ -1,5 +1,4 @@
 import unittest
-
 import FileManagement
 from User import User
 from Library import Library
@@ -17,7 +16,7 @@ class Test(unittest.TestCase):
     def test_add_book(self):
         self.library.remove_book(self.book)
         check = self.library.add_book(self.book)
-        added_book = self.library.get_book_by_title(self.book.get_title())
+        added_book = self.library.search_book_by_name(self.book.get_title())
 
         self.assertEqual(added_book, self.book)
 
@@ -25,7 +24,7 @@ class Test(unittest.TestCase):
         self.library.add_book(self.book)
         self.library.remove_book(self.book)
 
-        removed_book = self.library.get_book_by_title(self.book.get_title())
+        removed_book = self.library.search_book_by_name(self.book.get_title())
 
         self.assertEqual(removed_book, None)
 
@@ -94,13 +93,13 @@ class Test(unittest.TestCase):
 
         self.library.update_book(self.book)
 
-        self.assertEqual(self.library.get_book_by_title(self.book.get_title()), self.book)
+        self.assertEqual(self.library.search_book_by_name(self.book.get_title()), self.book)
 
         # Reset it
         self.book = self.book_factory.get_book("book", "Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
         self.library.update_book(self.book)
 
-        self.assertEqual(self.library.get_book_by_title(self.book.get_title()), self.book)
+        self.assertEqual(self.library.search_book_by_name(self.book.get_title()), self.book)
 
     def test_add_and_remove_user(self):
         self.library.remove_user(self.user)
@@ -156,7 +155,6 @@ class Test(unittest.TestCase):
             check = False
 
         self.assertEqual(check, True)
-
 
     def test_get_borrowed_copies_by_book_and_user(self):
         self.library.remove_book(self.book)

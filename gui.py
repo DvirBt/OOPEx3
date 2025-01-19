@@ -92,8 +92,8 @@ def init_page():
     back_button.grid(row=10, column=2, pady=10)
 
 def search_book(book_name, author_name):
-    book_by_title = library.get_book_by_title(book_name)
-    books_by_author = library.get_book_by_author(author_name)
+    book_by_title = library.search_book_by_name(book_name)
+    books_by_author = library.search_book_by_author(author_name)
     books_list = []
     if book_by_title:
         books_list.append(book_by_title)
