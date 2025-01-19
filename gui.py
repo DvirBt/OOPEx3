@@ -316,11 +316,16 @@ def try_lend_book(book, client, email, phone):
         The email of the client.
 
     phone : String
-        The phone number of the client.
+        The phone number of the client which must be 10 digits in order to be valid.
     ----------
     A pop-up notification will appear with the relevant message if the Book has been lent successfully or failed.
     """
     global user
+
+    if len(phone) != 10:
+        notification("Phone number must be 10 digits!", None)
+        return
+
     if book:
         success = library.borrow_book(book, user, client, email, phone)
     else:
@@ -347,6 +352,12 @@ def remove_book(book):
     """
     if book:
         success = library.remove_book(book)
+        for item in library.get_all_books():
+            if item.get_genre() == book.get_genre():
+                return
+
+        categories.remove(book.get_genre())
+
     else:
         success = False
 
