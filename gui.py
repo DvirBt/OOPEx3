@@ -84,13 +84,25 @@ def init_page():
     back_button.grid(row=10, column=2, pady=10)
 
 def search_book(book_name, author_name):
-    book_by_title = library.search_book_by_name(book_name)
+
+    if book_name == "":
+        book_name = None
+    if author_name == "":
+        author_name == None
+
+    books_by_title = library.search_book_by_name(book_name)
     books_by_author = library.search_book_by_author(author_name)
+
     books_list = []
-    if book_by_title:
-        books_list.append(book_by_title)
+
+    if books_by_title:
+        for book in books_by_title:
+            books_list.append(book)
+
     if books_by_author:
-        books_list += books_by_author
+        for book in books_by_author:
+            if book not in books_list:
+                books_list.append(book)
 
     if books_list:
         init_page()
@@ -99,7 +111,7 @@ def search_book(book_name, author_name):
                             font=('Ink Free', 22, 'bold'),
                             bg="#cae8cd")
         topic_label.grid(row=0, column=1, columnspan=3, padx=100, pady=25, sticky="nsew")
-        tree_select_value(books_list)
+        create_tree_for_view_page("Results", books_list)
 
     else:
         notification("No books found!", search_book)
@@ -345,7 +357,7 @@ def view_books_page():
     available_button.grid(row=2, column=2, pady=10, sticky="nsew")
     global user
     borrowed_button = Button(main_window, text="Lent books")
-    borrowed_button.config(command=lambda: create_tree_for_view_page("Lent books", library.get_borrowed_books_by_user()),
+    borrowed_button.config(command=lambda: create_tree_for_view_page("Lent books", library.get_borrowed_books()),
                            font=('Ink Free', 15, 'bold'),
                            bg="#cae8cd")
     borrowed_button.grid(row=3, column=2, pady=10, sticky="nsew")
@@ -389,7 +401,7 @@ def category_page():
     """
 
     category_button = Button(main_window, text="Submit")
-    category_button.config(command=lambda : create_tree_for_view_page(f"Books of {selected_category.get()}", library.get_book_by_genre(selected_category.get())),
+    category_button.config(command=lambda : create_tree_for_view_page(f"Books of {selected_category.get()}", library.search_book_by_genre(selected_category.get())),
                          font=('Ink Free', 15, 'bold'),
                          bg="#cae8cd")
     category_button.grid(row=2, column=2, pady=20, sticky="nsew")
@@ -445,6 +457,8 @@ def create_tree_for_view_page(topic, book_list):
                          font=('Ink Free', 15, 'bold'),
                          bg="#cae8cd")
         back_button.grid(row=0, column=0, columnspan=3, padx=50, pady=25, sticky="w")
+        if topic == "Results":
+            back_button.config(command=lambda : search_page())
 
     columns = ("Title", "Author", "Is loaned?", "Copies", "Genre", "Year")
     tree = Treeview(main_window, columns=columns, show="headings", height=10)
@@ -467,8 +481,9 @@ def create_tree_for_view_page(topic, book_list):
     v_scrollbar.grid(row=2, column=3, sticky="ns")
     tree.grid(row=2, column=2, padx=40, pady=20, sticky="nsew")
 
-    for item in book_list:
-        tree.insert("", "end",
+    if book_list:
+        for item in book_list:
+            tree.insert("", "end",
                     values=(item.get_title(), item.get_author(), item.get_is_loaned(), item.get_copies(), item.get_genre(), item.get_year()))
 
     #tree.pack(fill="both", expand=True)
@@ -494,7 +509,7 @@ def get_selected_book_from_tree(event=None):
         genre = item_values[4]
         year = item_values[5]
         """
-        book = library.get_book_by_title(title)
+        book = library.search_book_by_name(title)
         if book:
             return book
         else:
@@ -511,7 +526,7 @@ def return_book_page():
                          bg="#cae8cd")
     return_label.grid(row=0, column=1, columnspan=3, padx=220, pady=25, sticky="nsew")
     global user
-    borrowed_books_list = library.get_borrowed_books_by_user()
+    borrowed_books_list = library.get_borrowed_books()
     if borrowed_books_list:
         tree_select_value(borrowed_books_list)
 
@@ -542,8 +557,9 @@ def tree_select_value(books_list):
     value_tree.bind("<<TreeviewSelect>>", get_selected_book_from_tree) # value_tree.selection()
     value_tree.grid(row=2, column=2, padx=20, pady=20, sticky="nsew")
 
-    for item in books_list:
-        value_tree.insert("", "end",
+    if books_list:
+        for item in books_list:
+            value_tree.insert("", "end",
                     values=(
                     item.get_title(), item.get_author(), item.get_is_loaned(), item.get_copies(), item.get_genre(),
                     item.get_year()))
@@ -580,9 +596,9 @@ def remove_book_page():
 def try_lend_book(book, client, email, phone):
     global user
     success = library.borrow_book(book, user, client, email, phone) # ALWAYS TRUE!!!
-    if success is 0:
+    if success == 0:
         notification("Book lend successfully!", borrow_book_page)
-    elif success is 1:
+    elif success == 1:
         notification("Book lend failed!", None)
     else: # success == 2 -> entered the queue
         notification("The book is unavailable at the moment\nYou entered to the waiting list!", borrow_book_page)
