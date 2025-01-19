@@ -108,7 +108,7 @@ class Library(Subject):
             self.search_context = FullStrategy.FullStrategy()  # Default searching strategy
 
     @log_to_file
-    def borrow_book(self, book_to_lend: Book, librarian: User, count, client_full_name, client_email, client_phone):
+    def borrow_book(self, book_to_lend: Book, librarian: User, client_full_name, client_email, client_phone):
         """
         This function is given a book to borrow and return True if the book was successfully borrowed
         :param book_to_lend: the book to borrow
@@ -118,10 +118,13 @@ class Library(Subject):
         """
         if book_to_lend is not None:
             try:
-                check = FileManagement.lend_book(book_to_lend, librarian, count, client_full_name, client_email,
+                check = FileManagement.lend_book(book_to_lend, librarian, client_full_name, client_email,
                                                  client_phone)
-                if check:
+                if check == 1:
                     self.log_text = "book borrowed successfully"
+                    self.log_level = logging.INFO
+                elif check == 2:
+                    self.log_text = "book added to queue successfully"
                     self.log_level = logging.INFO
                 else:
                     self.log_text = "book borrowed fail"
@@ -137,16 +140,15 @@ class Library(Subject):
             return False
 
     @log_to_file
-    def return_book(self, book_to_return: Book, count):
+    def return_book(self, book_to_return: Book):
         """
         This function is given a book to return and return True if the book was successfully returned
         :param book_to_return: the book to return
-        :param count: how many books to return
         :return: True if succeeded
         """
         if book_to_return is not None:
             try:
-                check, clients_to_update = FileManagement.return_book(book_to_return, count)
+                check, clients_to_update = FileManagement.return_book(book_to_return)
                 if check:
                     self.log_text = "book returned successfully"
                     self.log_level = logging.INFO
@@ -405,7 +407,7 @@ class Library(Subject):
             self.log_level = logging.ERROR
 
     @log_to_file
-    def get_book_by_genre(self, name):
+    def search_book_by_genre(self, name):
         """
         Given a genre name the function returns a list with all the books
         written by in the same genre
@@ -526,7 +528,7 @@ class Library(Subject):
             if len(popular_books) > 0:
                 full_popular_books = []
                 for book in popular_books:
-                    full_popular_books.append(FileManagement.select_book_by_name(book))
+                    full_popular_books.append(FileManagement.select_book_by_name(book)[0])
                 return full_popular_books
             return None
         except Exception as e:

@@ -13,7 +13,7 @@ class SearchContext:
         return self.search_strategy.search_name(name)
 
     def search_author(self, name):
-        return self.search_author(name)
+        return self.search_strategy.search_author(name)
 
     def search_genre(self, name):
-        return self.search_genre(name)
+        return self.search_strategy.search_genre(name)

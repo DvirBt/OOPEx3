@@ -579,3 +579,822 @@ Search book Title1 by name completed successfully
 Search book Title1 by name completed successfully
 Successfully update the book: Title1
 Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed fail
+book borrowed fail
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book removed failed
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+book returned successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed failed
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned successfully
+book removed successfully
+book returned fail
+book returned fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book removed successfully
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book removed successfully
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+book returned fail
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Displayed book by category fail
+Displayed book by category fail
+Displayed book by category fail
+Displayed book by category fail
+Displayed book by category fail
+Displayed book by category fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book removed successfully
+book removed successfully
+book added successfully
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+book removed successfully
+book borrowed fail
+book borrowed fail
+book borrowed fail
+book added successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book added to queue successfully
+book added to queue successfully
+book added to queue successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+registered successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book borrowed successfully
+book removed successfully
+Search book Title1 by name completed fail
+Search book Title1 by name completed fail
+book removed failed
+book returned fail
+book returned fail
+book added successfully
+book returned fail
+book borrowed successfully
+book returned successfully
+book returned successfully
+book returned fail
+book returned fail
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Displayed book by category successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+Search book Title1 by name completed successfully
+Successfully update the book: Title1
+Search book Title1 by name completed successfully
+book removed successfully
+book removed successfully
+book added successfully
+book borrowed successfully

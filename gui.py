@@ -419,9 +419,10 @@ def category_page():
     """
 
     category_button = Button(main_window, text="Submit")
-    category_button.config(command=lambda : create_tree(f"Books of {selected_category.get()}", library.get_book_by_genre(selected_category.get())),
-                         font=('Ink Free', 15, 'bold'),
-                         bg="#cae8cd")
+    category_button.config(command=lambda : create_tree(f"Books of {selected_category.get()}",
+                                                        library.search_book_by_genre(selected_category.get())),
+                           font=('Ink Free', 15, 'bold'),
+                           bg="#cae8cd")
     category_button.grid(row=2, column=2, pady=20, sticky="nsew")
 
 # TODO: implement for borrowed different columns!
