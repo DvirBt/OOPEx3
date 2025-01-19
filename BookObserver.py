@@ -1,7 +1,8 @@
 import logging
 import os
+from pathlib import Path
 
-LOG_FILE = rf"{os.getcwd()}\log.txt"
+LOG_FILE = Path.cwd() / "log.txt"
 
 logging.basicConfig(
     filename=LOG_FILE,  # File where logs will be saved

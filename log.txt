@@ -1314,3 +1314,151 @@ Search book_name Moby Dick by name completed successfully
 book_name returned successfully
 Displayed all books successfully
 Search book_name Moby Dick by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Successfully removed user1: dvirbto
+registered successfully
+Successfully removed user1: dvirbto
+Successfully removed user1: dvirbto
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+book_name removed successfully
+book_name borrowed fail
+book_name borrowed fail
+book_name borrowed fail
+book_name added successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name added to queue successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+registered successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+book_name removed successfully
+book_name added successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name borrowed successfully
+book_name removed successfully
+Search book_name Title1 by name completed fail
+Search book_name Title1 by name completed fail
+book_name removed failed
+book_name returned fail
+book_name returned fail
+book_name added successfully
+book_name returned fail
+book_name borrowed successfully
+book_name returned successfully
+book_name returned successfully
+book_name returned fail
+book_name returned fail
+Search book_name A Game of Thrones by author completed successfully
+Search book_name A Game of Thrones by author completed successfully
+Displayed book_name by category successfully
+Displayed book_name by category successfully
+Search book_name The by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Search book_name a by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully
+Search book_name Title1 by name completed successfully
+Successfully update the book_name: Title1
+Search book_name Title1 by name completed successfully

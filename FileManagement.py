@@ -5,7 +5,7 @@ from User import User
 import hashlib
 from BookFactory import BookFactory
 from CSVIterator import CSVIterator
-
+from pathlib import Path
 
 def check(func):
     r"""
@@ -28,11 +28,11 @@ def check(func):
 """
 This are variables that are required for managing and accessing the .csv files
 """
-current_path = os.getcwd()
-available_books_path = rf"{current_path}\Files\available_books.csv"
-book_path = rf"{current_path}\Files\books.csv"
-users_database = rf"{current_path}\Files\users.csv"
-borrowed_books_path = rf"{current_path}\Files\borrowed_books.csv"
+current_path = Path.cwd()
+available_books_path = current_path / "Files" / "available_books.csv"
+book_path = current_path / "Files" / "books.csv"
+users_database = current_path / "Files" / "users.csv"
+borrowed_books_path = current_path / "Files" / "borrowed_books.csv"
 book_factory = BookFactory()  # Creates a factory to creates books for later
 
 

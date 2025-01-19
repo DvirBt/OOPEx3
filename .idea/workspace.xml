@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Fixed lend and return functionality">
+    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Fixed is_lent field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookObserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookObserver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManagement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +61,7 @@
     "Python tests.Python tests for Test.Test.test_get_all_books.executor": "Run",
     "Python tests.Python tests for Test.Test.test_get_all_borrowed.executor": "Run",
     "Python tests.Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_int.executor": "Run",
     "Python tests.Python tests for Test.Test.test_popular_books.executor": "Debug",
     "Python tests.Python tests for Test.Test.test_remove_book.executor": "Run",
     "Python tests.Python tests for Test.Test.test_return_book.executor": "Run",
@@ -85,7 +88,7 @@
       <recent name="C:\Users\Shaked\PycharmProjects\Book_Library\Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python tests.Python tests for Test.Test.test_int">
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -138,7 +141,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test.Test.test_search_book_by_author" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test.Test.test_int" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test.Test.test_search_book_by_author&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_int&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -170,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for Test.Test.test_int" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python tests.Python tests for Test.Test" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
         <item itemvalue="Python tests.Python tests for Test.Test.test_search_book_by_name" />
-        <item itemvalue="Python tests.Python tests for Test.Test.test_search_book_by_author" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737301255601</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixed is_lent field">
+      <option name="closed" value="true" />
+      <created>1737306117578</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737306117578</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -391,7 +402,8 @@
     <MESSAGE value="Fixed Strategy pattern and added a test" />
     <MESSAGE value="Added tests" />
     <MESSAGE value="Fixed lend and return functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed lend and return functionality" />
+    <MESSAGE value="Fixed is_lent field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed is_lent field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
