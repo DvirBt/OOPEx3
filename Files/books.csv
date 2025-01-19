@@ -1,5 +1,5 @@
 title,author,is_loaned,copies,genre,year
-The Catcher in the Rye,J.D. Salinger,No,3,Fiction,1951
+The Catcher in the Rye,J.D. Salinger,Yes,3,Fiction,1951
 To Kill a Mockingbird,Harper Lee,No,2,Fiction,1960
 The Great Gatsby,F. Scott Fitzgerald,No,4,Classic,1925
 Moby Dick,Herman Melville,No,1,Adventure,1851
@@ -34,4 +34,4 @@ The Handmaid's Tale,Margaret Atwood,No,3,Dystopian,1985
 The Odyssey,Homer,No,2,Epic Poetry,-800
 1984,George Orwell,No,5,Dystopian,1949
 Title2,Shaked Michael,No,3,Maybe,2005
-Title1,Author1,Yes,2,Science-Fiction,1962
+Title1,Author1,Yes,3,Science-Fiction,1962

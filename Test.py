@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
 
     def setUp(self):
         self.book_factory = BookFactory()
-        self.book = self.book_factory.get_book("book", "Title1", "Author1", "No", 3, "Science-Fiction", 1962)
+        self.book = self.book_factory.get_book("book_name", "Title1", "Author1", "No", 3, "Science-Fiction", 1962)
         self.user = User("dvirbto", "123")
         self.library = Library()
 
@@ -96,7 +96,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.library.search_book_by_name(self.book.get_title())[0], self.book)
 
         # Reset it
-        self.book = self.book_factory.get_book("book", "Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
+        self.book = self.book_factory.get_book("book_name", "Title1", "Author1", "Yes", 2, "Science-Fiction", 1962)
         self.library.update_book(self.book)
 
         self.assertEqual(self.library.search_book_by_name(self.book.get_title())[0], self.book)
