@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Better exception handling and logging">
-      <change beforePath="$PROJECT_DIR$/.idea/Book_Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Book_Library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e12a8039-8f70-48ae-89a7-438b6412b75b" name="Changes" comment="Changed a small thing in test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookObserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookObserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/books.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Files/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Library.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogDecorator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shakedm100&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shakedm100/OOPEx3.git&quot;,
+    &quot;accountId&quot;: &quot;fc8af00d-7eed-4064-8601-f4f7ec71f570&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -43,6 +51,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for Test.Test.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_add_and_remove_user.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_add_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_add_user.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_borrow_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_get_all_books.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_get_all_borrowed.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_get_borrowed_copies_by_book_and_user.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_int.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_popular_books.executor": "Debug",
+    "Python tests.Python tests for Test.Test.test_remove_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_return_book.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_search_book_by_author.executor": "Debug",
+    "Python tests.Python tests for Test.Test.test_search_book_by_genre.executor": "Run",
+    "Python tests.Python tests for Test.Test.test_search_book_by_name.executor": "Debug",
+    "Python tests.Python tests for Test.Test.test_update_book.executor": "Run",
     "Python.FileManagement.executor": "Run",
     "Python.Library.executor": "Run",
     "Python.Main.executor": "Run",
@@ -53,7 +77,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Shaked/Documents/GitHub/OOPEx3"
+    "last_opened_file_path": "C:/Users/Shaked/Documents/GitHub/OOPEx3",
+    "settings.editor.selected.configurable": "Csv.Editor.Settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -61,73 +86,7 @@
       <recent name="C:\Users\Shaked\PycharmProjects\Book_Library\Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
-    <configuration name="FileManagement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Book_Library" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileManagement.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Library" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Book_Library" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Library.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Book_Library" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.gui">
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Book_Library" />
       <option name="ENV_FILES" value="" />
@@ -137,11 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/gui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,19 +109,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for Test.Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test.Test.test_borrow_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_borrow_book&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test.Test.test_get_all_borrowed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_get_all_borrowed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test.Test.test_int" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Book_Library" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Test.test_int&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.gui" />
-        <item itemvalue="Python.FileManagement" />
-        <item itemvalue="Python.Library" />
+        <item itemvalue="Python tests.Python tests for Test.Test" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_get_all_borrowed" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_int" />
+        <item itemvalue="Python tests.Python tests for Test.Test.test_borrow_book" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -239,7 +259,143 @@
       <option name="project" value="LOCAL" />
       <updated>1736019263999</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Better exception handling and logging, removed LoggingDecorator.py">
+      <option name="closed" value="true" />
+      <created>1736094751520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736094751520</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Continued Test">
+      <option name="closed" value="true" />
+      <created>1736354602849</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736354602849</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added book factory and a search for the 10 most popular books.">
+      <option name="closed" value="true" />
+      <created>1736421630437</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736421630437</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Finished implementing a new iterator for FileManagement.py. In addition, added comments on all the functions in Library.py and FileManagement.py.">
+      <option name="closed" value="true" />
+      <created>1736451916757</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736451916757</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added stuff">
+      <option name="closed" value="true" />
+      <created>1736702968775</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736702968775</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added stuff">
+      <option name="closed" value="true" />
+      <created>1736704625039</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736704625039</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added stuff">
+      <option name="closed" value="true" />
+      <created>1736775688548</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736775688548</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added stuff">
+      <option name="closed" value="true" />
+      <created>1736777767991</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736777767991</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fixed a few bugs">
+      <option name="closed" value="true" />
+      <created>1737129816645</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1737129816645</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added search strategy logic">
+      <option name="closed" value="true" />
+      <created>1737281869560</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737281869560</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed Strategy pattern and added a test">
+      <option name="closed" value="true" />
+      <created>1737285821169</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737285821169</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added tests">
+      <option name="closed" value="true" />
+      <created>1737288002222</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737288002222</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added tests">
+      <option name="closed" value="true" />
+      <created>1737299289674</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737299289674</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fixed lend and return functionality">
+      <option name="closed" value="true" />
+      <created>1737301255601</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737301255601</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed is_lent field">
+      <option name="closed" value="true" />
+      <created>1737306117578</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737306117578</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Pathing is now general and unrelated to OS">
+      <option name="closed" value="true" />
+      <created>1737307993342</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737307993342</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changed a small thing in test">
+      <option name="closed" value="true" />
+      <created>1737309238950</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737309238950</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -250,6 +406,30 @@
     <MESSAGE value="Finished most of the backend of book and user" />
     <MESSAGE value="Added a basic GUI" />
     <MESSAGE value="Better exception handling and logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better exception handling and logging" />
+    <MESSAGE value="Better exception handling and logging, removed LoggingDecorator.py" />
+    <MESSAGE value="Continued Test" />
+    <MESSAGE value="Added book factory and a search for the 10 most popular books." />
+    <MESSAGE value="Finished implementing a new iterator for FileManagement.py. In addition, added comments on all the functions in Library.py and FileManagement.py." />
+    <MESSAGE value="Added stuff" />
+    <MESSAGE value="Fixed a few bugs" />
+    <MESSAGE value="Added search strategy logic" />
+    <MESSAGE value="Fixed Strategy pattern and added a test" />
+    <MESSAGE value="Added tests" />
+    <MESSAGE value="Fixed lend and return functionality" />
+    <MESSAGE value="Fixed is_lent field" />
+    <MESSAGE value="Pathing is now general and unrelated to OS" />
+    <MESSAGE value="Changed a small thing in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed a small thing in test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
